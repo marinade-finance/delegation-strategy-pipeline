@@ -24,7 +24,7 @@ jobs:
         slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
         scoring_id="$current_epoch.$slot_index"
-        echo "::set-env name=scoring_id::$scoring_id"
+        echo "scoring_id=$scoring_id" >> $GITHUB_ENV
 
         scoring_path="scoring/$scoring_id"
         mkdir -p "$scoring_path"
@@ -42,6 +42,7 @@ jobs:
 
     - name: Make a Pull Request
       run: |
+        scoring_id=${{ env.scoring_id }}
         scoring_branch="scoring/$scoring_id"
         gh pr create -B master -H "$scoring_branch" --title 'Publish Scoring Results ($scoring_id)' --body 'Auto-generated PR with scoring results'
       env:
