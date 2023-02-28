@@ -44,6 +44,13 @@ jobs:
       run: |
         scoring_id=${{ env.scoring_id }}
         scoring_branch="scoring/$scoring_id"
+
+        git config --global user.name 'Autonomous Scoring Pipeline'
+        git config --global user.email 'bot@noreply.marinade.finance'
+        git checkout -b "$scoring_branch"
+        git add .
+        ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
+
         gh pr create -B master -H "$scoring_branch" --title 'Publish Scoring Results ($scoring_id)' --body 'Auto-generated PR with scoring results'
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
