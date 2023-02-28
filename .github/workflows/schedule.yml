@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '50 0/1 * * *'
 jobs:
-  build:
+  trigger_scoring_if_needed:
     name: Schedule Scoring
     runs-on: ubuntu-latest
     steps:
@@ -12,14 +12,14 @@ jobs:
       run: |
         epoch_info=$(curl -sfLS "http://api.mainnet-beta.solana.com" -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}')
         current_epoch=$(<<<"$epoch_info" jq '.result.epoch' -r)
-        slot_in_epoch=$(<<<"$epoch_info" jq '.result.slotsInEpoch' -r)
+        slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
         last_scoring_epoch=0 # todo
 
         echo "Current epoch: $current_epoch"
-        echo "Current slot: $slot_in_epoch"
+        echo "Current slot: $slot_index"
 
-        if (( "$slot_in_epoch" > 300000 )) && (( $last_scoring_epoch != current_epoch ))
+        if (( "$slot_index" > 300000 )) && (( $last_scoring_epoch != current_epoch ))
         then
           echo "Would trigger the scoring pipeline"
         fi

@@ -1,0 +1,23 @@
+name: Scoring
+
+jobs: 
+  scoring:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: r-lib/actions/setup-r@master
+
+    - name: Install packages
+      run: |
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-install.bash)"
+
+    - name: Load Data
+      run: |
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-fetch-inputs.bash)"
+
+    - name: Score
+      run: |
+        export SCORING_R=$(mktemp)
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring.R -O "$SCORING_R"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-run.bash)"
