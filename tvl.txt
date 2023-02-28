@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Feb 2023 19:43:27 GMT
+Content-Type: application/json
+Content-Length: 435
+Connection: keep-alive
+Permissions-Policy: interest-cohort=()
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rLsotUmD21yU%2B80rfN2N0m4ObURQJLlQoQUlaGHjZ5oq2EIZYmvoI0RStLCvonDz%2Fc8WMkQA%2FQa8GCp3y6QFlWmZENFWoXSBIzXCVwcC8edswuQRUGPP5hLJR27gF2KevO06gXci"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a0ba625591cf93d-SJC
+
+{"staked_sol":6184876.393376577,"staked_usd":137716389.06790477,"liquidity_sol":138875.040490682,"liquidity_usd":3092279.9247075124,"total_sol":6323751.433867259,"total_usd":140808668.9926123,"self_staked_sol":1214034.725192254,"self_staked_usd":27032468.8680231,"standard_staked_sol":4970841.668184323,"standard_staked_usd":110683920.19988169,"total_virtual_staked_sol":4694887.507085095,"total_virtual_staked_usd":104539349.44410285}

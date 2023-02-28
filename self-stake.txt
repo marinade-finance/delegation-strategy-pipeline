@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Feb 2023 19:43:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 879
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Etag: W/"36f-dslXwat/D96w88ZewG2qopg94v8"
+X-Trace-Id: 5e6e02a29bd990ec80e8c68ac1c30fb5
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HzpDy6%2FOt5OcpcF%2Fy03Iyk57MNfig%2FUPs2S5ylZg7SXRPQEyGlKCROO8QYvfjV6IAF3DnUFDt7J0hr7VgGLjGTl2GziqbyURcI%2BiFzvCfEgPNnN%2Fpte%2BD7JM4X6JGYmvZ2t4E7nGclk00N9jIJUSww%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a0ba6363ecc981e-SJC
+
+{"HB2gzsd61E7jnJiDW6tf7atneup5j8zZi3Wtu5cAuNBq":{"partnerAccount":"QM3ACFu3VD9N6z6dmBseezxrNRP1T4MruGhpJX8B3nC","partnerName":"STAKING FACILITIES","msolTokenPartnerAccount":"CrR7DS7A8ABSsHwx92K3b6bD1moBzn5SpWf2ske8bqML","voteAccount":"DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a","comission":8,"walletAmount":1272500.026604723,"solendAmount":0,"quarryAmount":0,"total":1272500.026604723,"depositStakeAmount":514034.725192254,"depositSolAmount":700000},"SmrtPCMoSGVNE71ai22BjX5MyKeiAEanjjLR9SqZEiV":{"partnerAccount":"MSHRissZyf4nS2E7MShYrK4q5ucsPSqPv3ndw4ZcW4m","partnerName":"STAKER","msolTokenPartnerAccount":"CbcGQW5SZ6koAgRpPNUBkzGBPUZrpMs75LWAuTHQmELs","voteAccount":"GNZ1PAAS33davY4Q1BMEpZEpVBtRtGvSpcTH5wYVkkVt","comission":5,"walletAmount":0.553408027,"solendAmount":0,"quarryAmount":0.5,"total":1.0534080270000001,"depositStakeAmount":1.008221562,"depositSolAmount":0}}
