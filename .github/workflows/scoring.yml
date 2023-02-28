@@ -1,5 +1,10 @@
 name: Scoring
 
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger_scoring]
+
 jobs: 
   scoring:
     runs-on: ubuntu-latest
