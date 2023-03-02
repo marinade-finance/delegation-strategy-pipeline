@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@master
+        with:
+          ref: master
+          fetch-depth: 10
 
       - name: Load scoring details
         run: |
