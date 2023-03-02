@@ -18,6 +18,7 @@ jobs:
 
       - name: Load scoring details
         run: |
+          set -ex
           scores_csv=$(git log -1 --name-only --pretty=format: | grep score.csv)
           params_env=$(git log -1 --name-only --pretty=format: | grep params.env)
           scoring_run_ui_id=$(git log -1 --name-only --pretty=format: | head -1 | awk -F / '{print $2}')
