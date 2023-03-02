@@ -43,6 +43,12 @@ jobs:
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring.R -O "$SCORING_R"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-run.bash)"
 
+        if ! [[ -f scores.csv ]]
+        then
+          echo "Scores file was not produced!"
+          exit 1
+        fi
+
     - name: Make a Pull Request
       run: |
         scoring_id=${{ env.scoring_id }}
