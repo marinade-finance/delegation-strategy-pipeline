@@ -1,0 +1,74 @@
+name: Apply scoring
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  merge_to_master:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'scoring/'))
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Load scoring details
+        run: |
+          scores_csv=$(git log -1 --name-only --pretty=format: | grep score.csv)
+          params_env=$(git log -1 --name-only --pretty=format: | grep params.env)
+          scoring_run_ui_id=$(git log -1 --name-only --pretty=format: | head -1 | awk -F / '{print $2}')
+          epoch=$(<<<"$scoring_run_ui_id" | awk -F . '{print $1}')
+          
+          if [[ -z $scores_csv ]]
+          then
+            echo "Failed to find CSV with scores in the PR!"
+            exit 1
+          fi
+          
+          if [[ -z $params_env ]]
+          then
+            echo "Failed to find ENV file with scoring params in the PR!"
+            exit 1
+          fi
+          
+          if [[ -z $scoring_run_ui_id ]]
+          then
+            echo "Failed to detect scoring run UI ID from the PR!"
+            exit 1
+          fi
+          
+          if [[ -z $epoch ]]
+          then
+            echo "Failed to detect epoch from the UI ID!"
+            exit 1
+          fi
+
+          echo "scores_csv=$scores_csv" >> $GITHUB_ENV
+          echo "params_env=$params_env" >> $GITHUB_ENV
+          echo "scoring_run_ui_id=$scoring_run_ui_id" >> $GITHUB_ENV
+          echo "epoch=$epoch" >> $GITHUB_ENV
+
+      - name: Publish scoring results
+        run: |
+          export $(grep -v '^#' "${{ env.params_env }}" | xargs -d '\n')
+
+          curl -sLfS "http://validators-api.marinade.finance/admin/scores?epoch=1&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scores_csv }}" -X POST \
+            -H "Content-Type: multipart/form-data" \
+            -H 'Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}' \
+            --form "scores_csv=@${{ env.scores_csv }}"
+
+      # - name: Approval stage
+      #   uses: trstringer/manual-approval@v1
+      #   with:
+      #     secret: ${{ github.TOKEN }}
+      #     approvers: user1,user2,org-team1
+      #     minimum-approvals: 1
+      #     issue-title: "Deploying v1.3.5 to prod from staging"
+      #     issue-body: "Please approve or deny the deployment of version v1.3.5."
+      #     exclude-workflow-initiator-as-approver: false
+      #     additional-approved-words: ''
+      #     additional-denied-words: ''

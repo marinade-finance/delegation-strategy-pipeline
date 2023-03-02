@@ -1,4 +1,4 @@
-name: Scoring
+name: Prepare Scoring
 
 on:
   workflow_dispatch:
@@ -27,15 +27,18 @@ jobs:
         echo "scoring_id=$scoring_id" >> $GITHUB_ENV
 
         scoring_path="scoring/$scoring_id"
+        echo "scoring_path=$scoring_path" >> $GITHUB_ENV
+
         mkdir -p "$scoring_path"
-        cd "$scoring_path"
 
     - name: Load Data
       run: |
+        cd "${{ env.scoring_id }}"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-fetch-inputs.bash)"
 
     - name: Score
       run: |
+        cd "${{ env.scoring_id }}"
         export SCORING_R=$(mktemp)
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring.R -O "$SCORING_R"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-run.bash)"
