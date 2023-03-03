@@ -67,37 +67,37 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Prepare solana config
-        run: |
-          cat <<EOF > /tmp/solana-config.yml
-          json_rpc_url: "$RPC_URL"
-          websocket_url: ""
-          keypair_path: /id.json
-          address_labels:
-            "11111111111111111111111111111111": System Program
-          commitment: confirmed
-          EOF
-          echo "$KEYPAIR" > /tmp/id.json
+      # - name: Prepare solana config
+      #   run: |
+      #     cat <<EOF > /tmp/solana-config.yml
+      #     json_rpc_url: "$RPC_URL"
+      #     websocket_url: ""
+      #     keypair_path: /id.json
+      #     address_labels:
+      #       "11111111111111111111111111111111": System Program
+      #     commitment: confirmed
+      #     EOF
+      #     echo "$KEYPAIR" > /tmp/id.json
 
-        env:
-          RPC_URL: ${{ secrets.RPC_URL }}
-          KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
+      #   env:
+      #     RPC_URL: ${{ secrets.RPC_URL }}
+      #     KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
 
-      - name: Run scoring - simulation
-        run: |
-          images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
-          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1)
+      # - name: Run scoring - simulation
+      #   run: |
+      #     images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
+      #     latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1)
 
-          docker build -t "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" .
-          docker run --rm --user "$(id -u):$(id -g)" \
-            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-            -v /tmp/id.json:/id.json \
-            -v "$(pwd)/$scores_csv:/scores.csv" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
-            ./validator-manager -s update-scores2 --scores-file /scores.csv
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/marinade-anchor
+      #     docker build -t "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" .
+      #     docker run --rm --user "$(id -u):$(id -g)" \
+      #       -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+      #       -v /tmp/id.json:/id.json \
+      #       -v "$(pwd)/$scores_csv:/scores.csv" \
+      #       "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
+      #       ./validator-manager -s update-scores2 --scores-file /scores.csv
+      #   env:
+      #     ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+      #     ECR_REPOSITORY: marinade.finance/marinade-anchor
 
       - name: Publish scoring results
         run: |
@@ -105,7 +105,7 @@ jobs:
 
           curl -sLfS "https://validators-api-dev.marinade.finance/admin/scores?epoch=1&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
             -H "Content-Type: multipart/form-data" \
-            -H 'Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}' \
+            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
 
       # - name: Approval stage
