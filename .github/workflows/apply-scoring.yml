@@ -56,6 +56,49 @@ jobs:
           echo "scoring_run_ui_id=$scoring_run_ui_id" >> $GITHUB_ENV
           echo "epoch=$epoch" >> $GITHUB_ENV
 
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Prepare solana config
+        run: |
+          cat <<EOF > /tmp/solana-config.yml
+          json_rpc_url: "$RPC_URL"
+          websocket_url: ""
+          keypair_path: /id.json
+          address_labels:
+            "11111111111111111111111111111111": System Program
+          commitment: confirmed
+          EOF
+          echo "$KEYPAIR" > /tmp/id.json
+
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
+
+      - name: Run scoring - simulation
+        run: |
+          images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
+          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1)
+
+          docker build -t "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" .
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+            -v /tmp/id.json:/id.json \
+            -v "$(pwd)/$scores_csv:/scores.csv" \
+            "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
+            ./validator-manager -s update-scores2 --scores-file /scores.csv
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/marinade-anchor
+
       - name: Publish scoring results
         run: |
           export $(grep -v '^#' "${{ env.params_env }}" | xargs -d '\n')
