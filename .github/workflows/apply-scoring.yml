@@ -86,7 +86,7 @@ jobs:
       - name: Run scoring - simulation
         run: |
           images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
-          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | df -d' ' -f2)
+          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
 
           docker build -t "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" .
           docker run --rm --user "$(id -u):$(id -g)" \
