@@ -72,7 +72,7 @@ jobs:
           cat <<EOF > /tmp/solana-config.yml
           json_rpc_url: "$RPC_URL"
           websocket_url: ""
-          keypair_path: /id.json
+          keypair_path: /.config/solana/id.json
           address_labels:
             "11111111111111111111111111111111": System Program
           commitment: confirmed
@@ -90,7 +90,7 @@ jobs:
 
           docker run --rm --user "$(id -u):$(id -g)" \
             -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-            -v /tmp/id.json:/id.json \
+            -v /tmp/id.json:/.config/solana/id.json \
             -v "$(pwd)/$scores_csv:/scores.csv" \
             "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
             ./validator-manager -s update-scores2 --scores-file /scores.csv
