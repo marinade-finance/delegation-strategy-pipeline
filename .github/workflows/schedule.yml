@@ -14,7 +14,7 @@ jobs:
         current_epoch=$(<<<"$epoch_info" jq '.result.epoch' -r)
         slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
-        last_scoring_epoch=0 # todo
+        last_scoring_epoch=$(find scoring -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
 
         echo "Current epoch: $current_epoch"
         echo "Current slot: $slot_index"

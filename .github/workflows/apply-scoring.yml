@@ -1,4 +1,4 @@
-name: Apply scoring
+name: Apply Scoring
 
 on:
   workflow_dispatch:
