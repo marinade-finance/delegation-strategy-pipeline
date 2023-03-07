@@ -15,7 +15,7 @@ jobs:
 
     - name: Install packages
       run: |
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-install.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-install.bash)"
 
     - name: Prepare target directory
       run: |
@@ -34,14 +34,14 @@ jobs:
     - name: Load Data
       run: |
         cd "${{ env.scoring_path }}"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-fetch-inputs.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-fetch-inputs.bash)"
 
     - name: Score
       run: |
         cd "${{ env.scoring_path }}"
         export SCORING_R=$(mktemp)
-        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring.R -O "$SCORING_R"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/scoring/scripts/scoring-run.bash)"
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring.R -O "$SCORING_R"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-run.bash)"
 
         if ! [[ -f scores.csv ]]
         then
