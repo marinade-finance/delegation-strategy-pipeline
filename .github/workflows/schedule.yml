@@ -1,6 +1,7 @@
 name: Schedule Scoring
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '50 0/1 * * *'
 jobs:
@@ -16,12 +17,16 @@ jobs:
         current_epoch=$(<<<"$epoch_info" jq '.result.epoch' -r)
         slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
-        last_scoring_epoch=$(find scoring -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
+        last_scoring_epoch_from_dir=$(find scoring -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
+        git branch -r --no-merged
+        last_scoring_epoch_from_git=$(git branch -r --no-merged | grep origin/scoring/ | sort -n | tail -1 | cut -d/ -f3 | cut -d. -f1)
 
+        echo "Last scoring epoch (git): $last_scoring_epoch_from_git"
+        echo "Last scoring epoch (dir): $last_scoring_epoch_from_dir"
         echo "Current epoch: $current_epoch"
         echo "Current slot: $slot_index"
 
-        if (( "$slot_index" > 300000 )) && (( $last_scoring_epoch != current_epoch ))
+        if (( "$slot_index" > 300000 )) && (( $last_scoring_epoch_from_dir != current_epoch )) && (( $last_scoring_epoch_from_git != current_epoch ))
         then
           echo "Would trigger the scoring pipeline"
         fi
