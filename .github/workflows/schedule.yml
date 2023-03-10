@@ -18,10 +18,7 @@ jobs:
         slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
         last_scoring_epoch_from_dir=$(find scoring -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
-
-        gh pr list --state all --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName'
-
-        last_scoring_epoch_from_git=$(gh pr list --state all --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep scoring/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
+        last_scoring_epoch_from_git=$(gh pr list --state open --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep scoring/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
 
         echo "Last scoring epoch (git): $last_scoring_epoch_from_git"
         echo "Last scoring epoch (dir): $last_scoring_epoch_from_dir"
@@ -47,5 +44,6 @@ jobs:
         fi
 
         echo "Triggering the scoring pipeline..."
+        gh workflow run prepare-scoring.yml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
