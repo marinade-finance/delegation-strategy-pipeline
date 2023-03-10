@@ -102,7 +102,7 @@ jobs:
         run: |
           export $(grep -v '^#' "${{ env.params_env }}" | xargs -d '\n')
 
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/scores?epoch=$EPOCH&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
