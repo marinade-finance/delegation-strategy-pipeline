@@ -43,7 +43,7 @@ jobs:
           exit 0
         fi
 
-        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?epoch=$current_epoch&epoch_slot_current=$slot_index&job_scheduled=true" -X POST \
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_scheduled=true" -X POST \
           -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
         echo "Triggering the scoring pipeline..."

@@ -16,8 +16,7 @@ jobs:
       - name: Set and send start timestamp
         run: |
           start_timestamp=$(date +%s)
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?apply_scoring_pending=true&apply_scoring_start=$start_timestamp" -X POST \
-            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+          echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
 
       - name: Checkout the repository
         uses: actions/checkout@master
@@ -34,42 +33,27 @@ jobs:
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
           slot_index=$(<<<"$scoring_run_ui_id" awk -F . '{print $2}')
 
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?epoch=$epoch&epoch_slot_current=$slot_index&apply_scoring_pending=true" -X POST \
-            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
-
           if [[ -z $scores_csv ]]
           then
             echo "Failed to find CSV with scores in the PR!"
-            stop_timestamp=$(date +%s)
-            curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_end=$stop_timestamp" -X POST \
-              -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
             exit 1
           fi
           
           if [[ -z $params_env ]]
           then
             echo "Failed to find ENV file with scoring params in the PR!"
-            stop_timestamp=$(date +%s)
-            curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_end=$stop_timestamp" -X POST \
-              -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
             exit 1
           fi
           
           if [[ -z $scoring_run_ui_id ]]
           then
             echo "Failed to detect scoring run UI ID from the PR!"
-            stop_timestamp=$(date +%s)
-            curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_end=$stop_timestamp" -X POST \
-              -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
             exit 1
           fi
           
           if [[ -z $epoch ]]
           then
             echo "Failed to detect epoch from the UI ID!"
-            stop_timestamp=$(date +%s)
-            curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_end=$stop_timestamp" -X POST \
-              -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
             exit 1
           fi
 
@@ -128,15 +112,21 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
-  
-  report_metrics:
-    needs: scoring
-    steps:
-    - name: Update job status and stop timestamp
-      run: |
-        stop_timestamp=$(date +%s)
-        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&apply_scoring_end=$stop_timestamp" -X POST \
-          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
+      - name: Update job status and compute job duration
+        run: |
+          start_timestamp=${{ env.start_timestamp }}
+          duration=$($(date +%s) - $start_timestamp)
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&apply_scoring_duration=$duration" -X POST \
+            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
+      - name: Report job failure
+        if: ${{ failure() }}
+        run: |
+          start_timestamp=${{ env.start_timestamp }}
+          duration=$($(date +%s) - $start_timestamp)
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_duration=$duration" -X POST \
+            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       # - name: Approval stage
       #   uses: trstringer/manual-approval@v1

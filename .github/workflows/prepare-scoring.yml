@@ -16,8 +16,7 @@ jobs:
     - name: Set and send start timestamp
       run: |
         start_timestamp=$(date +%s)
-        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?prepare_scoring_pending=true&prepare_scoring_start=$start_timestamp" -X POST \
-          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+        echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
 
     - name: Install packages
       run: |
@@ -37,9 +36,6 @@ jobs:
 
         mkdir -p "$scoring_path"
 
-        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?epoch=$current_epoch&epoch_slot_current=$slot_index&prepare_scoring_pending=true" -X POST \
-          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
-
     - name: Load Data
       run: |
         cd "${{ env.scoring_path }}"
@@ -55,11 +51,23 @@ jobs:
         if ! [[ -f scores.csv ]]
         then
           echo "Scores file was not produced!"
-          stop_timestamp=$(date +%s)
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&prepare_scoring_end=$stop_timestamp" -X POST \
-            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
           exit 1
         fi
+
+    - name: Update job status and compute job duration
+      run: |
+        start_timestamp=${{ env.start_timestamp }}
+        duration=$($(date +%s) - $start_timestamp)
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&prepare_scoring_duration=$duration" -X POST \
+          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
+    - name: Report job failure
+      if: ${{ failure() }}
+      run: |
+        start_timestamp=${{ env.start_timestamp }}
+        duration=$($(date +%s) - $start_timestamp)
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&prepare_scoring_duration=$duration" -X POST \
+          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
     - name: Make a Pull Request
       run: |
@@ -75,12 +83,3 @@ jobs:
         gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body 'Auto-generated PR with scoring results'
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  report_metrics:
-    needs: scoring
-    steps:
-    - name: Update job status and stop timestamp
-      run: |
-        stop_timestamp=$(date +%s)
-        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&prepare_scoring_end=$stop_timestamp" -X POST \
-          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
