@@ -57,7 +57,7 @@ jobs:
     - name: Update job status and compute job duration
       run: |
         start_timestamp=${{ env.start_timestamp }}
-        duration=$($(date +%s) - $start_timestamp)
+        duration=$(($(date +%s) - $start_timestamp))
         curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&prepare_scoring_duration=$duration" -X POST \
           -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
@@ -65,7 +65,7 @@ jobs:
       if: ${{ failure() }}
       run: |
         start_timestamp=${{ env.start_timestamp }}
-        duration=$($(date +%s) - $start_timestamp)
+        duration=$(($(date +%s) - $start_timestamp))
         curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&prepare_scoring_duration=$duration" -X POST \
           -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
