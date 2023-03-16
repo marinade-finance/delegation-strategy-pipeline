@@ -13,6 +13,11 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'scoring/'))
 
     steps:
+      - name: Set and send start timestamp
+        run: |
+          start_timestamp=$(date +%s)
+          echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
+
       - name: Checkout the repository
         uses: actions/checkout@master
         with:
@@ -26,7 +31,7 @@ jobs:
           params_env=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep params.env)
           scoring_run_ui_id=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
-          
+
           if [[ -z $scores_csv ]]
           then
             echo "Failed to find CSV with scores in the PR!"
@@ -106,6 +111,21 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
+
+      - name: Update job status and compute job duration
+        run: |
+          start_timestamp=${{ env.start_timestamp }}
+          duration=$(($(date +%s) - $start_timestamp))
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&apply_scoring_duration=$duration" -X POST \
+            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
+      - name: Report job failure
+        if: ${{ failure() }}
+        run: |
+          start_timestamp=${{ env.start_timestamp }}
+          duration=$(($(date +%s) - $start_timestamp))
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_duration=$duration" -X POST \
+            -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       # - name: Approval stage
       #   uses: trstringer/manual-approval@v1

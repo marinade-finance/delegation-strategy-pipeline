@@ -13,6 +13,11 @@ jobs:
     - uses: actions/checkout@master
     - uses: r-lib/actions/setup-r@v2
 
+    - name: Set and send start timestamp
+      run: |
+        start_timestamp=$(date +%s)
+        echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
+
     - name: Install packages
       run: |
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-install.bash)"
@@ -48,6 +53,21 @@ jobs:
           echo "Scores file was not produced!"
           exit 1
         fi
+
+    - name: Update job status and compute job duration
+      run: |
+        start_timestamp=${{ env.start_timestamp }}
+        duration=$(($(date +%s) - $start_timestamp))
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&prepare_scoring_duration=$duration" -X POST \
+          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
+    - name: Report job failure
+      if: ${{ failure() }}
+      run: |
+        start_timestamp=${{ env.start_timestamp }}
+        duration=$(($(date +%s) - $start_timestamp))
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&prepare_scoring_duration=$duration" -X POST \
+          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
     - name: Make a Pull Request
       run: |

@@ -43,6 +43,9 @@ jobs:
           exit 0
         fi
 
+        curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_scheduled=true" -X POST \
+          -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
+
         echo "Triggering the scoring pipeline..."
         gh workflow run prepare-scoring.yml
       env:
