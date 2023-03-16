@@ -31,7 +31,6 @@ jobs:
           params_env=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep params.env)
           scoring_run_ui_id=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
-          slot_index=$(<<<"$scoring_run_ui_id" awk -F . '{print $2}')
 
           if [[ -z $scores_csv ]]
           then
