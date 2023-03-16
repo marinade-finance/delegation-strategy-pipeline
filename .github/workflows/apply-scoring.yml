@@ -116,7 +116,7 @@ jobs:
         run: |
           start_timestamp=${{ env.start_timestamp }}
           duration=$(($(date +%s) - $start_timestamp))
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_succeded=true&apply_scoring_duration=$duration" -X POST \
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_success=true&apply_scoring_duration=$duration" -X POST \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       - name: Report job failure
@@ -124,7 +124,7 @@ jobs:
         run: |
           start_timestamp=${{ env.start_timestamp }}
           duration=$(($(date +%s) - $start_timestamp))
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_failed=true&apply_scoring_duration=$duration" -X POST \
+          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_error=true&apply_scoring_duration=$duration" -X POST \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       # - name: Approval stage
