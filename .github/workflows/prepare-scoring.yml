@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: r-lib/actions/setup-r@v2
+    - uses: r-lib/actions/setup-pandoc@v2
 
     - name: Set and send start timestamp
       run: |
@@ -39,20 +40,29 @@ jobs:
     - name: Load Data
       run: |
         cd "${{ env.scoring_path }}"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-fetch-inputs.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/reports/scoring-fetch-inputs.bash)"
 
     - name: Score
       run: |
         cd "${{ env.scoring_path }}"
         export SCORING_R=$(mktemp)
-        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring.R -O "$SCORING_R"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-run.bash)"
+        export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/reports/scoring.R -O "$SCORING_R"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.bash)"
 
         if ! [[ -f scores.csv ]]
         then
           echo "Scores file was not produced!"
           exit 1
         fi
+
+    - name: Score - Report
+      run: |
+        cd "${{ env.scoring_path }}"
+        export SCORING_REPORT_RMD=$(mktemp)
+        export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.bash)" - "${{ env.scoring_id }}"
 
     - name: Update job status and compute job duration
       run: |
