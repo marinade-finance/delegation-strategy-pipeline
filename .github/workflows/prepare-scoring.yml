@@ -13,14 +13,20 @@ jobs:
     - uses: actions/checkout@master
     - uses: r-lib/actions/setup-r@v2
     - uses: r-lib/actions/setup-pandoc@v2
+      with:
+        pandoc-version: 3.1.1
     - run: |
-        echo "Package: rprojroot" > DESCRIPTION
+        cat <<EOF > DESCRIPTION
+        Package: rprojroot
+        Version: 0.0.1
+        EOF
 
     - uses: r-lib/actions/setup-r-dependencies@v2
       with:
         extra-packages: |
           any::dotenv
-          any::data
+          any::data.table
+          any::dplyr
           any::rmarkdown
           any::treemapify
           any::gridExtra
@@ -57,9 +63,9 @@ jobs:
       run: |
         cd "${{ env.scoring_path }}"
         export SCORING_R=$(mktemp)
-        export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
+        export SCORING_WORKING_DIRECTORY="."
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.R -O "$SCORING_R"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-run.bash)"
 
         if ! [[ -f scores.csv ]]
         then
@@ -70,10 +76,18 @@ jobs:
     - name: Score - Report
       run: |
         cd "${{ env.scoring_path }}"
-        export SCORING_REPORT_RMD=$(mktemp)
-        export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
+        export SCORING_REPORT_RMD=$(mktemp --suffix=.Rmd)
+        export SCORING_WORKING_DIRECTORY="."
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.bash)" - "${{ env.scoring_id }}"
+
+    - name: Score - Summary
+      run: |
+        cd "${{ env.scoring_path }}"
+        export SCORING_SUMMARY_RMD=$(mktemp --suffix=.Rmd)
+        export SCORING_WORKING_DIRECTORY="."
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.Rmd -O "$SCORING_SUMMARY_RMD"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.bash)" - "${{ env.scoring_id }}"
 
     - name: Update job status and compute job duration
       run: |
@@ -98,9 +112,9 @@ jobs:
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
-        git add .
+        git add scoring
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body 'Auto-generated PR with scoring results'
+        gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md"
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
