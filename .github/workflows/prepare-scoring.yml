@@ -88,6 +88,7 @@ jobs:
         export SCORING_WORKING_DIRECTORY="."
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.Rmd -O "$SCORING_SUMMARY_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.bash)" - "${{ env.scoring_id }}"
+        cat "$SCORING_SUMMARY_RMD"
 
     - name: Update job status and compute job duration
       run: |
@@ -116,5 +117,6 @@ jobs:
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
         gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md"
+        cat "${{ env.scoring_path }}/summary.md"
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
