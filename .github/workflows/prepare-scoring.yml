@@ -26,7 +26,7 @@ jobs:
         extra-packages: |
           any::dotenv
           any::data.table
-          any::knitr
+          any::dplyr
           any::rmarkdown
           any::treemapify
           any::gridExtra
