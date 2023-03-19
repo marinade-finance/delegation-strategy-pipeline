@@ -13,15 +13,23 @@ jobs:
     - uses: actions/checkout@master
     - uses: r-lib/actions/setup-r@v2
     - uses: r-lib/actions/setup-pandoc@v2
+    - uses: r-lib/actions/setup-r-dependencies@v2
+      with:
+        extra-packages: |
+          any::dotenv
+          any::data
+          any::rmarkdown
+          any::treemapify
+          any::gridExtra
 
     - name: Set and send start timestamp
       run: |
         start_timestamp=$(date +%s)
         echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
 
-    - name: Install packages
-      run: |
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-install.bash)"
+    # - name: Install packages
+    #   run: |
+    #     bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-install.bash)"
 
     - name: Prepare target directory
       run: |
@@ -40,14 +48,14 @@ jobs:
     - name: Load Data
       run: |
         cd "${{ env.scoring_path }}"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/reports/scoring-fetch-inputs.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-fetch-inputs.bash)"
 
     - name: Score
       run: |
         cd "${{ env.scoring_path }}"
         export SCORING_R=$(mktemp)
         export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
-        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/reports/scoring.R -O "$SCORING_R"
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.R -O "$SCORING_R"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.bash)"
 
         if ! [[ -f scores.csv ]]
@@ -61,7 +69,7 @@ jobs:
         cd "${{ env.scoring_path }}"
         export SCORING_REPORT_RMD=$(mktemp)
         export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
-        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.bash)" - "${{ env.scoring_id }}"
 
     - name: Update job status and compute job duration
