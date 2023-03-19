@@ -62,7 +62,7 @@ jobs:
         export SCORING_R=$(mktemp)
         export SCORING_WORKING_DIRECTORY="${{ env.scoring_path }}"
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.R -O "$SCORING_R"
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-run.bash)"
 
         if ! [[ -f scores.csv ]]
         then
