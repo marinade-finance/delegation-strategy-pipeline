@@ -20,7 +20,7 @@ jobs:
       with:
         extra-packages: |
           any::dotenv
-          any::data
+          any::data.table
           any::rmarkdown
           any::treemapify
           any::gridExtra
