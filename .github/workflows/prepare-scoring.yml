@@ -78,6 +78,14 @@ jobs:
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.bash)" - "${{ env.scoring_id }}"
 
+    - name: Score - Summary
+      run: |
+        cd "${{ env.scoring_path }}"
+        export SCORING_SUMMARY_RMD=$(mktemp)
+        export SCORING_WORKING_DIRECTORY="."
+        wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.Rmd -O "$SCORING_SUMMARY_RMD"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.bash)" - "${{ env.scoring_id }}"
+
     - name: Update job status and compute job duration
       run: |
         start_timestamp=${{ env.start_timestamp }}
@@ -101,9 +109,9 @@ jobs:
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
-        git add .
+        git add scoring
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body 'Auto-generated PR with scoring results'
+        gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md"
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
