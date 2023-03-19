@@ -76,7 +76,7 @@ jobs:
     - name: Score - Report
       run: |
         cd "${{ env.scoring_path }}"
-        export SCORING_REPORT_RMD=$(mktemp --suffix=Rmd)
+        export SCORING_REPORT_RMD=$(mktemp --suffix=.Rmd)
         export SCORING_WORKING_DIRECTORY="."
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.Rmd -O "$SCORING_REPORT_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-report.bash)" - "${{ env.scoring_id }}"
@@ -84,7 +84,7 @@ jobs:
     - name: Score - Summary
       run: |
         cd "${{ env.scoring_path }}"
-        export SCORING_SUMMARY_RMD=$(mktemp --suffix=Rmd)
+        export SCORING_SUMMARY_RMD=$(mktemp --suffix=.Rmd)
         export SCORING_WORKING_DIRECTORY="."
         wget https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.Rmd -O "$SCORING_SUMMARY_RMD"
         bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-summary.bash)" - "${{ env.scoring_id }}"
