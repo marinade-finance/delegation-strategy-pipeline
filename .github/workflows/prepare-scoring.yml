@@ -21,7 +21,7 @@ jobs:
 
     - name: Install packages
       run: |
-        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/scripts/scoring-install.bash)"
+        bash -c "$(curl -sSfL https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/reports/scripts/scoring-install.bash)"
 
     - name: Prepare target directory
       run: |
