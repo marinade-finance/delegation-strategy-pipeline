@@ -115,6 +115,23 @@ jobs:
         git add scoring
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md"
+        pr_url=$(gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
+        echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Send Discord Notification
+      run: |
+        scoring_id=${{ env.scoring_id }}
+        pr_url=${{ env.pr_url }}
+        curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+            "username": "Delegation Strategy",
+            "avatar_url": "https://public-files.s3.eu-central-1.amazonaws.com/outlet-bot-2.png",
+            "embeds": [
+                {
+                    "title": "Scoring PR ('"$scoring_id"') is prepared.",
+                    "url": "'"$pr_url"'",
+                    "color": "5661687"
+                }
+            ]
+        }'
