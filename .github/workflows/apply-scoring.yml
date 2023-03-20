@@ -131,7 +131,7 @@ jobs:
         run: |
           curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
               "username": "Delegation Strategy",
-              "avatar_url": "https://public-files.s3.eu-central-1.amazonaws.com/outlet-bot-2.png",
+              "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
               "embeds": [
                   {
                       "title": "Scoring successfully applied.",
@@ -139,6 +139,8 @@ jobs:
                   }
               ]
           }'
+        env:
+            DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       # - name: Approval stage
       #   uses: trstringer/manual-approval@v1

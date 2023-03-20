@@ -106,7 +106,7 @@ jobs:
 
     - name: Make a Pull Request
       run: |
-        scoring_id=${{ env.scoring_id }}
+        scoring_id="${{ env.scoring_id }}"
         scoring_branch="scoring/$scoring_id"
 
         git config --global user.name 'Autonomous Scoring Pipeline'
@@ -122,11 +122,11 @@ jobs:
 
     - name: Send Discord Notification
       run: |
-        scoring_id=${{ env.scoring_id }}
-        pr_url=${{ env.pr_url }}
+        scoring_id="${{ env.scoring_id }}"
+        pr_url="${{ env.pr_url }}"
         curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
             "username": "Delegation Strategy",
-            "avatar_url": "https://public-files.s3.eu-central-1.amazonaws.com/outlet-bot-2.png",
+            "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
             "embeds": [
                 {
                     "title": "Scoring PR ('"$scoring_id"') is prepared.",
@@ -135,3 +135,5 @@ jobs:
                 }
             ]
         }'
+      env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
