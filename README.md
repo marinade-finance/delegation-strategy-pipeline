@@ -1,5 +1,11 @@
 # Delegation Strategy Pipeline
 This repository takes care of running Marinade's process scoring Solana validators.
+
+## Scoring results
+The directory `scoring` contains results of scoring runs along with reports.
+
+## Pipelines
+
 Several pipelines are defined here, see their flow in the graph attached below:
 
 ```mermaid
@@ -29,6 +35,4 @@ flowchart TB
     end
     scheduler_d -->scoring_a
     scoring_e -->|PR approved and merged| publish_a
-
-    click scheduler "https://www.github.com" "This is a tooltip for a link"
 ```
