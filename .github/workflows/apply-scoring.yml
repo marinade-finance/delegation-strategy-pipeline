@@ -224,7 +224,7 @@ jobs:
               -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
               -v /tmp/id.json:/.config/solana/id.json \
               "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
-              ./validator-manager -s emergency-unstake {} | cat
+              ./validator-manager -s emergency-unstake {}
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/marinade-anchor
