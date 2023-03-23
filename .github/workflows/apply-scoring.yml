@@ -158,6 +158,7 @@ jobs:
   emergency_unstake:
     needs: apply_scoring
     runs-on: ubuntu-latest
+    steps:
       - name: Checkout the repository
         uses: actions/checkout@master
         with:
