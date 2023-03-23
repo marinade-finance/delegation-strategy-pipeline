@@ -96,12 +96,13 @@ jobs:
           docker run --rm --user "$(id -u):$(id -g)" \
             -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
             -v /tmp/id.json:/.config/solana/id.json \
-            -v "$(pwd)/$scores_csv:/scores.csv" \
+            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
             "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
             ./validator-manager -s update-scores2 --scores-file /scores.csv
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/marinade-anchor
+          SCORES_CSV: ${{ env.scores_csv }}
 
       - name: Publish scoring results
         run: |
@@ -153,3 +154,91 @@ jobs:
       #     exclude-workflow-initiator-as-approver: false
       #     additional-approved-words: ''
       #     additional-denied-words: ''
+
+  emergency_unstake:
+    needs: apply_scoring
+    runs-on: ubuntu-latest
+      - name: Checkout the repository
+        uses: actions/checkout@master
+        with:
+          ref: master
+          fetch-depth: 20
+
+      - name: Load scoring details
+        run: |
+          set -ex
+          unstake_hints_json=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep unstake-hints.json)
+          epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
+
+          if [[ -z $unstake_hints_json ]]
+          then
+            echo "Failed to find JSON with unstake hints in the PR!"
+            exit 1
+          fi
+
+          if [[ -z $epoch ]]
+          then
+            echo "Failed to detect epoch from the UI ID!"
+            exit 1
+          fi
+
+          echo "unstake_hints_json=$unstake_hints_json" >> $GITHUB_ENV
+          echo "epoch=$epoch" >> $GITHUB_ENV
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Prepare solana config
+        run: |
+          cat <<EOF > /tmp/solana-config.yml
+          json_rpc_url: "$RPC_URL"
+          websocket_url: ""
+          keypair_path: /.config/solana/id.json
+          address_labels:
+            "11111111111111111111111111111111": System Program
+          commitment: confirmed
+          EOF
+          echo "$KEYPAIR" > /tmp/id.json
+
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
+
+      - name: Emergency unstake - simulation
+        run: |
+          images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
+          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+
+          <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
+            docker run --rm --user "$(id -u):$(id -g)" \
+              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+              -v /tmp/id.json:/.config/solana/id.json \
+              "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
+              ./validator-manager -s emergency-unstake {}
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/marinade-anchor
+          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
+
+      # - name: Send Discord Notification
+      #   run: |
+      #     curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+      #         "username": "Delegation Strategy",
+      #         "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
+      #         "embeds": [
+      #             {
+      #                 "title": "Scoring successfully applied.",
+      #                 "color": "52224"
+      #             }
+      #         ]
+      #     }'
+      #   env:
+      #       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
