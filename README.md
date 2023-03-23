@@ -32,7 +32,7 @@ flowchart TB
         publish_b[Publish scoring to DS API] -->publish_c
         publish_c[Publish scoring on-chain] -->publish_d
         publish_d[Emergency unstake] -->publish_e
-        publish_e( ))
+        publish_e(( ))
     end
     scheduler_d -->scoring_a
     scoring_e -->|PR approved and merged| publish_a
