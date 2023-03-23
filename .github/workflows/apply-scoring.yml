@@ -225,22 +225,25 @@ jobs:
               -v /tmp/id.json:/.config/solana/id.json \
               "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
               ./validator-manager -s emergency-unstake {}
+          true
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/marinade-anchor
           UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
 
-      # - name: Send Discord Notification
-      #   run: |
-      #     curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
-      #         "username": "Delegation Strategy",
-      #         "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
-      #         "embeds": [
-      #             {
-      #                 "title": "Scoring successfully applied.",
-      #                 "color": "52224"
-      #             }
-      #         ]
-      #     }'
-      #   env:
-      #       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Send Discord Notification
+        run: |
+          detail=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | ((length | tostring) + " validators, " + (add | tostring) + " SOL")' -r)
+          curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+              "username": "Delegation Strategy - Emergency Unstake",
+              "avatar_url": "https://public.marinade.finance/ds-emergency-bot.png",
+              "embeds": [
+                  {
+                      "title": "Emergency unstake successfully applied. ('"$detail"')",
+                      "color": "52224"
+                  }
+              ]
+          }'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
