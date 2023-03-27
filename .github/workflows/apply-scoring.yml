@@ -88,27 +88,45 @@ jobs:
           RPC_URL: ${{ secrets.RPC_URL }}
           KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
 
-      - name: Run scoring - simulation
+      - name: Configure image
         run: |
           images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+          echo "latest=$latest" >> $GITHUB_ENV
 
+      - name: Run scoring - simulation
+        run: |
           docker run --rm --user "$(id -u):$(id -g)" \
             -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
             -v /tmp/id.json:/.config/solana/id.json \
             -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
+            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
             ./validator-manager -s update-scores2 --scores-file /scores.csv
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/marinade-anchor
           SCORES_CSV: ${{ env.scores_csv }}
+          IMAGE_TAG: ${{ env.latest }}
+
+      - name: Run scoring
+        run: |
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+            -v /tmp/id.json:/.config/solana/id.json \
+            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
+            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+            ./validator-manager update-scores2 --scores-file /scores.csv
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/marinade-anchor
+          SCORES_CSV: ${{ env.scores_csv }}
+          IMAGE_TAG: ${{ env.latest }}
 
       - name: Publish scoring results
         run: |
           export $(grep -v '^#' "${{ env.params_env }}" | xargs -d '\n')
 
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
+          curl -sLfS "https://validators-api.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
@@ -117,7 +135,7 @@ jobs:
         run: |
           start_timestamp=${{ env.start_timestamp }}
           duration=$(($(date +%s) - $start_timestamp))
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_success=true&apply_scoring_duration=$duration" -X POST \
+          curl -sLfS "https://validators-api.marinade.finance/admin/metrics?job_success=true&apply_scoring_duration=$duration" -X POST \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       - name: Report job failure
@@ -125,7 +143,7 @@ jobs:
         run: |
           start_timestamp=${{ env.start_timestamp }}
           duration=$(($(date +%s) - $start_timestamp))
-          curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_error=true&apply_scoring_duration=$duration" -X POST \
+          curl -sLfS "https://validators-api.marinade.finance/admin/metrics?job_error=true&apply_scoring_duration=$duration" -X POST \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
       - name: Send Discord Notification
@@ -214,21 +232,39 @@ jobs:
           RPC_URL: ${{ secrets.RPC_URL }}
           KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
 
-      - name: Emergency unstake - simulation
+      - name: Configure image
         run: |
           images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+          echo "latest=$latest" >> $GITHUB_ENV
 
+      - name: Emergency unstake - simulation
+        run: |
           <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
             docker run --rm --user "$(id -u):$(id -g)" \
               -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
               -v /tmp/id.json:/.config/solana/id.json \
-              "$ECR_REGISTRY/$ECR_REPOSITORY:$latest" \
+              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
               ./validator-manager -s emergency-unstake {}
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/marinade-anchor
           UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
+          IMAGE_TAG: ${{ env.latest }}
+
+      - name: Emergency unstake
+        run: |
+          <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
+            docker run --rm --user "$(id -u):$(id -g)" \
+              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+              -v /tmp/id.json:/.config/solana/id.json \
+              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+              ./validator-manager emergency-unstake {}
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/marinade-anchor
+          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
+          IMAGE_TAG: ${{ env.latest }}
 
       - name: Send Discord Notification
         run: |
