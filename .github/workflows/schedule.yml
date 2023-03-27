@@ -25,7 +25,7 @@ jobs:
         echo "Current epoch: $current_epoch"
         echo "Current slot: $slot_index"
 
-        if (( slot_index < 300000 ))
+        if (( slot_index < 216000 ))
         then
           echo "Too early in the epoch!"
           exit 0
