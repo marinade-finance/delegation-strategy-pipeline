@@ -35,6 +35,7 @@ jobs:
           any::rmarkdown
           any::treemapify
           any::gridExtra
+          any::semver
 
     # - name: Install packages
     #   run: |
