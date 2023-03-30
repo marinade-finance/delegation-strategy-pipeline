@@ -268,13 +268,22 @@ jobs:
 
       - name: Send Discord Notification
         run: |
-          detail=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | ((length | tostring) + " validators, " + (add | tostring) + " SOL")' -r)
+          validators_count=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | length' -r)
+          unstaked_sol=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | add' -r)
+
+          message="Emergency unstake successfully applied. ($validators_count validators, $unstaked_sol SOL)"
+
+          if (( $validators_count == 0 ))
+          then
+            message="No emergency unstakes needed this time."
+          fi
+
           curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
               "username": "Delegation Strategy - Emergency Unstake",
               "avatar_url": "https://public.marinade.finance/ds-emergency-bot.png",
               "embeds": [
                   {
-                      "title": "Emergency unstake successfully applied. ('"$detail"')",
+                      "title": "'"$message"'",
                       "color": "52224"
                   }
               ]
