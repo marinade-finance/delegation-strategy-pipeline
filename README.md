@@ -37,3 +37,18 @@ flowchart TB
     scheduler_d -->scoring_a
     scoring_e -->|PR approved and merged| publish_a
 ```
+
+## Timing
+```mermaid
+gantt
+    title Marinade's epoch operations
+    dateFormat  SSSSSS
+    axisFormat %f
+    section Solana
+    Epoch                        :0, 432000
+    section Marcrank
+    Merge stakes, update state   :0, 414000
+    Stake/unstake/rebalance      :414000, 432000
+    section DS
+    Scoring runs                 :crit, 216000, 250000
+```
