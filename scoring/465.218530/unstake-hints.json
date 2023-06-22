@@ -1,0 +1,11 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "ChaossQVry9AgexbXooZoWUTDfhT1x5zsAmTbBqa5142",
+      "marinade_stake": 37452.676014262,
+      "hints": [
+        "LowCredits"
+      ]
+    }
+  ]
+}
