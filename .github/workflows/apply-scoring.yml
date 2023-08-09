@@ -115,12 +115,13 @@ jobs:
             -v /tmp/id.json:/.config/solana/id.json \
             -v "$(realpath "$SCORES_CSV"):/scores.csv" \
             "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            ./validator-manager -s update-scores2 --scores-file /scores.csv
+            ./validator-manager -s --print-only update-scores2 --scores-file /scores.csv
         env:
           SCORES_CSV: ${{ env.scores_csv }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          IMAGE_TAG: f367f41
+          # old image tag: f367f41
+          IMAGE_TAG: 90491da
 
       - name: Run scoring
         run: |
@@ -273,12 +274,13 @@ jobs:
               -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
               -v /tmp/id.json:/.config/solana/id.json \
               "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-              ./validator-manager -s emergency-unstake {}
+              ./validator-manager -s --print-only emergency-unstake {}
         env:
           UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          IMAGE_TAG: f367f41
+          # old image tag: f367f41
+          IMAGE_TAG: 90491da
 
       - name: Emergency unstake
         run: |
