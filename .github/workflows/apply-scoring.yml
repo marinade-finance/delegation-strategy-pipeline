@@ -120,8 +120,8 @@ jobs:
           SCORES_CSV: ${{ env.scores_csv }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          # old image tag: f367f41
-          IMAGE_TAG: 90491da
+          # old working image tag: f367f41
+          IMAGE_TAG: 36899f1
 
       - name: Run scoring
         run: |
@@ -279,8 +279,8 @@ jobs:
           UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          # old image tag: f367f41
-          IMAGE_TAG: 90491da
+          # old working image tag: f367f41
+          IMAGE_TAG: 36899f1
 
       - name: Emergency unstake
         run: |
