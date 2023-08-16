@@ -90,7 +90,7 @@ jobs:
 
       - name: Configure image
         run: |
-          images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
+          images=$(aws ecr describe-images --repository-name marinade.finance/validator-manager)
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
           echo "latest=$latest" >> $GITHUB_ENV
 
@@ -101,27 +101,12 @@ jobs:
             -v /tmp/id.json:/.config/solana/id.json \
             -v "$(realpath "$SCORES_CSV"):/scores.csv" \
             "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            ./validator-manager -s update-scores2 --scores-file /scores.csv
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/marinade-anchor
-          SCORES_CSV: ${{ env.scores_csv }}
-          IMAGE_TAG: ${{ env.latest }}
-
-      - name: Run scoring - simulation - refactored validator-manager
-        run: |
-          docker run --rm --user "$(id -u):$(id -g)" \
-            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-            -v /tmp/id.json:/.config/solana/id.json \
-            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
             ./validator-manager -s --print-only update-scores2 --scores-file /scores.csv
         env:
-          SCORES_CSV: ${{ env.scores_csv }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          # old working image tag: f367f41
-          IMAGE_TAG: 36899f1
+          SCORES_CSV: ${{ env.scores_csv }}
+          IMAGE_TAG: ${{ env.latest }}
 
       - name: Run scoring
         run: |
@@ -133,7 +118,7 @@ jobs:
             ./validator-manager update-scores2 --scores-file /scores.csv
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/marinade-anchor
+          ECR_REPOSITORY: marinade.finance/validator-manager
           SCORES_CSV: ${{ env.scores_csv }}
           IMAGE_TAG: ${{ env.latest }}
 
@@ -249,7 +234,7 @@ jobs:
 
       - name: Configure image
         run: |
-          images=$(aws ecr describe-images --repository-name marinade.finance/marinade-anchor)
+          images=$(aws ecr describe-images --repository-name marinade.finance/validator-manager)
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
           echo "latest=$latest" >> $GITHUB_ENV
 
@@ -260,27 +245,12 @@ jobs:
               -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
               -v /tmp/id.json:/.config/solana/id.json \
               "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-              ./validator-manager -s emergency-unstake {}
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/marinade-anchor
-          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
-          IMAGE_TAG: ${{ env.latest }}
-
-      - name: Emergency unstake - simulation - refactored validator-manager
-        run: |
-          <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
-            docker run --rm --user "$(id -u):$(id -g)" \
-              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-              -v /tmp/id.json:/.config/solana/id.json \
-              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
               ./validator-manager -s --print-only emergency-unstake {}
         env:
-          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
-          # old working image tag: f367f41
-          IMAGE_TAG: 36899f1
+          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
+          IMAGE_TAG: ${{ env.latest }}
 
       - name: Emergency unstake
         run: |
@@ -292,7 +262,7 @@ jobs:
               ./validator-manager emergency-unstake {}
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/marinade-anchor
+          ECR_REPOSITORY: marinade.finance/validator-manager
           UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
           IMAGE_TAG: ${{ env.latest }}
 
