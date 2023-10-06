@@ -1,0 +1,25 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "GMpKrAwQ9oa4sJqEYQezLr8Z2TUAU72tXD4iMyfoJjbh",
+      "marinade_stake": 38.658599076,
+      "hints": [
+        "LowCredits"
+      ]
+    },
+    {
+      "vote_account": "EH98DbaKkW4b987mJAHQ89c7z4DAviZZMmAxX3LkABCe",
+      "marinade_stake": 7.162253236,
+      "hints": [
+        "LowCredits"
+      ]
+    },
+    {
+      "vote_account": "CertuszpSb9Qb8v5HhndmSdCC3WoKAiFoBEXmNhjJPUg",
+      "marinade_stake": 3.39458417,
+      "hints": [
+        "LowCredits"
+      ]
+    }
+  ]
+}
