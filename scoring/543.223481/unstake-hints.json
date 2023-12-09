@@ -1,0 +1,39 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
+      "marinade_stake": 455,
+      "hints": [
+        "Blacklist"
+      ]
+    },
+    {
+      "vote_account": "81LF3sFyx9aANNhZPTyPEULKHV1mTqd3qho7ZLQghNJL",
+      "marinade_stake": 1,
+      "hints": [
+        "LowCredits"
+      ]
+    },
+    {
+      "vote_account": "SmithX2hngQMZXVN36C6TsyjthTU3YnsALAs1MaDghV",
+      "marinade_stake": 78,
+      "hints": [
+        "Blacklist"
+      ]
+    },
+    {
+      "vote_account": "8Tz3KbpHjUPxFHwyvWrdoQ5K464NZb6trntqNS5qW875",
+      "marinade_stake": 1.474330578,
+      "hints": [
+        "LowCredits"
+      ]
+    },
+    {
+      "vote_account": "2vZd7mdsiDiXvGUq1ASNfkYYjMJ83yYXKHA3zfmKHc4g",
+      "marinade_stake": 2505.816534648,
+      "hints": [
+        "LowCredits"
+      ]
+    }
+  ]
+}
