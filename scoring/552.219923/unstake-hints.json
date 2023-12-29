@@ -1,0 +1,18 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "6yShbTX3KRMJLANDfo8Xo4aHYCjepjUbna9Y64mdQB1a",
+      "marinade_stake": 5.756037401,
+      "hints": [
+        "Blacklist"
+      ]
+    },
+    {
+      "vote_account": "SmithX2hngQMZXVN36C6TsyjthTU3YnsALAs1MaDghV",
+      "marinade_stake": 25046.93186622,
+      "hints": [
+        "Blacklist"
+      ]
+    }
+  ]
+}
