@@ -1,0 +1,18 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "DuGCGy6inpKrECrBMWissxMQtqgAy8EYjY6CgjVk8g1b",
+      "marinade_stake": 6.017773365,
+      "hints": [
+        "HighCommission"
+      ]
+    },
+    {
+      "vote_account": "jvLJkuy8Ce8GBaDMgbjfXKMobepVCFcpGWWviAPqV7g",
+      "marinade_stake": 2.054983714,
+      "hints": [
+        "HighCommission"
+      ]
+    }
+  ]
+}
