@@ -1,0 +1,25 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "HpBE2kci3uJ45fjLnxDmF788Qz8h24zrDok5PBsouQos",
+      "marinade_stake": 4.62028889,
+      "hints": [
+        "HighCommission"
+      ]
+    },
+    {
+      "vote_account": "DciShieqLiMBjfqxiJ66F9b9fckJusbqFFnwJiG9jKmg",
+      "marinade_stake": 3.499583771,
+      "hints": [
+        "HighCommission"
+      ]
+    },
+    {
+      "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
+      "marinade_stake": 103.14204299,
+      "hints": [
+        "Blacklist"
+      ]
+    }
+  ]
+}
