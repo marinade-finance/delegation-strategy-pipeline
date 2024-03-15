@@ -70,11 +70,12 @@ jobs:
 
     - name: Make a Pull Request
       run: |
+        cd "${{ env.scoring_path }}"
         scoring_id="${{ env.scoring_id }}"
         scoring_branch="ds-scoring/$scoring_id"
-        cp /tmp/snapshot/* scoring
-        gzip -c scoring/validators.json > scoring/validators.json.gz
-        rm scoring/validators.json
+        cp /tmp/snapshot/* "${{ env.scoring_path }}"
+        gzip -c scoring/validators.json > "${{ env.scoring_path }}/validators.json.gz"
+        rm "${{ env.scoring_path }}/validators.json"
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
@@ -83,3 +84,5 @@ jobs:
 
         pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
