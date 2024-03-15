@@ -25,7 +25,7 @@ jobs:
         echo "Current epoch: $current_epoch"
         echo "Current slot: $slot_index"
 
-        gh workflow run v2-prepare-scoring.yml
+        gh workflow run v2-prepare-scoring.yml --ref feat/ds-scoring
 
         if (( slot_index < 216000 ))
         then
