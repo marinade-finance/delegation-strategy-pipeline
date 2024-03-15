@@ -66,52 +66,54 @@ jobs:
           echo "epoch=$epoch" >> $GITHUB_ENV
           echo "COMPONENTS=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
           echo "COMPONENT_WEIGHTS=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode"
-  #     - name: Configure AWS credentials
-  #       uses: aws-actions/configure-aws-credentials@v1
-  #       with:
-  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #         aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+          echo "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}"
 
-  #     - name: Login to Amazon ECR
-  #       id: login-ecr
-  #       uses: aws-actions/amazon-ecr-login@v1
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
-  #     - name: Prepare solana config
-  #       run: |
-  #         cat <<EOF > /tmp/solana-config.yml
-  #         json_rpc_url: "$RPC_URL"
-  #         websocket_url: ""
-  #         keypair_path: /.config/solana/id.json
-  #         address_labels:
-  #           "11111111111111111111111111111111": System Program
-  #         commitment: confirmed
-  #         EOF
-  #         echo "$KEYPAIR" > /tmp/id.json
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
 
-  #       env:
-  #         RPC_URL: ${{ secrets.RPC_URL }}
-  #         KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
+      - name: Prepare solana config
+        run: |
+          cat <<EOF > /tmp/solana-config.yml
+          json_rpc_url: "$RPC_URL"
+          websocket_url: ""
+          keypair_path: /.config/solana/id.json
+          address_labels:
+            "11111111111111111111111111111111": System Program
+          commitment: confirmed
+          EOF
+          echo "$KEYPAIR" > /tmp/id.json
 
-  #     - name: Configure image
-  #       run: |
-  #         images=$(aws ecr describe-images --repository-name marinade.finance/validator-manager)
-  #         latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
-  #         echo "latest=$latest" >> $GITHUB_ENV
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          KEYPAIR: ${{ secrets.VALIDATOR_MANAGEMENT_KEYPAIR }}
 
-  #     - name: Run scoring - simulation
-  #       run: |
-  #         docker run --rm --user "$(id -u):$(id -g)" \
-  #           -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-  #           -v /tmp/id.json:/.config/solana/id.json \
-  #           -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-  #           "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-  #           ./validator-manager -s --print-only update-scores2 --scores-file /scores.csv
-  #       env:
-  #         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-  #         ECR_REPOSITORY: marinade.finance/validator-manager
-  #         SCORES_CSV: ${{ env.scores_csv }}
-  #         IMAGE_TAG: ${{ env.latest }}
+      - name: Configure image
+        run: |
+          images=$(aws ecr describe-images --repository-name marinade.finance/validator-manager)
+          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+          echo "latest=$latest" >> $GITHUB_ENV
+
+      - name: Run scoring - simulation
+        run: |
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+            -v /tmp/id.json:/.config/solana/id.json \
+            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
+            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+            ./validator-manager -s --print-only update-scores2 --scores-file /scores.csv
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/validator-manager
+          SCORES_CSV: ${{ env.scores_csv }}
+          IMAGE_TAG: ${{ env.latest }}
 
   #     - name: Publish scoring results
   #       run: |
