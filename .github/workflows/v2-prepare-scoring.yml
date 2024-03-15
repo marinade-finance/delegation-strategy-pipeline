@@ -15,7 +15,7 @@ jobs:
         start_timestamp=$(date +%s)
         echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
 
-    - uses: actions/checkout@scoring-v2
+    - uses: actions/checkout@master
     - name: Prepare target directory
       run: |
         epoch_info=$(curl -sfLS "http://api.mainnet-beta.solana.com" -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}')
