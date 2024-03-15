@@ -73,6 +73,8 @@ jobs:
         scoring_id="${{ env.scoring_id }}"
         scoring_branch="scoring-v2/$scoring_id"
         cp /tmp/snapshot/* scoring
+        gzip -c scoring/validators.json > scoring/validators.json.gz
+        rm scoring/validators.json
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
