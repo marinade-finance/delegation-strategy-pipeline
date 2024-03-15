@@ -25,7 +25,7 @@ jobs:
         scoring_id="$current_epoch.$slot_index"
         echo "scoring_id=$scoring_id" >> $GITHUB_ENV
 
-        scoring_path="scoring/$scoring_id"
+        scoring_path="scoring-v2/$scoring_id"
         echo "scoring_path=$scoring_path" >> $GITHUB_ENV
 
         mkdir -p "$scoring_path"
@@ -82,7 +82,25 @@ jobs:
         git add scoring
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
+        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Send Discord Notification
+      run: |
+        scoring_id="${{ env.scoring_id }}"
+        pr_url="${{ env.pr_url }}"
+        curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+            "username": "Delegation Strategy",
+            "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
+            "embeds": [
+                {
+                    "title": "Scoring V2 PR ('"$scoring_id"') is prepared.",
+                    "url": "'"$pr_url"'",
+                    "color": "5661687"
+                }
+            ]
+        }'
+      env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
