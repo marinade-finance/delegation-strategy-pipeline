@@ -1,9 +1,9 @@
 name: Prepare Scoring V2
 
 on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: [trigger_scoring]
+  push:
+    branches:
+      - feat/ds-scoring
 
 jobs: 
   scoring:
