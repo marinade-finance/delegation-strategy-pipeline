@@ -228,7 +228,7 @@ jobs:
           fi
 
           curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
-              "username": "(SIMULATION) Delegation Strategy V2 - Emergency Unstake",
+              "username": "(SIMULATION) Delegation Strategy V2 - Emergency Unstake 💀",
               "avatar_url": "https://public.marinade.finance/ds-emergency-bot.png",
               "embeds": [
                   {
