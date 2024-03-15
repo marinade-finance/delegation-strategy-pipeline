@@ -66,12 +66,12 @@ jobs:
       run: |
         scoring_id="${{ env.scoring_id }}"
         scoring_branch="scoring-v2/$scoring_id"
-        mv /tmp/snapshot/* scoring
+        cp /tmp/snapshot/* scoring
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
         git add scoring
         ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        pr_url=$(gh pr create -B master -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
+        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
