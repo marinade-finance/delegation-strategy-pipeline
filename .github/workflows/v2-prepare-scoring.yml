@@ -74,7 +74,7 @@ jobs:
         scoring_branch="ds-scoring/$scoring_id"
         ls -alrth
         cp /tmp/snapshot/* "${{ env.scoring_path }}/"
-        gzip -c scoring/validators.json > "${{ env.scoring_path }}/validators.json.gz"
+        gzip -c "${{ env.scoring_path }}/validators.json" > "${{ env.scoring_path }}/validators.json.gz"
         rm "${{ env.scoring_path }}/validators.json"
         cd "${{ env.scoring_path }}"
         git config --global user.name 'Autonomous Scoring Pipeline'
