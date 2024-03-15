@@ -6,7 +6,7 @@ on:
     - cron: '50 0/1 * * *'
 jobs:
   trigger_scoring_if_needed:
-    name: Schedule Scoring
+    name: Schedule Scoring V2
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the repository
@@ -42,9 +42,6 @@ jobs:
           echo "Scoring already in PR!"
           exit 0
         fi
-
-        # curl -sLfS "https://validators-api-dev.marinade.finance/admin/metrics?job_scheduled=true" -X POST \
-        #   -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}"
 
         echo "Triggering the V2 scoring pipeline..."
         gh workflow run v2-prepare-scoring.yml
