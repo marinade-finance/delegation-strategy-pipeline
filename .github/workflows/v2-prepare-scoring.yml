@@ -17,12 +17,6 @@ jobs:
 
     - uses: actions/checkout@master
 
-    - run: |
-        cat <<EOF > DESCRIPTION
-        Package: rprojroot
-        Version: 0.0.1
-        EOF
-
     - name: Prepare target directory
       run: |
         epoch_info=$(curl -sfLS "http://api.mainnet-beta.solana.com" -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}')
