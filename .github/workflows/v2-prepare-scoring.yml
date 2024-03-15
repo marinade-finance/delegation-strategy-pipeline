@@ -43,7 +43,7 @@ jobs:
 
     - name: Run compute scoring
       run: |
-        docker run --rm --user "$(id -u):$(id -g)" \
+        docker run --rm \
           -e "DATA_PROVIDER_MODE=api" \
           -e "VALIDATORS_URL=https://validators-api.marinade.finance/validators" \
           -e "BLACKLIST_URL=https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/blacklist.csv" \
