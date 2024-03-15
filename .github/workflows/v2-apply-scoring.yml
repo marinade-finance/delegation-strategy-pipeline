@@ -27,10 +27,11 @@ jobs:
       - name: Load scoring details
         run: |
           set -ex
-          scores_csv=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
-          params_json=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
+          git fetch --all
+          scores_csv=$(git log -1 scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
+          params_json=$(git log -1 scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
 
-          scoring_run_ui_id=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
+          scoring_run_ui_id=$(git log -1 scoring-v2 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
 
           weightVoteCredits=$(jq '.weightVoteCredits' $params_json)
