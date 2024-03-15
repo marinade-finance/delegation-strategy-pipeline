@@ -113,8 +113,6 @@ jobs:
           ECR_REPOSITORY: marinade.finance/validator-manager
           SCORES_CSV: ${{ env.scores_csv }}
           IMAGE_TAG: ${{ env.latest }}
-          COMPONENTS: ${{ env.components }}
-          COMPONENTS_WEIGHTS: ${{ env.components_weights }}
 
       - name: Publish scoring results
         run: |
@@ -124,6 +122,9 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
+        env:
+          COMPONENTS: ${{ env.components }}
+          COMPONENTS_WEIGHTS: ${{ env.components_weights }}
 
       - name: Send Discord Notification
         run: |
