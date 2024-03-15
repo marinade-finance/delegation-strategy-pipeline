@@ -5,7 +5,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - ds-scoring
+      - scoring-v2
 
 jobs:
   apply_scoring:
