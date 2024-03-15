@@ -1,0 +1,88 @@
+name: Prepare Scoring V2
+
+on:
+  push:
+    branches:
+      - feat/ds-scoring
+
+jobs: 
+  scoring:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set start timestamp
+      run: |
+        start_timestamp=$(date +%s)
+        echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
+
+    - uses: actions/checkout@master
+    - name: Prepare target directory
+      run: |
+        epoch_info=$(curl -sfLS "http://api.mainnet-beta.solana.com" -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}')
+        current_epoch=$(<<<"$epoch_info" jq '.result.epoch' -r)
+        slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
+
+        scoring_id="$current_epoch.$slot_index"
+        echo "scoring_id=$scoring_id" >> $GITHUB_ENV
+
+        scoring_path="scoring/$scoring_id"
+        echo "scoring_path=$scoring_path" >> $GITHUB_ENV
+
+        mkdir -p "$scoring_path"
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Configure image
+      run: |
+        images=$(aws ecr describe-images --repository-name marinade.finance/ds-scoring)
+        latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+        echo "latest=$latest" >> $GITHUB_ENV
+
+    - name: Run compute scoring
+      run: |
+        docker run --rm \
+          -e "DATA_PROVIDER_MODE=api" \
+          -e "VALIDATORS_URL=https://validators-api.marinade.finance/validators" \
+          -e "BLACKLIST_URL=https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/blacklist.csv" \
+          -e "REWARDS_API=https://validators-api.marinade.finance/rewards" \
+          -e "VEMNDE_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/vemnde/latest" \
+          -e "MSOL_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/msol/latest" \
+          -e "REWARDS_URL=https://validators-api.marinade.finance/rewards" \
+          -e "JITO_MEV_URL=https://kobe.mainnet.jito.network/api/v1/validators" \
+          -e "BONDS_URL=https://validator-bonds-api.marinade.finance/bonds" \
+          -e "MARINADE_TVL_URL=http://api.marinade.finance/tlv" \
+          -v "/tmp/snapshot:/usr/src/app/snapshot" \
+          "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+          pnpm cli -- computeScoring
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: marinade.finance/ds-scoring
+        IMAGE_TAG: ${{ env.latest }}
+
+    - name: Make a Pull Request
+      run: |
+        scoring_id="${{ env.scoring_id }}"
+        scoring_branch="ds-scoring/$scoring_id"
+        ls -alrth
+        cp /tmp/snapshot/* "${{ env.scoring_path }}/"
+        gzip -c "${{ env.scoring_path }}/validators.json" > "${{ env.scoring_path }}/validators.json.gz"
+        rm "${{ env.scoring_path }}/validators.json"
+        git config --global user.name 'Autonomous Scoring Pipeline'
+        git config --global user.email 'bot@noreply.marinade.finance'
+        git checkout -b "$scoring_branch"
+        git add scoring
+        ! [ -z "$(git status --porcelain)" ] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
+
+        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
+        echo "pr_url=$pr_url" >> $GITHUB_ENV
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
