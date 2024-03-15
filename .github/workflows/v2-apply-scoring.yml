@@ -64,9 +64,8 @@ jobs:
           echo "scores_csv=$scores_csv" >> $GITHUB_ENV
           echo "scoring_run_ui_id=$scoring_run_ui_id" >> $GITHUB_ENV
           echo "epoch=$epoch" >> $GITHUB_ENV
-          echo "COMPONENTS=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
-          echo "COMPONENT_WEIGHTS=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode"
-          echo "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}"
+          echo "components=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
+          echo "components_weights=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode" >> $GITHUB_ENV
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -103,6 +102,8 @@ jobs:
 
       - name: Run scoring - simulation
         run: |
+          echo "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&components_weights=$COMPONENTS_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}"
+
           docker run --rm --user "$(id -u):$(id -g)" \
             -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
             -v /tmp/id.json:/.config/solana/id.json \
@@ -114,6 +115,8 @@ jobs:
           ECR_REPOSITORY: marinade.finance/validator-manager
           SCORES_CSV: ${{ env.scores_csv }}
           IMAGE_TAG: ${{ env.latest }}
+          COMPONENTS: ${{ env.components }}
+          COMPONENTS_WEIGHTS: ${{ env.components_weights }}
 
   #     - name: Publish scoring results
   #       run: |
