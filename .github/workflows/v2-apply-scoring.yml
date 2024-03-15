@@ -40,6 +40,12 @@ jobs:
             echo "Failed to find CSV with scores in the PR!"
             exit 1
           fi
+
+          if [[ -z $params_json ]]
+          then
+            echo "Failed to find JSON with params in the PR!"
+            exit 1
+          fi
           
           if [[ -z $scoring_run_ui_id ]]
           then
