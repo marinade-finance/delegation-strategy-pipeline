@@ -116,7 +116,6 @@ jobs:
 
       - name: Publish scoring results
         run: |
-          export $(grep -v '^#' "${{ env.params_env }}" | xargs -d '\n')
 
           curl -sLfS "https://validators-api-dev.marinade.finance/admin/scores?epoch=${{ env.epoch }}&components=$COMPONENTS&component_weights=$COMPONENT_WEIGHTS&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
             -H "Content-Type: multipart/form-data" \
