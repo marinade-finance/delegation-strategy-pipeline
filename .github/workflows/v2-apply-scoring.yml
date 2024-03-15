@@ -27,13 +27,20 @@ jobs:
       - name: Load scoring details
         run: |
           set -ex
-          scores_csv=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
-          params_json=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
+          scores_csv=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
+          params_json=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
 
-          scoring_run_ui_id=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
+          scoring_run_ui_id=$(git log -1 -b scoring-v2 --name-only --pretty=format: --grep 'scoring run' | head -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
+
+          weightVoteCredits=$(jq '.weightVoteCredits' $params_json)
+          weightInflationCommission=$(jq '.weightInflationCommission' $params_json)
+          weightMEVCommission=$(jq '.weightMEVCommission' $params_json)
+          weightStakeConcentrationCity=$(jq '.weightStakeConcentrationCity' $params_json)
           weightStakeConcentrationASO=$(jq '.weightStakeConcentrationASO' $params_json)
-          echo "$weightStakeConcentrationASO"
+          weightStakeConcentrationNode=$(jq '.weightStakeConcentrationNode' $params_json)
+          weightStakeConcentrationCountry=$(jq '.weightStakeConcentrationCountry' $params_json)
+          weightBlockProduction=$(jq '.weightBlockProduction' $params_json)
 
           if [[ -z $scores_csv ]]
           then
@@ -57,7 +64,7 @@ jobs:
           echo "scoring_run_ui_id=$scoring_run_ui_id" >> $GITHUB_ENV
           echo "epoch=$epoch" >> $GITHUB_ENV
           echo "COMPONENTS=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
-
+          echo "COMPONENT_WEIGHTS=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode"
   #     - name: Configure AWS credentials
   #       uses: aws-actions/configure-aws-credentials@v1
   #       with:
