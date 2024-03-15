@@ -71,7 +71,7 @@ jobs:
     - name: Make a Pull Request
       run: |
         scoring_id="${{ env.scoring_id }}"
-        scoring_branch="scoring-v2/$scoring_id"
+        scoring_branch="ds-scoring/$scoring_id"
         cp /tmp/snapshot/* scoring
         gzip -c scoring/validators.json > scoring/validators.json.gz
         rm scoring/validators.json
