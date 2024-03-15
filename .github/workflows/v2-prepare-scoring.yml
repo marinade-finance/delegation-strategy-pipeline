@@ -29,43 +29,43 @@ jobs:
 
         mkdir -p "$scoring_path"
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Configure image
-        run: |
-          images=$(aws ecr describe-images --repository-name marinade.finance/ds-scoring)
-          latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
-          echo "latest=$latest" >> $GITHUB_ENV
+    - name: Configure image
+      run: |
+        images=$(aws ecr describe-images --repository-name marinade.finance/ds-scoring)
+        latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+        echo "latest=$latest" >> $GITHUB_ENV
 
-      - name: Run compute scoring
-        run: |
-          docker run --rm --user "$(id -u):$(id -g)" \
-            -e "DATA_PROVIDER_MODE=api" \
-            -e "VALIDATORS_URL=https://validators-api.marinade.finance/validators" \
-            -e "BLACKLIST_URL=https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/blacklist.csv" \
-            -e "REWARDS_API=https://validators-api.marinade.finance/rewards" \
-            -e "VEMNDE_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/vemnde/latest" \
-            -e "MSOL_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/msol/latest" \
-            -e "REWARDS_URL=https://validators-api.marinade.finance/rewards" \
-            -e "JITO_MEV_URL=https://kobe.mainnet.jito.network/api/v1/validators" \
-            -e "BONDS_URL=https://validator-bonds-api.marinade.finance/bonds" \
-            -e "MARINADE_TVL_URL=http://api.marinade.finance/tlv" \
-            -v "/tmp/snapshot:/usr/src/app/snapshot" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            pnpm cli -- computeScoring
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/ds-scoring
-          IMAGE_TAG: ${{ env.latest }}
-      - name: Check scoring files
-        run: |
-          ls -l /tmp/snapshot
+    - name: Run compute scoring
+      run: |
+        docker run --rm --user "$(id -u):$(id -g)" \
+          -e "DATA_PROVIDER_MODE=api" \
+          -e "VALIDATORS_URL=https://validators-api.marinade.finance/validators" \
+          -e "BLACKLIST_URL=https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/blacklist.csv" \
+          -e "REWARDS_API=https://validators-api.marinade.finance/rewards" \
+          -e "VEMNDE_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/vemnde/latest" \
+          -e "MSOL_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/msol/latest" \
+          -e "REWARDS_URL=https://validators-api.marinade.finance/rewards" \
+          -e "JITO_MEV_URL=https://kobe.mainnet.jito.network/api/v1/validators" \
+          -e "BONDS_URL=https://validator-bonds-api.marinade.finance/bonds" \
+          -e "MARINADE_TVL_URL=http://api.marinade.finance/tlv" \
+          -v "/tmp/snapshot:/usr/src/app/snapshot" \
+          "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+          pnpm cli -- computeScoring
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: marinade.finance/ds-scoring
+        IMAGE_TAG: ${{ env.latest }}
+    - name: Check scoring files
+      run: |
+        ls -l /tmp/snapshot
