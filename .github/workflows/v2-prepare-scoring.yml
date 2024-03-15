@@ -76,7 +76,6 @@ jobs:
         cp /tmp/snapshot/* "${{ env.scoring_path }}/"
         gzip -c "${{ env.scoring_path }}/validators.json" > "${{ env.scoring_path }}/validators.json.gz"
         rm "${{ env.scoring_path }}/validators.json"
-        cd "${{ env.scoring_path }}"
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
