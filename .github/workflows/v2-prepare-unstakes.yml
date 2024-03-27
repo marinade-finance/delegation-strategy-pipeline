@@ -7,7 +7,7 @@ on:
     branches:
       - scoring-v2
 jobs: 
-  scoring:
+  unstakes:
     runs-on: ubuntu-latest
 
     steps:
@@ -79,7 +79,7 @@ jobs:
 
     - name: Merge unstakes
       run: |
-        jq --slurpfile json1 "/tmp/snapshot/unstake-hints.json" --slurpfile json2 "${{ env.unstake_hints_json }}" '.[0].unstake_hints as $json1_unstakes | .[1].unstake_hints as $json2_unstakes | [$json1_unstakes[] | .hints += ($json2_unstakes[] | select(.vote_account == .vote_account).hints) | .hints |= unique] ' <<< '{}' > "${{ env.scoring_path }}/unstake-hints.json"
+        jq --slurpfile json1 "/tmp/snapshot/unstake-hints.json" --slurpfile json2 "${{ env.unstake_hints_json }}" '.[0].unstake_hints as $json1_unstakes | .[1].unstake_hints as $json2_unstakes | [$json1_unstakes[] | .hints += ($json2_unstakes[] | select(.vote_account == $json1_unstakes[].vote_account).hints) | .hints |= unique] ' <<< '{}' > "${{ env.unstake_hints_json }}"
 
     - name: Make a Pull Request
       run: |
