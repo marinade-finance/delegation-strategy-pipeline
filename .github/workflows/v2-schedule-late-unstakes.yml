@@ -1,4 +1,4 @@
-name: Schedule Scoring V2
+name: Schedule Unstakes V2
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: '50 0/1 * * *'
 jobs:
   trigger_scoring_if_needed:
-    name: Schedule Scoring V2
+    name: Schedule Unstakes V2
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the repository
@@ -25,25 +25,25 @@ jobs:
         echo "Current epoch: $current_epoch"
         echo "Current slot: $slot_index"
 
-        if (( slot_index < 216000 ))
+        if (( slot_index < 259200 ))
         then
           echo "Too early in the epoch!"
           exit 0
         fi
 
-        if ! [[ -z $last_v2_scoring_epoch_from_dir ]] && (( last_v2_scoring_epoch_from_dir == current_epoch ))
+        if [[ -z $last_v2_scoring_epoch_from_dir ]] && (( last_v2_scoring_epoch_from_dir == current_epoch ))
         then
-          echo "Scoring already run and merged!"
+          echo "Scoring didn't run or wasn't merged!"
           exit 0
         fi
 
         if ! [[ -z $last_v2_scoring_epoch_from_git ]] && (( last_v2_scoring_epoch_from_git == current_epoch ))
         then
-          echo "Scoring already in PR!"
+          echo "Scoring PR is not merged!"
           exit 0
         fi
 
-        echo "Triggering the V2 scoring pipeline..."
-        gh workflow run v2-prepare-scoring.yml
+        echo "Triggering the V2 late unstake pipeline..."
+        gh workflow run v2-prepare-late-unstakes.yml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
