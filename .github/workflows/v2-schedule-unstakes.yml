@@ -44,6 +44,6 @@ jobs:
         fi
 
         echo "Triggering the V2 late unstake pipeline..."
-        gh workflow run v2-prepare-late-unstakes.yml
+        gh workflow run v2-prepare-unstakes.yml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
