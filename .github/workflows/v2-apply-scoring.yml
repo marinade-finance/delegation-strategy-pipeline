@@ -23,7 +23,6 @@ jobs:
         run: |
           set -ex
           git fetch --all
-          gh workflow run v2-prepare-unstakes.yml
           scores_csv=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
           params_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
 
@@ -62,8 +61,6 @@ jobs:
           echo "epoch=$epoch" >> $GITHUB_ENV
           echo "components=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
           echo "components_weights=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode" >> $GITHUB_ENV
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1

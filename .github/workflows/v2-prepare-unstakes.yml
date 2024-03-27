@@ -2,9 +2,10 @@ name: Prepare Late Unstakes V2
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [trigger_unstakes]
-
+  pull_request:
+    types: [closed]
+    branches:
+      - scoring-v2
 jobs: 
   scoring:
     runs-on: ubuntu-latest
