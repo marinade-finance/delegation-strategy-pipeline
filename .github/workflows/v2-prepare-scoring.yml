@@ -72,7 +72,6 @@ jobs:
       run: |
         scoring_id="${{ env.scoring_id }}"
         scoring_branch="ds-scoring/$scoring_id"
-        ls -alrth
         cp /tmp/snapshot/* "${{ env.scoring_path }}/"
         gzip -c "${{ env.scoring_path }}/validators.json" > "${{ env.scoring_path }}/validators.json.gz"
         rm "${{ env.scoring_path }}/validators.json"
@@ -86,21 +85,3 @@ jobs:
         echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Send Discord Notification
-      run: |
-        scoring_id="${{ env.scoring_id }}"
-        pr_url="${{ env.pr_url }}"
-        curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
-            "username": "Delegation Strategy",
-            "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
-            "embeds": [
-                {
-                    "title": "Scoring V2 PR ('"$scoring_id"') is prepared.",
-                    "url": "'"$pr_url"'",
-                    "color": "5661687"
-                }
-            ]
-        }'
-      env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}

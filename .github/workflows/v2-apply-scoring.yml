@@ -13,11 +13,6 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'ds-scoring/'))
 
     steps:
-      - name: Set start timestamp
-        run: |
-          start_timestamp=$(date +%s)
-          echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
-
       - name: Checkout the repository
         uses: actions/checkout@master
         with:
@@ -28,6 +23,7 @@ jobs:
         run: |
           set -ex
           git fetch --all
+          gh workflow run v2-prepare-unstakes.yml
           scores_csv=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv)
           params_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep params.json)
 
@@ -120,18 +116,3 @@ jobs:
             -H "Content-Type: multipart/form-data" \
             -H "Authorization: ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             --form "scores_csv=@${{ env.scores_csv }}"
-
-      - name: Send Discord Notification
-        run: |
-          curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
-              "username": "Delegation Strategy V2",
-              "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
-              "embeds": [
-                  {
-                      "title": "(SIMULATION) Scoring V2 successfully applied to DEV.",
-                      "color": "52224"
-                  }
-              ]
-          }'
-        env:
-            DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
