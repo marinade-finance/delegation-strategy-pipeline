@@ -87,20 +87,20 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # - name: Send Discord Notification
-    #   run: |
-    #     scoring_id="${{ env.scoring_id }}"
-    #     pr_url="${{ env.pr_url }}"
-    #     curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
-    #         "username": "Delegation Strategy",
-    #         "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
-    #         "embeds": [
-    #             {
-    #                 "title": "Scoring V2 PR ('"$scoring_id"') is prepared.",
-    #                 "url": "'"$pr_url"'",
-    #                 "color": "5661687"
-    #             }
-    #         ]
-    #     }'
-    #   env:
-    #       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Send Discord Notification
+      run: |
+        scoring_id="${{ env.scoring_id }}"
+        pr_url="${{ env.pr_url }}"
+        curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+            "username": "Delegation Strategy",
+            "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
+            "embeds": [
+                {
+                    "title": "Scoring V2 PR ('"$scoring_id"') is prepared.",
+                    "url": "'"$pr_url"'",
+                    "color": "5661687"
+                }
+            ]
+        }'
+      env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
