@@ -112,6 +112,5 @@ jobs:
       - name: Publish scoring results
         run: |
           curl -sLfS "https://scoring-dev.marinade.finance/api/v1/scores/upload?epoch=${{ env.epoch }}&components=${{ env.components }}&component_weights=${{ env.components_weights }}&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
-            -H "Content-Type: multipart/form-data" \
             -H "Authorization: Bearer ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
-            --form "scores_csv=@${{ env.scores_csv }}"
+            -F "scores=@${{ env.scores_csv }}"
