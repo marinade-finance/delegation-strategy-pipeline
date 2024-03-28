@@ -79,7 +79,21 @@ jobs:
 
     - name: Merge unstakes
       run: |
-        jq --slurpfile json1 "/tmp/snapshot/unstake-hints.json" --slurpfile json2 "${{ env.unstake_hints_json }}" '.[0].unstake_hints as $json1_unstakes | .[1].unstake_hints as $json2_unstakes | [$json1_unstakes[] | .hints += ($json2_unstakes[] | select(.vote_account == $json1_unstakes[].vote_account).hints) | .hints |= unique] ' <<< '{}' > "${{ env.unstake_hints_json }}"
+        file1="/tmp/snapshot/unstake-hints.json"
+        file2="${{ env.unstake_hints_json }}"
+        output="merged.json"
+        temp=$(mktemp)
+        accounts=$(jq -r '.unstake_hints[].vote_account' "$file1" "$file2" | sort -u)
+        echo '{"unstake_hints": []}' > "$output"
+        echo "$accounts" | while read -r account; do
+          [[ -z "$account" ]] && continue
+          hints1=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file1")
+          hints2=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file2")
+          hints_merged=$(echo -e "$hints1\n$hints2" | grep -v '^$' | sort | uniq | jq -R . | jq -s .)
+          validator_json=$(jq -n --arg account "$account" --argjson hints "$hints_merged" '{vote_account: $account, hints: $hints}')
+          jq --argjson validator "$validator_json" '.unstake_hints += [$validator]' "$output" > "$temp" && mv "$temp" "$output"
+        done
+        mv merged.json "${{ env.unstake_hints_json }}"
 
     - name: Make a Pull Request
       run: |
