@@ -104,6 +104,20 @@ jobs:
         echo "validators_count=$validators_count" >> $GITHUB_ENV
         mv merged.json "${{ env.unstake_hints_json }}"
 
+    - name: Generate Unstakes Summary
+      run: |
+        total_marinade_stake="${{ env.total_marinade_stake }}"
+        validators_count="${{ env.validators_count }}"
+        
+        cat > unstakes.md << EOF
+        # Unstakes results $scoring_id
+
+        | Stake type              | Stake (SOL)    | Validators     |
+        |:------------------------|---------------:|---------------:|
+        | **Total unstakes**      | $total_marinade_stake | $validators_count |
+
+        EOF
+
     - name: Make a Pull Request
       run: |
         scoring_id="${{ env.scoring_id }}"
@@ -115,7 +129,7 @@ jobs:
         git checkout -b "$scoring_branch"
         git add scoring-v2
         ! [ -z "$(git status --porcelain)" ] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
-        pr_body="Total Marinade stake: $total_marinade_stake\nNumber of validators: $validators_count\n\nEmergency unstakes for scoring run $scoring_id."
+        pr_body=$(cat unstakes.md)
         pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
