@@ -84,15 +84,19 @@ jobs:
         file2="${{ env.unstake_hints_json }}"
         output="merged.json"
         temp=$(mktemp)
+        jq '.unstake_hints = []' "$file1" > "$output"
         accounts=$(jq -r '.unstake_hints[].vote_account' "$file1" "$file2" | sort -u)
-        echo '{"unstake_hints": []}' > "$output"
         echo "$accounts" | while read -r account; do
-          [[ -z "$account" ]] && continue
-          hints1=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file1")
-          hints2=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file2")
-          hints_merged=$(echo -e "$hints1\n$hints2" | grep -v '^$' | sort | uniq | jq -R . | jq -s .)
-          validator_json=$(jq -n --arg account "$account" --argjson hints "$hints_merged" '{vote_account: $account, hints: $hints}')
-          jq --argjson validator "$validator_json" '.unstake_hints += [$validator]' "$output" > "$temp" && mv "$temp" "$output"
+            [[ -z "$account" ]] && continue
+            hints1=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file1")
+            hints2=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file2")
+            hints_merged=$(echo -e "$hints1\n$hints2" | grep -v '^$' | sort | uniq | jq -R . | jq -s .)
+            base_entry=$(jq --arg account "$account" '.unstake_hints[] | select(.vote_account == $account)' "$file1")
+            if [[ -z "$base_entry" ]]; then
+                base_entry=$(jq --arg account "$account" '.unstake_hints[] | select(.vote_account == $account)' "$file2")
+            fi
+            updated_entry=$(echo "$base_entry" | jq --argjson hints "$hints_merged" '.hints = $hints')
+            jq --argjson entry "$updated_entry" '.unstake_hints += [$entry]' "$output" > "$temp" && mv "$temp" "$output"
         done
         total_marinade_stake=$(jq '[.unstake_hints[].marinade_stake | tonumber] | add' merged.json)
         validators_count=$(jq '.unstake_hints | length' merged.json)
