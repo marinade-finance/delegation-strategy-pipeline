@@ -110,7 +110,7 @@ jobs:
         cat > unstakes.md << EOF
         # Unstakes results $scoring_id
 
-        | Stake type              | Stake (SOL)    | Validators     |
+        |                         | Stake (SOL)    | Validators     |
         |:------------------------|---------------:|---------------:|
         | **Total unstakes**      | $total_marinade_stake | $validators_count |
 
