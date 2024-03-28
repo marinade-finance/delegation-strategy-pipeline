@@ -38,6 +38,7 @@ jobs:
 
         echo "unstake_hints_json=$unstake_hints_json" >> $GITHUB_ENV
         echo "epoch=$epoch" >> $GITHUB_ENV
+        echo "scoring_id=$scoring_run_ui_id" >> $GITHUB_ENV
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -98,7 +99,7 @@ jobs:
     - name: Make a Pull Request
       run: |
         scoring_id="${{ env.scoring_id }}"
-        scoring_branch="ds-scoring/$scoring_id"
+        scoring_branch="ds-unstakes/$scoring_id"
         git config --global user.name 'Autonomous Scoring Pipeline'
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
