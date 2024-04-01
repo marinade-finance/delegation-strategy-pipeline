@@ -1,0 +1,5680 @@
+{
+  "validators": [
+    {
+      "vote_account": "6UDU4Z9TTbYy8gcRKBd7RX3Lm2qMsSR4PMuzoyYPzLma",
+      "mev_commission_bps": 749,
+      "running_jito": true,
+      "active_stake": 114992270469284
+    },
+    {
+      "vote_account": "9YuHxtGG6cajhbu7Kf2iUSBLZjEjfZquto81hoKyKP6t",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8514535442816
+    },
+    {
+      "vote_account": "Bjq4FbzK9aA9bQ7nYd5eGjTtiMyB8yFLVomgr8Wow4hK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63512791684245
+    },
+    {
+      "vote_account": "B1w6SZcyvjyp6zEyStcc8u9AxXAh2AbYvNzMmP9rRKE9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 261862611879245
+    },
+    {
+      "vote_account": "F13Fo2eRH5EecT1gL9TAisbLxwDYiLsK7sTjHAEmprTM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35402401058483
+    },
+    {
+      "vote_account": "9jYFwBfbjYmvasFbJyES9apLJDTkwtbgSDRWanHEvcRw",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 226636358233659
+    },
+    {
+      "vote_account": "Ac8zL56RqrEwZcJa2HL7ZVCBW8py1ehVYj5qmfJXcdFQ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 226156372324821
+    },
+    {
+      "vote_account": "8F4e1nbeC6hn9jkojtboERZGaafxUUtsqUy3MKJLohkh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 267354797309010
+    },
+    {
+      "vote_account": "6zQxjGdH1yfXSGCdBmxfRLx5hE4Zgh4zQE5mmb7Px2ax",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10833615998502
+    },
+    {
+      "vote_account": "FdGcvmbpebUwYA3vSywnagsaC3Tq3pAVmcR6VoxVcdV9",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 25269631218333
+    },
+    {
+      "vote_account": "3SGcQnwxkQFVvhFnQhebCw7Vr9mpkMEbNXFVJFpSXcBD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3033180767120
+    },
+    {
+      "vote_account": "7kge23FTbCXc6dZxMPQfAWLnVFTgGzio5wpXUo9si2mV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 140407971623864
+    },
+    {
+      "vote_account": "Eyguy5v25fonYVzPPpQ4fTGFjxkSmQzcHz5X24d8VpVQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9183127589754
+    },
+    {
+      "vote_account": "EXhYxF25PJEHb3v5G1HY8Jn8Jm7bRjJtaxEghGrUuhQw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 2693449447723894
+    },
+    {
+      "vote_account": "HSrVYheVzxb298uP83jFpS3ZHAEk8jJfJ25cbnnZ2gBp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60053083850386
+    },
+    {
+      "vote_account": "AJeVAZafCgFZSbXTLNsGvih1QWUjnshCVR9ymL58vD1t",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10570127556124
+    },
+    {
+      "vote_account": "9vNLTLdwAdHw8EdiZrLzDtUpm3hp7E2MGaNi6SmdfBGz",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 76709127638071
+    },
+    {
+      "vote_account": "4o5Ti7wcsieUJ8eS4Ep1LERozxNmAWMDXWsta7FDzJzQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8823836609172
+    },
+    {
+      "vote_account": "DTwEEF6VSrmTBYkDcj3BKAc52qhvP8CEQUEAMMT1cG3",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 38424632221933
+    },
+    {
+      "vote_account": "72Ag5dggfQFknHXABYnG172r2vtepa5ugiZDJCmKnx4X",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39377779667181
+    },
+    {
+      "vote_account": "5m3oE8X1HokEpjXJv9eES98JiNuD9yp1T9TDCuxvZZDR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 40723423500234
+    },
+    {
+      "vote_account": "9yYzduhLTmv2C9unYhiEDxKvaTj6D2yeRXL8mFkmTfKc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58791523531754
+    },
+    {
+      "vote_account": "2BGBakG9kjmZAaygVmAuUrBSqBZt8p5FVabbStxHEXUj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 68535615007851
+    },
+    {
+      "vote_account": "APLFy3sMEaUVXfoUVKLVSqPyWsgKens5iS3JCWjWUtVX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38716751386963
+    },
+    {
+      "vote_account": "3m8Ct5n9feJFEuuXFb67oqt9XEJeBYkGyEdQRX33QQ5H",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34791640529051
+    },
+    {
+      "vote_account": "D3DfFvmLBKkX9JJNEpJRXpM1pYTVPQ5dpPQRc9F49xk4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 129496376113885
+    },
+    {
+      "vote_account": "CAf8jfgqhia5VNrEF4A7Y9VLD3numMq9DVSceq7cPhNY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 291433460663398
+    },
+    {
+      "vote_account": "2qsJLygBZ2XoYkRtkngH4fH4CtFmzfnjARbtMSWkZAQs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 303198104988211
+    },
+    {
+      "vote_account": "5tuzKhGEnS44QyKur42TPFdgkLs2yAT8GQsVHvBTHz47",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9883860429728
+    },
+    {
+      "vote_account": "48oxpSHQkM4sdXUY9NQ8KnEtebzZbyk8uUT7JRdVQNuf",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 90917332662134
+    },
+    {
+      "vote_account": "BUyTfHHrp3HQ4TQXaXrRrNuhLsbz23auKYNrxkQRfViP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 86587262703186
+    },
+    {
+      "vote_account": "D6HbUn4FeyZWiY5ftTAxK1TXmvCLjBoPG9nRsr8z8y5g",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 6982415234024
+    },
+    {
+      "vote_account": "AumDzwu4mvm8TthHRcKjCGAWMBbEutMYE3tsPqArue7g",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59775438622329
+    },
+    {
+      "vote_account": "GtieaErmxgFVySoaxcN3RP3m6kcmpWGqknZ3peXkaRPC",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57410779071610
+    },
+    {
+      "vote_account": "Bkskrv38Kn7zJR5mvmbCDGn2M4Jyhzt2ZqwQXV6rYnXa",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 711555449290268
+    },
+    {
+      "vote_account": "2PC2DCk8C7n4jhXA427a1qL9CFRu7PtrzKHixU6LXocN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 15098573514300
+    },
+    {
+      "vote_account": "beefKGBWeSpHzYBHZXwp5So7wdQGX6mu4ZHCsH3uTar",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 3013593105387925
+    },
+    {
+      "vote_account": "55d6G3qVzKfZ5ZWQxaExw7rJSZ1sRg5EQfXaJAo6vwwZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 74953559245639
+    },
+    {
+      "vote_account": "AddV9GtVTtepbNa7MBNDx81wTMRgnXf8nzhRuyinVab5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 94126254315320
+    },
+    {
+      "vote_account": "45EFuLYe3dENpTgxTb44xB7NCozKdZpdFoJigUPPfAMj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9086052853959
+    },
+    {
+      "vote_account": "6mEgxgVus3rWJrt3qFk3BvEV38SVHNCqBdQJXxLBbcst",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61395826660236
+    },
+    {
+      "vote_account": "7MMhQedcxv1ZLMthZsDtPYy14reJMYF1FbBVMba2FGK2",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 151398095117188
+    },
+    {
+      "vote_account": "xQoNyt6WsfTrSC81ahnkv7yD7vv1YY9rGynPJcuhNw3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33848848196087
+    },
+    {
+      "vote_account": "4CtNJvygjgJ3aY77eLV6Ld5V7g2M9bD2t9XYxYFcbMJ8",
+      "mev_commission_bps": 790,
+      "running_jito": true,
+      "active_stake": 60103933527971
+    },
+    {
+      "vote_account": "BgheKvqFnT6qEyBtweMGGBRGtgqzb7DxAYn13uXqfoZW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58875181107537
+    },
+    {
+      "vote_account": "E3yhPs5PPN4RZh8FbJo2eqtdrAYKCK9H7pcSD1vCNCP4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59063807633575
+    },
+    {
+      "vote_account": "mintrNtxN3PhAB45Pt41XqyKghTTpqcoBkQTZqh96iR",
+      "mev_commission_bps": 5000,
+      "running_jito": true,
+      "active_stake": 1198549074580853
+    },
+    {
+      "vote_account": "3614D3JSpMS1R9PELGLfTGGWaHGiUJKfBqxgKyGGP6pK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35416501111891
+    },
+    {
+      "vote_account": "1234LB7uvDC23rdCQoK8C3jNwnovUNyeKxz8wC3dghJ5",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 291301156741549
+    },
+    {
+      "vote_account": "5afRnmkFn1pRU9oussqwk1RRBVyoDgUkL16Jz4qNf574",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 54554293316802
+    },
+    {
+      "vote_account": "eYz2SxqtjoojYR3KVvLU3wBQks62fKcGX2821eChPw2",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 40599394836015
+    },
+    {
+      "vote_account": "FJ7sKbuXR28w4K5EChBbi9tXYfCfrdpF4EaKnRvLPzL8",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 123608998919314
+    },
+    {
+      "vote_account": "H7fXvnLCKtZqJBTipxeseabGfAZUdHJ9XuP6hCKrbvUb",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 68313758702855
+    },
+    {
+      "vote_account": "FMKT6kHBkmPf3LjZV5tpo3oR4m32rF8nF8JtC3WWcWoN",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 101926472738171
+    },
+    {
+      "vote_account": "67x1GbUVDgpms45ECDmKSd8zaETkCEXJ7ZhLgorgzqme",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 13193297431141
+    },
+    {
+      "vote_account": "53E4XKikDXTiATZY1cuhXqSuYZ7usvpuGosjCY7SmV3Y",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9733923613304
+    },
+    {
+      "vote_account": "257RiTszC98omSCmX9KjNMwDDhiceGPcHtPyzC184D8R",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10591416729160
+    },
+    {
+      "vote_account": "Ak5BJzQe2R8qFuyYmaAFPjXuD7XPux3ZNTv52D7rfiqR",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 2615200216488505
+    },
+    {
+      "vote_account": "GyCgzHMj9CkfrLHJP9a7m5b2tzcRRgVYsuJ91jMb6vDv",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 9484857301337
+    },
+    {
+      "vote_account": "HkK6U5e8HkTs5uE7VEWQ2H3NuznjLF1mpoRVjzdDgfF5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 41711268316775
+    },
+    {
+      "vote_account": "5iZ5PQPy5Z9XDnkfoWPi6nvUgtxWnRFwZ36WaftPuaVM",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 325022881211036
+    },
+    {
+      "vote_account": "8LMZATqjhFL2cTEQFeJbAzxtmQqB1zBbrMwJYtSB3wy5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9872065828234
+    },
+    {
+      "vote_account": "D7ZCDE1PHe8duMjNpxwHrYbrRzcnsS7p4nD2daLzWwtr",
+      "mev_commission_bps": 9900,
+      "running_jito": true,
+      "active_stake": 60540861276139
+    },
+    {
+      "vote_account": "2uXoWb4tuNZ72wAdQDfGn42PzRQ2kZD2x6ZDt3urwPrv",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 35577441743616
+    },
+    {
+      "vote_account": "AavwT5GecqFL18ino3YVv5z1icD6p7ENTuXuzAUf6QNM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60814843611360
+    },
+    {
+      "vote_account": "6F4gdYb1sqHGMeFaeEcqt8N6S2anHre2BkZM7QWo8r6N",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 107598257633923
+    },
+    {
+      "vote_account": "DySC6eaUthvVVzu4s8GFupm4PzYLNvq372AYnNrKP4xP",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 255714032795414
+    },
+    {
+      "vote_account": "DriFTm3wM9ugxhCA1K3wVQMSdC4Dv4LNmyZMmZiuHRpp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 46186598807496
+    },
+    {
+      "vote_account": "9V3mbi8z9MHicFQN9n9CGEMfuX4yKaBjJNuzyTUxaWXi",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 112915819364737
+    },
+    {
+      "vote_account": "EogKVYgic8LKAuV1kR9nRqJaS5zpwCvSMfqoehzmAMpK",
+      "mev_commission_bps": 5000,
+      "running_jito": true,
+      "active_stake": 136164620373615
+    },
+    {
+      "vote_account": "AqCAXRpWJBpaJxEDyv7ruP2wi6fef6DBTaAHSxdTf7hA",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 421687952785600
+    },
+    {
+      "vote_account": "G3wJM4gfVhkSapswtSgtQ6HmYoaiXY77asK3pxJTxeAX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62442568473183
+    },
+    {
+      "vote_account": "2DpnT6to3eJsXeg1Tk42XFCXLMKL7pGzMKFwQS5CNK6a",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60417448558005
+    },
+    {
+      "vote_account": "5TkFPZf79rezPXzCTP6DjH4NLb7Hw3jRsAme1fv431oz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 45006689541309
+    },
+    {
+      "vote_account": "De4k4hrdkxFHmAx4nVRA3g5ukdg4YqmDLdwuYUcrjjud",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 32749514580810
+    },
+    {
+      "vote_account": "8b9afBA43fSDH2GHMFWVgz64Bsi5k96MDkrjPx8esePg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38708831405646
+    },
+    {
+      "vote_account": "edu1fZt5i82cFm6ujUoyXLMdujWxZyWYC8fkydWHRNT",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 656825048399187
+    },
+    {
+      "vote_account": "Dcoj98wWiKhA4iqxcSg7NtuR2miA7tZqtycMdkPo8XDw",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 65765057535398
+    },
+    {
+      "vote_account": "HJn9tYQq6axQgsMewSDr6fNcGYnWdSdRF1yNno6pB439",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 5312959952519
+    },
+    {
+      "vote_account": "Dw3kFV3QXkwPKkApPU6vvkj5MijjmJenuNVt6Gj3jqp4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 14423855519810
+    },
+    {
+      "vote_account": "ERXQNpsCnxHWhiTjFTKuRYRJs13hHqSKJdx5aDGe8Ww3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60229017329691
+    },
+    {
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 448344384033371
+    },
+    {
+      "vote_account": "3P2Fq9v1NwtrVTnwPGj2qVdVwnSvuNovZJWGS7nRvoin",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 64766312028543
+    },
+    {
+      "vote_account": "HkqCfZFY5Hh8UDSGH6AJqtxpS6CFC2aqqFgqiDYtSPZw",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 78032959588821
+    },
+    {
+      "vote_account": "5FYwswmNFCTHUb3v71CXwfgN4PDJFmQwMnLENVFszYhZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10112608302183
+    },
+    {
+      "vote_account": "G7akZgkcuqr7Vw1bHXqerKeawQ2Uc1WK9VaYq9APWNLE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 14354681334685
+    },
+    {
+      "vote_account": "6hkfqeNAbURk7CmAQsP4Qm6WwHVF4LxHupEvQf7Tkrf1",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 94241550193125
+    },
+    {
+      "vote_account": "8UZnAPPeYMbxju37MDR3it9nTutGhK9F1hKDxZikygfN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58113246729186
+    },
+    {
+      "vote_account": "AkGimZzM1sVWT1H5pTYW7ccZjJrR3KC9xFgT2PVTrGmV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10450905583619
+    },
+    {
+      "vote_account": "4n4KiUuRwgAqdTh6ag8WRy3ibL2gbWTVJPfEGw3SAsHx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58343909507200
+    },
+    {
+      "vote_account": "zuSTGUom2RaEsQDAoZ5rG6YwuepdkZKpcjUDFJZE54P",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39050699653500
+    },
+    {
+      "vote_account": "FQwewNXahV7MiZcLpY6p1xhUs2acVGQ3U5Xxc7FzV571",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 982449514827597
+    },
+    {
+      "vote_account": "3WVpmSScht8t8uPZHWqwCwPECrz9TdEVdumaGqPhGM6H",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12375644826509
+    },
+    {
+      "vote_account": "HAu1TuW2T3mBQYbQdQ7edzVhKxirqT2k7jwUcFxSJGWX",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 557877946826326
+    },
+    {
+      "vote_account": "3nYnW8z3Aum5U6HiVLJkR71rauWPW2hyvngye4t25rPt",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 3964149127313
+    },
+    {
+      "vote_account": "AjdEzodq5LpRA63AtQaiHyTLDfjTkr6csrtYWiSDPjaK",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34023396181953
+    },
+    {
+      "vote_account": "93jNtLuu5MF3Me4MGidwQFq8Pg7iVWiRHioXm3aYhsv6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 1320237005729773
+    },
+    {
+      "vote_account": "4DBehwe4U1gHaE575LZVnjN1MfyPSyWjidadRJoQcyAR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58864147924838
+    },
+    {
+      "vote_account": "F82nmpcZMdHtMVsLtAGByPavdN5WuEX1hjNwzs3UFuwq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 5530591071762
+    },
+    {
+      "vote_account": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 8876088140196392
+    },
+    {
+      "vote_account": "7tsnKQmKWS1JoCoL22WGVTmtJcyQznKSGzedBYZoJNqV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10645128360049
+    },
+    {
+      "vote_account": "8ygeLBNceokp2HfjUdg3pzii8MaqmHpAuuh3S5yvJVph",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59200030647832
+    },
+    {
+      "vote_account": "ChaosDKeBjU22B4nnvYWXyTRPuWTzJBR4m3QPfBw6Tta",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 12198127518765
+    },
+    {
+      "vote_account": "55gncCYVFXYZhjD5a3aemVVtiHaVwfzu2R4axgamGLwV",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 155646329715946
+    },
+    {
+      "vote_account": "9yn8kRqgtYsAV5Pg2YTmu3PCmnm4yXFE3cRGZ2G6WFho",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 49348430135148
+    },
+    {
+      "vote_account": "mtMPgo97xCs8PbDNwc7ij7jDWkzS8pzo9A6W116hnbX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12438306210289
+    },
+    {
+      "vote_account": "Ej35PiU6wxfrQeJJwuqoT7s2gYSwCjcxQtEpHvpvWBu2",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 11508945474311
+    },
+    {
+      "vote_account": "H4UcftxDC72MW4WYcXuyYmfSQMo9hDXpkGBxycBMVbEi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60464833828998
+    },
+    {
+      "vote_account": "Fu8PjDfwWjRBAx9nSynpMRUtn87SraJEexcnDHtcoD6g",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 52610136450314
+    },
+    {
+      "vote_account": "AgXvq3pi94BxsTPEQFjb8jjv5f75KPFkfJsLJCcAvVf5",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 11081041820072
+    },
+    {
+      "vote_account": "8vyuJTHSDkx7k1zymea4TMsgvixf3rCYBXHPDQajePkE",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 169539219738741
+    },
+    {
+      "vote_account": "1Dadio3JRvpEjY6iSmXmhbGy9RiU8Nxh2GmoVbNusbE",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 56176719415969
+    },
+    {
+      "vote_account": "FyjD5idTCfy2nMnApAh1cqcsjrhHzDELVH4QMcMeYTXf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9576091025824
+    },
+    {
+      "vote_account": "AnodeNCzJGQ7QwheFqJr6EknKGa72m6XHiLtDQiXcmEc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35825703332809
+    },
+    {
+      "vote_account": "HHsYizoCxdkBs1RP91gD75QBfubVLrpd1Shp8srsiyR6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10442100010986
+    },
+    {
+      "vote_account": "HTtwGKgQgsQCAFDPBgN7LabHTMEkUpmTnFqEo5cBcquR",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 67794298496384
+    },
+    {
+      "vote_account": "56ixbAMwsBiguYXsbzABGNaQVDeFDXQdA9m6hvyumtLy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60453754227616
+    },
+    {
+      "vote_account": "RAREcr3SmDePhWD4Je1qEh1UMCQD5MFaDHF7UTzezQh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 140231048941883
+    },
+    {
+      "vote_account": "J9m57tJrjukiCzubJVYQtskwfHiKD7DB6295nhwVRhpc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 53260320853974
+    },
+    {
+      "vote_account": "5RCD4pZcKH3NHN4XHxvsnVAawSaConLgsZbreSN5dXpZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 79598603152831
+    },
+    {
+      "vote_account": "7r1g7s6UjYuosRCHwedpGRCbJhZqM2LhUPxgoayRE6Rm",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 59114249862177
+    },
+    {
+      "vote_account": "74UYnazXV25u3SCTsx6AHfPak8nennsxYTMhaeHbvuE6",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 33755304702745
+    },
+    {
+      "vote_account": "BXNW9ysAB9ksEDidcNWraaFkMeA88q6xzFRSyNnGvQYC",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 240250592854135
+    },
+    {
+      "vote_account": "Simpj3KyRQmpRkXuBvCQFS7DBBG6vqw93SkZb9UD1hp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 253511822548866
+    },
+    {
+      "vote_account": "8c15zdteBtxxcffHsegtppNK9eG9JPye9gL4kCppZmKr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57203598724360
+    },
+    {
+      "vote_account": "BDn3HiXMTym7ZQofWFxDb7ZGQX6GomQzJYKfytTAqd5g",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 85561831092723
+    },
+    {
+      "vote_account": "BXf5pMTSWJdfwaiRYpwJjkTUuUe2sdvcJx7X7UNbyGe1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 265004906188161
+    },
+    {
+      "vote_account": "6TwbKFn21CudK4bKCDTZsHDs2LCxFWUx8mkD6WgzSSSC",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56933634105519
+    },
+    {
+      "vote_account": "5yFJNKNAM1vPWMbSogN8wf47UB3ddvD8AjgeQFTC8sPU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7509201093803
+    },
+    {
+      "vote_account": "F9BQ33SM3CWo3wUK4GZwnKUWciKMB7pF54no9cKzj68u",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 36504464848916
+    },
+    {
+      "vote_account": "7LtXiFCXqxwntUkTfzMAmS8TTehK8m3cbzx7BgvYFTiP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 80709240830131
+    },
+    {
+      "vote_account": "xZdM99vCZe8ErpVJ4PRDCqneAgnFu96ZbfnZ98GFFGW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10009111564656
+    },
+    {
+      "vote_account": "779oetuUCvPN31rm1bf4DF3shoCGGAXdjVyni6CwvBPQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7916444595609
+    },
+    {
+      "vote_account": "R1vAoSPFQdCc6wsAEMtxWXjqptSeN1YUiq2Zni1of21",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 333722032440236
+    },
+    {
+      "vote_account": "8YBQZbNQKwtNLgcNPExr2iwWUsrSTT4PsR8duxjtWiP3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61143292446776
+    },
+    {
+      "vote_account": "Sms7uGpLwxCUxvV7uJq36wvQyGBPCzy87ZkC9mZcDSE",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 106045476901903
+    },
+    {
+      "vote_account": "Ehdn9LdjTAURQSMoDPERXLehtvzy7QD762wwPkzGT7RS",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 242312714317174
+    },
+    {
+      "vote_account": "94Fybch6SXbRxRh9JrKEmMgsThxX8andVUnQ9BuHxjar",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 2699131995218
+    },
+    {
+      "vote_account": "GaxxAn5335dA4U3772MCFeqdyqCVEfmsQTQ47YXfC2Xi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36603991200071
+    },
+    {
+      "vote_account": "H2Gdv2AZdAr1RPmXzPKFVE5oPqXnxH7V4ZRRNfuGbX1D",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8999481720669
+    },
+    {
+      "vote_account": "G5dZZ3J95jER4v7N5LBg73ybxfg9RxFBpVc3LAY57UPu",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 115158545378
+    },
+    {
+      "vote_account": "7rFAeD5UT4fy8cQCnY8Y5F8GW1Wgw345Nxb7diXu5cjG",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59168788436101
+    },
+    {
+      "vote_account": "8HKPEMxtHy6gakwm4MzLBpc8ieSDWypky6ZEkzNHKyhF",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10835481133568
+    },
+    {
+      "vote_account": "FnAPJkzf19s87sm24Qhv6bHZMZvZ43gjNUBRgjwXpD4v",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 108985460486765
+    },
+    {
+      "vote_account": "Rn3ERP5cLVcB4oWRZpoujk5VRPM7SLrM2txPVHGYwn2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 920344810684
+    },
+    {
+      "vote_account": "o27rnqfNHPwHsRp2xPXXwWzn2q2dGxn6UD4Rt5KMU5h",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60053185739982
+    },
+    {
+      "vote_account": "C7QN8QByBuW2fbGBhSvxYUkBHZ1UUm7uGdWREiexuKMf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11414456931593
+    },
+    {
+      "vote_account": "GSaWJ4FjXQ3RGctXaBdcW9oh939cwxXUeeV9A9d4shvf",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 61513381521164
+    },
+    {
+      "vote_account": "3ucuV6s4F3jvhvMrx9hz69abis2Q6P14aDxpdtP65kCc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58987493615354
+    },
+    {
+      "vote_account": "3eV533fsCb9EkazR6C41rTHnvLfwtzh415U5v5W8hZM4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34685004208939
+    },
+    {
+      "vote_account": "66PSXQ5Z7mFqLZFEMYD657PJFGqwqqqLoFa1rkrp2S7G",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58625199298247
+    },
+    {
+      "vote_account": "2Q9mEXrNcJknsDyBjsAieH8XrL4MBePEaLJwmHr3NK3L",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 58540570491334
+    },
+    {
+      "vote_account": "BJ6RVC6Moc9mB8u3qcubnhS9ejninfPfXvz6kFGgRH8v",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 228629462327272
+    },
+    {
+      "vote_account": "4ysUQbvWDjUdRprcjaBEH4V2VqPJgrPSwRsS6ATTMbiB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 61625700982367
+    },
+    {
+      "vote_account": "8XPteKmVNkkAwESc7b68BLKLLfHfBwKrag9jk2JnotqM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59769462139855
+    },
+    {
+      "vote_account": "KXMGa7fRW78c6VVND6YwPbR9sEu8V3q9QL3ctLDioAT",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 84442891859361
+    },
+    {
+      "vote_account": "9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1923905049336825
+    },
+    {
+      "vote_account": "GwT72fNWtBrFa9GsBru2kPso1NEw3AnzrjPwprVAv32X",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 25482913995389
+    },
+    {
+      "vote_account": "5eafxmzReWy8vWRmBcor4oShtQgDwHR3CGGPrfcxdU75",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 64258361767997
+    },
+    {
+      "vote_account": "3a2onvgTpGynakAQwx6gigtSeL7itZewNxqb5JiAvWeA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62619234377020
+    },
+    {
+      "vote_account": "RBFvvcGPBpgkBYmJGsphoDQJD8sszSuorM7TorWm12Y",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1650699425947054
+    },
+    {
+      "vote_account": "88KvxpFUnahtg4GCuRayvoyysboHp8j1P38EqgjjdB4r",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60700532271000
+    },
+    {
+      "vote_account": "AkTJNhRStpi6FmehZi2tit96vQgXkmgpkfGfrp4krQuN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59673396695653
+    },
+    {
+      "vote_account": "3S5Pw4wiwvF3B5pXQVzraiFUF2iQUDnowZDTCXBmE33k",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58226216417114
+    },
+    {
+      "vote_account": "8on1N2tPQurjanzUc8TVnbvvu6JwAbLHmqsCWC3QTxPM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61384669757762
+    },
+    {
+      "vote_account": "8T2WGj3jZNUDXQyNKUx3kQ8FCNzEfyAXVCBqAh6BLcL4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 6806327599843
+    },
+    {
+      "vote_account": "GBj57rgnT8gvFdU7awQ1u4toKxMGcHGHp6VVRXz34qyV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36451879545260
+    },
+    {
+      "vote_account": "GGKZN9R2aGaW3rBA1HyzSUJESjNccpEfUQtQNZG2z9Dr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33788762718223
+    },
+    {
+      "vote_account": "GiXx1mwSR44Tz96CaDqoadzAhZgZv7e3yZshqUwiEwwh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34034005130031
+    },
+    {
+      "vote_account": "HcHHb1ZfmCxpyJmXWcvsGqPjYGCyUTfXs7nMKYesVicm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8888787764941
+    },
+    {
+      "vote_account": "DkFMfnJku9arJJtUytBXijUyb8tuX5FQvsTUVUQQ9pgX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59234202683779
+    },
+    {
+      "vote_account": "EKUh585fWD7LeDRHgmYd9EXpQnY6KNbNAhyBi3FuVw6Y",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 83437404279267
+    },
+    {
+      "vote_account": "93JNyhEhzyNQWAyqNRyCE8GN1jTAfR2NBT87hnrnYvAM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36465356934073
+    },
+    {
+      "vote_account": "3Qvmhayko5Yn3sSXDsHsMzS8QjdU4CshQF2y6L276kgi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 53171946232794
+    },
+    {
+      "vote_account": "6cEvDrwXz3Lq6J5s6iFtg3hcuYoznPPV8g6JZ1mJ5aVf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38523279520747
+    },
+    {
+      "vote_account": "GAKLDmghREn6YHGu5y5vTHA9JJY1Nuxy7n8zz4RFzH3p",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58555383162585
+    },
+    {
+      "vote_account": "B6AsRAEeNoic8ipRg7JPXPwLFJbQorGz8v1SmBxkyQvj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10118943182823
+    },
+    {
+      "vote_account": "FahWJg2PkphJaMUUCzdYhXkD5NngUuuFRFD3YCE3BSwb",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 382019859156136
+    },
+    {
+      "vote_account": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 4776187732377267
+    },
+    {
+      "vote_account": "7teJuHhmHjCHDZiB2TEgdS5wFru4sRJB9JJR4wAQ8pM5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61799219340053
+    },
+    {
+      "vote_account": "3yeRxYXdpkFh92kibqHHXQtmQiEUPtNFKsdDrAEhwWHQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9758352293280
+    },
+    {
+      "vote_account": "2NxEEbhqqj1Qptq5LXLbDTP5tLa9f7PqkU8zNgxbGU9P",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 150543695005245
+    },
+    {
+      "vote_account": "BeLBaGs8dVP1bcA2zhv1RHmEPFY9PfmSR2mFgoqKkiaz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 54192119403745
+    },
+    {
+      "vote_account": "D7rALJCR3KUMhTwtmjvk4ursBLbDNvAVRf2FwdQtbVF9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33789009952605
+    },
+    {
+      "vote_account": "G9Bo258C5jjmMHv77SY6SxEfjuxQfE2eS3wdw6vWu7zc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9234551298100
+    },
+    {
+      "vote_account": "8drPe3FbV8SjsU8S415vtjarTnW9XR9TGaXbhAdWRUWp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34383100337899
+    },
+    {
+      "vote_account": "2nkthAWjAehaEQ1S6r4nDSAUzAVTL7ZW3bd7WkP4KrrK",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 33973901729950
+    },
+    {
+      "vote_account": "GdRKUZKdiXMEATjddQW6q4W8bPgXRBYJKayfeqdQcEPa",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60183742884564
+    },
+    {
+      "vote_account": "H7CfFGvmUHWvryBKAaVibVxz85SYmWyoECx3CjLHq3zC",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 93090215675379
+    },
+    {
+      "vote_account": "2Gife8andd4BkEbT5CncpriPxmQYqbspDh8cXkN6RUSH",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 45329616853220
+    },
+    {
+      "vote_account": "BdeeGeStdrRL1Vc93zgJ5wri26gYT6gL1YaDkwv5rES2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10540986215450
+    },
+    {
+      "vote_account": "BWkvytz3MAiLkUbMuYK5yV1VYThbBYYQYG3gdef8NLw5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 331219629380555
+    },
+    {
+      "vote_account": "Ez5oqa7UBJosiUZ3YbXsjGfnZAdcGE7awrkRmcCWY3yB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59913200663113
+    },
+    {
+      "vote_account": "FVhMWs3bbayWpUqDAbWUPH813gzFzJEo8fzhLhhkGstp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 297555474934663
+    },
+    {
+      "vote_account": "3r5ZXC1yFqMmk8VwDdUJbEdPmZ8KZvEkzd5ThEYRetTk",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 261623145243214
+    },
+    {
+      "vote_account": "9b9Th2hxmgf49rzs2mQcg1hHoasmQT51DDwUH1jFtPtk",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60009570471518
+    },
+    {
+      "vote_account": "3JadNLK7V9NNzC9a1jRAZQXExT7mBtBhcjCaaaRE7B3R",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34226437652198
+    },
+    {
+      "vote_account": "EREdwtKaz2Myg5E1v5akDLdAoV19qNqxrNXy95FGBzPP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10752263195622
+    },
+    {
+      "vote_account": "8tMnVxscJu4zgBc9SWmXNHoY4UyERSss2ftHbPnNWBpU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11390323223884
+    },
+    {
+      "vote_account": "8o3tfZcpTizxtxphuBCXNDxnVX7pFNwpNBLmHyf2Dbvx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60457671907251
+    },
+    {
+      "vote_account": "GZgVV7MMweKm11hh8z8Nui9kRo3VxUVr2qgmkDdtJesa",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 73355132409594
+    },
+    {
+      "vote_account": "6sHtpsxU8KPY5cd6EbutSBUGaXnwu8r3voM3kgjSKoW9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58692471823629
+    },
+    {
+      "vote_account": "Boh7hCu8itWCsdA8ujkJ6uXFdTdsFHri66MihkJmdhdJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9268995388030
+    },
+    {
+      "vote_account": "6csfbzZEnk7kGJRy7Xg4cgAuRdFCUdrjckzRnnY1Qj55",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59552210438861
+    },
+    {
+      "vote_account": "2WgrQTu8QitYjqywZ6uBZBFWigMdXjR6trzd6SYNwihU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57828351315266
+    },
+    {
+      "vote_account": "4gGhS4PaKHsg5GWEpo4tHhMibdHMeRa5567NVubMEBiB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 33646604730205
+    },
+    {
+      "vote_account": "irBmuzr6ZJbkBZwreeDeQBCpVLJWsxeWS4pfjsfkDSL",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 61789104352298
+    },
+    {
+      "vote_account": "3uvqr8aX2fS3W9XHdud5avRGbUtY9uswBGmr9S2N7uF2",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 58612064393042
+    },
+    {
+      "vote_account": "31BQ9aXoHU7TpJ4uQHyYGZW4JVb62LefFWW53NpeSYmB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36003571095767
+    },
+    {
+      "vote_account": "1KXz4xKV2viJCGpxqnQqdf2J45vQr5USdmtcJLTaHkm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 213394903477252
+    },
+    {
+      "vote_account": "AJmRAtaMf646abDoNBK18ghFTwR3ocnQjRCttrQkzFET",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38021702899998
+    },
+    {
+      "vote_account": "66ADRQzSCUySLWsrqaxTLzH29a37SX8xcuda5VJg4Mga",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58366717842016
+    },
+    {
+      "vote_account": "8Mjq1SbLknY5UftyjekY5fLhv4jeE6A1Ht4fkTFpL7ZF",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33681880963461
+    },
+    {
+      "vote_account": "6hTLQ5HSdWcpZkbXmZxXaGjCgTh7zh8UeWKWKgGE1BPp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63012678590284
+    },
+    {
+      "vote_account": "J4JhJL3kurhw8RZKhXp3fFTjyd5NX2yCbKDBN1eMh1Uy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60614870123336
+    },
+    {
+      "vote_account": "4jEHuQZTNTRYAhxRYEjV3HJ1b4wqdQjnBRdPzFWzkCft",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 64554676670575
+    },
+    {
+      "vote_account": "Gfho5i3wo2HiLtG6xPftvyHM3GQr2KAV2coUU9mhndLE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12098634776082
+    },
+    {
+      "vote_account": "9cKVaFggtMmcH4B398iTiCRMhhMuvzBnM7xMpMLSFuik",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10660012634927
+    },
+    {
+      "vote_account": "ifHMQAxuzMPF19jsZXpLMTA9wNzPzB8XkNaWyCi8Zg8",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60840583920260
+    },
+    {
+      "vote_account": "BFx4GGeS6s66HGux6oy7jMwiKPu6sUAJrzhK89wHun6R",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 83598262828996
+    },
+    {
+      "vote_account": "ALiQdX94fYbGUt8ar6chuAN1nj8g8bKSgJ7qV3W7bPsS",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1150518968239400
+    },
+    {
+      "vote_account": "76nwV8zz8tLz97SBRXH6uwHvgHXtqJDLQfF66jZhQ857",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 238321887453876
+    },
+    {
+      "vote_account": "akVU92YQV5hNTuzLBkF3RZCzKydZokyvzL7WdPF3D57",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 50322859860527
+    },
+    {
+      "vote_account": "C5q2UJGhzQBizCGyhxj45V5GUS55kZBhKDACyGpKDKJd",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9794784292226
+    },
+    {
+      "vote_account": "9UL36jMUb87NLqGhMDTZdEreZQ4gjQMcc5w5p1B4JaNS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58645190070530
+    },
+    {
+      "vote_account": "9oNSYHVuPFYSVRBUN1nRW3Hoz58XGH957etGuQ1pWAmG",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60439553142947
+    },
+    {
+      "vote_account": "52WzGBfGF2M2o7j8GUbaw5gUQHjKWgWzHtshEX5P2Tmm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59423680665401
+    },
+    {
+      "vote_account": "DpS6eqJxL5VnTAh1syswsk1wuuCqmrfUtu164HxDVWKE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 1976565396280
+    },
+    {
+      "vote_account": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 6477187560352206
+    },
+    {
+      "vote_account": "7TxqpzzpayaU3F9kVSdgpEc4gfV2UZhCJHJSPftiw7Q5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58677506771980
+    },
+    {
+      "vote_account": "BqcP9Uj8R6jAG9btZLPxhnPtZBjCTQax6qmuztby2xoG",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 33576809823460
+    },
+    {
+      "vote_account": "HnkhL3JYBSmb3s9thcVWzAQA9NqJb5m9U2d7mdDxprGo",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 125041325688855
+    },
+    {
+      "vote_account": "Ev683W2Xe56cJDG9Ja5rZDSVgWk1e5NVug3iJUWP2VZL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11856436573579
+    },
+    {
+      "vote_account": "EdGevanAjM8a6Gg9KxBVrmVdZAUGAZ9xaVd7t9R4H2x",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 434643275683591
+    },
+    {
+      "vote_account": "34yvUa2fxfm2tUqxFEj9PHrVNwCcdzd51eo9hntWpZRs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 295516963800985
+    },
+    {
+      "vote_account": "CVroX2HbjDHcawMySpXWP4ZnAStWVnt95ihAXBeq9q11",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38727217406181
+    },
+    {
+      "vote_account": "8FPz3JG4E3HVXxGbPZVibarva4AGXSZWx3qKLUS5uFtN",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 431968260556044
+    },
+    {
+      "vote_account": "2wUhcnViyzstvWmk7NAboKtjbFbqJPo4BvFBV37dacLc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 90489380937482
+    },
+    {
+      "vote_account": "CJ1GZixWD1WzozqZMm3v9dY2xboRYZfQuuEHzawAthen",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 139333964879430
+    },
+    {
+      "vote_account": "AY271jdvcyo5VzBiWsMGLEjpZFFrarq8FDydJHLmYgCG",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59400238619545
+    },
+    {
+      "vote_account": "DZyHRH4i41apAfoeb7pTQANRf3SW1KNAn1sgpazZQ3MV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34364018583757
+    },
+    {
+      "vote_account": "5AC692spnjbegP7ttCXJEzUe8S81sLYsqJd8Ae6Zv1xU",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 45136927189005
+    },
+    {
+      "vote_account": "VNbW721iu6uVkrx246N2BiQth8u4b4SCPJwH3JvUovD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 68562983773210
+    },
+    {
+      "vote_account": "6hZL2FZim27WkQccMfygvvXH2eow5u3wR6XUJHbMoeWP",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 575129402334676
+    },
+    {
+      "vote_account": "27MtjMSAQ2BGkXNuJEJkxFyCJT8dugGAaHJ9T7Gc6x4x",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 249649920615517
+    },
+    {
+      "vote_account": "F6EGV11LvuJiwEMkuH3idx9AeqjyrvKa47596eQEP6AX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38801787198134
+    },
+    {
+      "vote_account": "2PEyBgsPYBQ8pMdXQtEaPGNqWQHE9GCnmV2tTVN4GMru",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 710250156794450
+    },
+    {
+      "vote_account": "qjUuLxWo29QCBr7ZQw4EPLkAtmjHS2ZdZpZcH9g7fRb",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 40162678479327
+    },
+    {
+      "vote_account": "EXrWdDxFaE3Sfsbh3TV5ToGhMqu53xrmeoVdvn467jUH",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 238684067714294
+    },
+    {
+      "vote_account": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 9171137593992136
+    },
+    {
+      "vote_account": "8ACcAUtFEEYRYGJ5CPPBco8NvbwhjZKsgv7Fma64QDPM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 278853342328
+    },
+    {
+      "vote_account": "83c5NZebvsUQsL3e9xb37nHiYchLCudDYtQ5Z3gLnLxv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 149889924600665
+    },
+    {
+      "vote_account": "4dmq1Bwm47TbmAzHCxKWDBuvHWwdRxBtddghcxJfMCNi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11245773794807
+    },
+    {
+      "vote_account": "EsELtZoep4TYcugKyMnB4ZWZYxn99V5Vb1TwexDzFey",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 52821689029303
+    },
+    {
+      "vote_account": "mrgn2vsZ5EJ8YEfAMNPXmRux7th9cNfBasQ1JJvVwPn",
+      "mev_commission_bps": 200,
+      "running_jito": true,
+      "active_stake": 455891688384471
+    },
+    {
+      "vote_account": "4tuMshQNpAFpy1YtEHnSsE5EPN1mAT8FevWvn2UPJHNM",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 82086305896394
+    },
+    {
+      "vote_account": "DUCKsGEPEdNv9QeskPNwoJdWgAXjxUFrkNDEKjAnLWyY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 226946160942871
+    },
+    {
+      "vote_account": "Fy9rMyH93jtX21AAvKdVXqDWEGovaX16oLm1MLfbLbY4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12012895169249
+    },
+    {
+      "vote_account": "8d25KBXdovroNVbjRmvDeW7H3QMW2nfZZo7G9zQ693ki",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 67596239382210
+    },
+    {
+      "vote_account": "voEskim7SFWrPx1tV2PVisqyrJejxmDEARX11mtZ5vo",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 209028412052272
+    },
+    {
+      "vote_account": "2A6d8MHcd5dnA9dx3nUtt271BcfvGcAZk4uje7rn8YZA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12105201114873
+    },
+    {
+      "vote_account": "95YsopyjvJQ7MedMy9AgKy8dL8vXxKNiY1Ath52WSHb7",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11388209055076
+    },
+    {
+      "vote_account": "Ck2rHWiP22YzrMgwVSe9ngyRW81JXLRot2CUo1Bf5RFh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1142269656733
+    },
+    {
+      "vote_account": "C6DEs3i448uhrsWMMnWYq7WsxkujcgADrCJQ4AMJ8ipj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11722272223339
+    },
+    {
+      "vote_account": "VaCdXKupamusfRsDf9Ai7e8Up36Z4f3MP6SqhnM7c76",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58254000956196
+    },
+    {
+      "vote_account": "2cRtnW1f6b8GSTWENTr2pQ1Bobz9QmCdq1oVyCmSmV1n",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61132561631976
+    },
+    {
+      "vote_account": "3kV8UahWWN7Fh41PddYczuismJSLjtrKhYRZW5RUqiEK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36406876631861
+    },
+    {
+      "vote_account": "GZzcHTsorXLrWEevXYo51ED15NTYPLPLzgGxddYMNdn5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59344938332783
+    },
+    {
+      "vote_account": "DpZLBTc94PHUQLEsGh3mjRF2U9etouZbSVyAS5aqFrom",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59732037354163
+    },
+    {
+      "vote_account": "EBGfQMkRqBZ6mj2AJ1UxwKD7MbiuMGJamzKZe2UZrG6B",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 60014835914988
+    },
+    {
+      "vote_account": "FSDKGroWxgBf7VmV6X1NLDhnncrWW2ekztwRWiJrPf3k",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58910564941761
+    },
+    {
+      "vote_account": "2PpHNHPLseBb4doTu1ajTwAxCrjmu7ubReDHKPrjxi9F",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 90955418522401
+    },
+    {
+      "vote_account": "mrgn6ETrBDM8mjjYN8rbVwFqVwF8z6rtmvGLbdGuVUU",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 470643059158837
+    },
+    {
+      "vote_account": "FM9TSfBK3Xcdj2KY91hUZveSbiTDCBbaYkDbL1ksdwvn",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61813320174448
+    },
+    {
+      "vote_account": "aVotE2iXaXUVKeTWaHtKbSkkUqH96zC6kTKyonzHQZ4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 41504941024024
+    },
+    {
+      "vote_account": "29VMLFnCzjTeJBpKpoq1UQhc81y6LHYVABE6DdJNWUXf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58609069003550
+    },
+    {
+      "vote_account": "Y3JVETZQq3Be8zwKAassXVHnz23xt4V7MRFEsNPYyh8",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 49356584312960
+    },
+    {
+      "vote_account": "HSqp9mTHWiAgd3FuFu6jPTRHSA9Q8vcJCPU6Ln9qLNKU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11784504722541
+    },
+    {
+      "vote_account": "CCknLtNpJWNzq2cBrwqYxXR9oguZmaXtoMQQQDCec2xY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 71801443363938
+    },
+    {
+      "vote_account": "9wQQnnnkk5b5GkQWTW9L4kEA3CjFv6CqsQd5gt6tRsHK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 84509520186682
+    },
+    {
+      "vote_account": "DMm976Nr2pfvFYw2XbvYVQQedXLi2AeYvvbf4RkAgTm5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10756832361010
+    },
+    {
+      "vote_account": "ArgSLuXhyJzchuv8cN7oYzsVaqiAZwgdvG6nQgyg3Mhw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59220694199980
+    },
+    {
+      "vote_account": "HcbE5huUVDgsf7SURsRfQqnFMp3Zz3i49eXMddugPyAP",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 306308551477482
+    },
+    {
+      "vote_account": "5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 49963822832723
+    },
+    {
+      "vote_account": "9o4Y8WvRisPxEpuo4sZBq1CtfNsYanzp87bSgeYuGf3R",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 73110831054892
+    },
+    {
+      "vote_account": "4LhqjPqhFMdXPMPN3B7raXVmd8zCKdEddRcrFuRf46Y9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61080187631944
+    },
+    {
+      "vote_account": "A7uqmajxP3NdzbYDXiGQRGTL8d3dZ5pjS4kR9NTZcxtg",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 348004856300553
+    },
+    {
+      "vote_account": "FXbkkbLWH4PxSK8t1JmKAHn4pEvGsCFyMT7pfgwm62us",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63333225576398
+    },
+    {
+      "vote_account": "HdP3326wLHUqtzNvVfxFWtfp5EA8njHdfwnWfPoCBjWa",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59030105471421
+    },
+    {
+      "vote_account": "2wTzvCfVGJuGUTvRD5qMtmxAaVJE43suTN31enfW44yb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 42458589994441
+    },
+    {
+      "vote_account": "4n7VikBy3jT2HHBjeJrTARCrBko8xhxRRLSULj79RCZL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11471287660102
+    },
+    {
+      "vote_account": "Ebm1XKkMzaFg2L5rzLPBnFHMtpDPa6SWJ7nVUzZUmXmR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 54587103919155
+    },
+    {
+      "vote_account": "KRAKEnMdmT4EfM8ykTFH6yLoCd5vNLcQvJwF66Y2dag",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3546962603203601
+    },
+    {
+      "vote_account": "6q9FDuZLXxZAXttw9oNHnya7cvgvrqLW2xbcc7wJdFFz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10885907822319
+    },
+    {
+      "vote_account": "7XTz9RDt9gbckonUUYvzQ8q3Pfdo36oiQsreXsHhNFzj",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34030352915778
+    },
+    {
+      "vote_account": "8etTu2xMeEFYoECZtZS3p3SBQStZYU3dVzxhV1a4yd8u",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36217006798813
+    },
+    {
+      "vote_account": "irKsY8c3sQur1XaYuQ811hzsEQJ5Hq3Yu3AAoXYnp8W",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 72204096558545
+    },
+    {
+      "vote_account": "9RkA9F2YB6UtTFaFS8oP3sSMXKyKcoQUbvDEft9ttpfb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58195790554370
+    },
+    {
+      "vote_account": "9w3YAf77BSGLQXahTpwAe9U9mNdCXkqmxH17uCyN1wyH",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 307057684223112
+    },
+    {
+      "vote_account": "GV2i2sTn835Ktvkvq3ANLxbujPjfMCnzKjiH3JWUYDix",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39049892022301
+    },
+    {
+      "vote_account": "97DsFuV8H6RiFXSXds1k4RscrLPbbDnxG2CW7wDwqrZn",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56971940847974
+    },
+    {
+      "vote_account": "9R4Qp6vJw6W8qEmXsfkfH4tP1PCCKkBbYQhdLU2CAY7o",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12578571120511
+    },
+    {
+      "vote_account": "37BPVW1Ne1XHrzK15xguAS2BTdobVfThDzTE2mv8SsnJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 276668644761661
+    },
+    {
+      "vote_account": "F1hnW5XU95uyMZ1zfCqC8w6beJEt99CfbJVoFQ7NZEuL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10344770732680
+    },
+    {
+      "vote_account": "HLM6hyDWrEca9QMS92nDBa2AreU1qDkppttPVuJ7E2CU",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 45283224641624
+    },
+    {
+      "vote_account": "XW5163eazG97Y2zndg2ZsaU2uBU2jgshdMDVvvZPp7J",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10035547717209
+    },
+    {
+      "vote_account": "JAc59DHJCxu9T1xSP1eaMD82aH3jGNqvwQYZkfA4JLy3",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 35849473293725
+    },
+    {
+      "vote_account": "5JbRmaWpRwxRfPGhHt8JAnJ3JnGAPFF44s7sfAC2QjTM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12029963172246
+    },
+    {
+      "vote_account": "BKccvpa2f5McCLjE91pSGzEY6Ac5sWm1jmHy5QmZ1vTm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63597917641322
+    },
+    {
+      "vote_account": "DLMhVf7xXa8R2D2y1fZSRVQwXdup7EfwBFbttzn5ppnC",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 105784395355802
+    },
+    {
+      "vote_account": "HXAepTnchdti3ogS88CGTiAFKrxrDt8gfiFA9KeVZBh2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38802469967231
+    },
+    {
+      "vote_account": "CrLn7zEBytbmRBUGhkDyyUbGCa6H7bMCnw94Dip8QbcJ",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 248963215190548
+    },
+    {
+      "vote_account": "4sFsBDei4m7UXwuMeAGVmnJxZe9peJ5tvq581HoT9aH9",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 70282819640050
+    },
+    {
+      "vote_account": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
+      "mev_commission_bps": 2000,
+      "running_jito": true,
+      "active_stake": 4234712838163211
+    },
+    {
+      "vote_account": "D8aGMETy3q6ymADJs7YS81QY2qTQmptVox3iCfGDgSTA",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 40208366454295
+    },
+    {
+      "vote_account": "AbwvzMSq9zrRBwJ4HtBnhp85ZCTME4R4cgrAGppezmDK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34367494231489
+    },
+    {
+      "vote_account": "DbvxuUhsh81y3f1NrqHEHbWA6xJfVbfY3eNTa1rFoWzQ",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 48309604103223
+    },
+    {
+      "vote_account": "7x7jzvQgZ5PHdkZKrzUy2sXgpb3YxY8XjLqrZgd6nbGy",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 125813233869479
+    },
+    {
+      "vote_account": "ERut3CwqVeoa616QBaoHc5jL52RpkXjZZZ7MeaMaCtLi",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1937542943890623
+    },
+    {
+      "vote_account": "8EKcbqKnQT9SV7hFUmfpJixZ63GL5btf74umgPQWsMUH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39630579692657
+    },
+    {
+      "vote_account": "CP4UHXqiTf8zesbYZh4zyoS9jHGo4w4RpDAQ3y7AGEhi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11177722862510
+    },
+    {
+      "vote_account": "6K5veuKeVeXXnJQVm9NPytNX3ZAbUoGWePyC83ymRUCh",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 40474836188196
+    },
+    {
+      "vote_account": "HZPcvG4ykhEkRJP3uEhCqYWehWxt4iWGv1cEmxZyweUA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9704166710054
+    },
+    {
+      "vote_account": "4qpydVthCuWtZMyegKEXC8ZQr5gFqXpyvpgUXZ6zWc5H",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10667391824786
+    },
+    {
+      "vote_account": "DPmsofVJ1UMRZADgwYAHotJnazMwohHzRHSoomL6Qcao",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 245869535823938
+    },
+    {
+      "vote_account": "22hhSBsywC3qxr6zvT38zmmhkBQCr6oTqWNABLTgdnm6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 47421586928346
+    },
+    {
+      "vote_account": "2Dh9w9HuNuvmpmsfRFqWhNqQuMX8U9BAU4xyyyqzEq2h",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58268213886508
+    },
+    {
+      "vote_account": "FkK9cat6c8zhLXeYFn4UTvy6fnSLB4p6SCbRQQfdFkkP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 75268453580376
+    },
+    {
+      "vote_account": "Bzn4NxNmh6vTrZyMRoL2qjZFNYbckRwNyHQwxzoJoggX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35453493491037
+    },
+    {
+      "vote_account": "8EQwZusrHgjZyDKXVdtsCeGNsL6VmEB5xq2EP6XK4AUq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36332853772834
+    },
+    {
+      "vote_account": "6xwWwNVXJLGhgPfBpew7UDcSjQr73McXSRK2EhdhcL1u",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34023699118695
+    },
+    {
+      "vote_account": "7xSQKGWBwASNFVzBHyJnS1Vivhu5Ha6m14RfkToYPEyx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7766366336850
+    },
+    {
+      "vote_account": "49DJjUX3cwFvaZD5rCAwubiz7qdRWDez9xmB381XdHru",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 357049385995239
+    },
+    {
+      "vote_account": "8LFBopVbvVJ4RqDaheie99P5jK7jrSm99t2F77jBwdFc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 69433131708682
+    },
+    {
+      "vote_account": "yrfQfUfsZechz1zqQyTRRz43czTZQidcrm4SNVWiDPi",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 246170738056930
+    },
+    {
+      "vote_account": "6yPPsFnekoqRRJerVKrBoHuZayydS9K1bmGM64hPUdvq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9279132027681
+    },
+    {
+      "vote_account": "5HScvYkTWL9iojhPv26xK7GqB7oBsj9A2qHCeNRFmdyG",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 60129657468885
+    },
+    {
+      "vote_account": "AYgYFhN7EpUWr7v6chhdL38Z7evXPpzd1ry8R4EEmXKq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9311580016360
+    },
+    {
+      "vote_account": "AdtBv6jyEjY74XhkxZkowMuGfV1r58j44WCRyeToic99",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62307351005599
+    },
+    {
+      "vote_account": "J43U4RpHE4DX4XK1s9mvGYuYSL1ELPgK9eFPWdpA3j9y",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8980815892926
+    },
+    {
+      "vote_account": "2UuXvFqNmyxsNygvFUfjmDGMGn7pGQ61t5CUzvgczazW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60455909302704
+    },
+    {
+      "vote_account": "59k9CiZ7L1bpEivLrAtaMPMgw18syZ4RQsJUo3hbbj8x",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 44122482503654
+    },
+    {
+      "vote_account": "87d9cGc1xHFxoiteZhXjYL48U6B1DAdLhpxXhmVKi1un",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60277437441107
+    },
+    {
+      "vote_account": "HNXuDfYtRnRjcUJHqfNg6sKzeqfz3YBCXeZQEBwZJg16",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61410814649658
+    },
+    {
+      "vote_account": "6ztDG1XRZiuXtoCotN51kUPtdHXwRAgRiVEbbUfoQ6CK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 68529346251407
+    },
+    {
+      "vote_account": "6fiUHL6s3iGgp19H7PfbEuJGgu4LQsWMu625fya16xgb",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34002839769052
+    },
+    {
+      "vote_account": "3NXnw51gHc2rDWTCWU4eVpP1yHyKKbJa1p6JDgMkmiDa",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 233996949216025
+    },
+    {
+      "vote_account": "9DBZwngoxasx4uf2FxUaDpgWTTDo6RGthsEzTxVCWW8c",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9475097838040
+    },
+    {
+      "vote_account": "2naPB8XC4FWp4er8M2nxDsphXHEyQH2CSQMFaSHxWWd8",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 9468821160144
+    },
+    {
+      "vote_account": "g73uD1jYARir7KJBmS94KN5XjasoZwcxAgCrS59LyBG",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38395792987855
+    },
+    {
+      "vote_account": "7ECQ4mUCMpxF8kchT5sHg5JpwV9eves7yme4GB72m1uk",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 54127047158752
+    },
+    {
+      "vote_account": "2ZuVhyBsUbTh27LBCQH3BkenjPp86gUZiNBKmhPsTRpT",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 94882108964113
+    },
+    {
+      "vote_account": "Fc2GXrMTuZvZh5cPR9ovSk5Jn9auU4pdjt337G5MczMq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 13116138314661
+    },
+    {
+      "vote_account": "BdDF74LLy8a2o95pXLzMx2ribFE4SDWCfDMkq9MRx4yb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59963268560842
+    },
+    {
+      "vote_account": "9xEFsHZt2mbuGQjtVGABxpeQiNeDvj54pfsJrrrUUev6",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 325409225090162
+    },
+    {
+      "vote_account": "A1taSaBJrLMrqfWsPESYDujnZv5yD7bF35LjXoyNXhzN",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 34365799877642
+    },
+    {
+      "vote_account": "4v2os15BGgAnqiy76YvPmAywp5xKh9jfBPfnQGzUVc9c",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 69214572597269
+    },
+    {
+      "vote_account": "49RtuKZApoLAKm1T26ttyALNwhByF23cEUyV9R4fuF3u",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10655236345849
+    },
+    {
+      "vote_account": "GdVBPczdFaPf1GXvx8ByHeA1ZHAHwwmdQEPihH74SXm9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 62564092015293
+    },
+    {
+      "vote_account": "EARNynHRWg6GfyJCmrrizcZxARB3HVzcaasvNa8kBS72",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 1182851083778289
+    },
+    {
+      "vote_account": "Dwd8kB4wJH13JihQAJVvUgUuMCDrJ8CG6Av1XGqNkfN6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9471981474668
+    },
+    {
+      "vote_account": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 5002614801567328
+    },
+    {
+      "vote_account": "s2VZdgVB1GkLy9y6N8CwEyD35bomuvxSkc4e8affvt9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59167092158281
+    },
+    {
+      "vote_account": "5KZ2dv5fnpJGy9LjwXkvXX5M7U6NjqxW8UfbVkTph89n",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39091885410502
+    },
+    {
+      "vote_account": "Csp2hDVRX4cRitFEswJJcoH9ju4rcPUSsqU9pkh5JBQU",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59641020196737
+    },
+    {
+      "vote_account": "78QvBqfkWbDbyo1DMb2ku42r1UfxecwptjbPWJqxkX6E",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 149635585092507
+    },
+    {
+      "vote_account": "9jJNuZE4EHTrz8xiTzmDGjJnCn5dGmruCyUwG1vgdHZR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 69236881123404
+    },
+    {
+      "vote_account": "GgXf7iPfXXosQLUroCCzVFSjG7q35cW2uQKQcaQdDdSD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9868289200317
+    },
+    {
+      "vote_account": "DhU3Q2NoCxU5ArXJWm3zxFDRuBiPU4fGrJ8kUasPxMnQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61107102467025
+    },
+    {
+      "vote_account": "ADaCfGqp5drykfme5omgfFsVgyFv2kHJMQCTxcGngrn2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 52254225200189
+    },
+    {
+      "vote_account": "91ciyr81FJnZaoWcDT4PHwwdzgNp21cgH354JbCuxnwR",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 67609291009664
+    },
+    {
+      "vote_account": "5bwJVaHeF6aYG7MxtJTYeezpwfVN9iAx9Egd1E5pEXGZ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34350519744773
+    },
+    {
+      "vote_account": "9uCHWHPT9xwrhUX9AnK7zm38pC1qc4Q3pS2zi5HRRCZZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57891838930371
+    },
+    {
+      "vote_account": "CT2CzbiNRz8ccgWQZR4BN7cpm3rDyWyQxUf5MNbMom7n",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59182255157052
+    },
+    {
+      "vote_account": "HWPnjLn1Mhtv6YuxCDY58pJVqFrurruWPTXFVSVQC6Cj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11293928235090
+    },
+    {
+      "vote_account": "3UmhLuNdgE2NYDSfXmbu5DhPRxWUK8JwiRcG6tXV4JGc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 208736656398086
+    },
+    {
+      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 6096931432647866
+    },
+    {
+      "vote_account": "BQMvUHC6wqpd3TR8B5tAF8WXQ9xBRkopVqzAC65BSd4A",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57927399266284
+    },
+    {
+      "vote_account": "CxzxNSRyhENwyVmWh1bEnegpvhmqFH1Wrtjdt6A83Mni",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10864404310979
+    },
+    {
+      "vote_account": "6559KMdiUseNSAkRcK9WcFcNTppoj6jWtKVedpMkBYCn",
+      "mev_commission_bps": 745,
+      "running_jito": true,
+      "active_stake": 199916717005027
+    },
+    {
+      "vote_account": "4GBNbRQ9Jpq5oqU65GTmLjaH9xCwt1h7Y4HKiMcNudjX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63385955420537
+    },
+    {
+      "vote_account": "FdD4CP38NUZf2e1dN6tLw5Q4iU2cb438v1eGcQy5x3nQ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 10084621033876
+    },
+    {
+      "vote_account": "GDeQhGxQeHC65MWt7o27NdjichewGMm7iCHuZLvgGrsA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39510432616333
+    },
+    {
+      "vote_account": "U4dEPAUipZwAQWAuetxrEvDQfnvu5XuzZYWWx7XVy9V",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12482950705624
+    },
+    {
+      "vote_account": "vahVByZszdHguLa7U7GLz8UdUFN85mcwdkefiqVjtGt",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 232232097494759
+    },
+    {
+      "vote_account": "9HkDHk27SwpNdVuAjWvxx8d1Pg8HYUNCC721okcvj9Eg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 41256307454641
+    },
+    {
+      "vote_account": "CogentC52e7kktFfWHwsqSmr8LiS1yAtfqhHcftCPcBJ",
+      "mev_commission_bps": 7500,
+      "running_jito": true,
+      "active_stake": 1921001190732586
+    },
+    {
+      "vote_account": "J4oLW1wjuALZhiDUQeZF4fo9ZMwTCmup6YyjxAxwsjbH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59009673381973
+    },
+    {
+      "vote_account": "9x5j56aq51cAv6qoymAc7at7z3wc9KEYaHKPgoWDK2kk",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11774223606779
+    },
+    {
+      "vote_account": "Bp1F9Ma65vJCecNQBauQ3yvbARDbC1kZXEvfmcux9HLy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62044625818368
+    },
+    {
+      "vote_account": "SmithX2hngQMZXVN36C6TsyjthTU3YnsALAs1MaDghV",
+      "mev_commission_bps": 9000,
+      "running_jito": true,
+      "active_stake": 917000675350582
+    },
+    {
+      "vote_account": "G9oM5tuM9E9r4Q9N5cNbm7NbT8bGuaQFdJ7QTPXVYHeJ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 158033169266577
+    },
+    {
+      "vote_account": "SoLdWNZvT8f9293cELNBcPL3XLzsKCyG4AFmvqwXbmq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34624123200668
+    },
+    {
+      "vote_account": "7PrwBc81z19peAGLjjq3Bt4uLtRonRrwR963gxJE8i18",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58302546855584
+    },
+    {
+      "vote_account": "B8NFTRJDovY5DHA3HXHXC76rhafYM11gVasbsACzEAs1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38722927286036
+    },
+    {
+      "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3220389021496446
+    },
+    {
+      "vote_account": "HfXwCe7o66x2bDC9LvXLPcP7FpxcDzDhWzxgrCJ9r44w",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59562530456384
+    },
+    {
+      "vote_account": "eondcw2upjH14EuvBzmn6HfGEGo8t9hG9JbXtPj6cym",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 304924929556235
+    },
+    {
+      "vote_account": "CYqD1ZhkJYWXZpT6Tp5gpA34ytpf9P4wHLbhvnkvwAYg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 2761708499169
+    },
+    {
+      "vote_account": "EjCgjDEG9Moendqzv8wkCmnJiuNMAkDioYFRQxGYU7gc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39175278669665
+    },
+    {
+      "vote_account": "A2XnPCfYMt8inTUX3DhbVZ6ZW7pmXquLKJ1knGupjaKS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12500226337728
+    },
+    {
+      "vote_account": "D21r1TUPx5XnC3qSCshykA2beYbe6PejvV59apKH6xfD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 6434085164759
+    },
+    {
+      "vote_account": "CjspxRz7DTACphbx9J7ijypCvvVg3PHFo9rwmfajECfL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60282978880802
+    },
+    {
+      "vote_account": "EBVj3uwSKZpqEb1K267JaPxDQhULVqCy6hYeQqjsPh81",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 78349214269172
+    },
+    {
+      "vote_account": "CertusDeBmqN8ZawdkxK5kFGMwBXdudvWHYwtNgNhvLu",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 3459151992827779
+    },
+    {
+      "vote_account": "Fgevrsfh8KsFN7eomRWS3N2bjKvqRBGMcEo9oQbT1ikX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59498784154349
+    },
+    {
+      "vote_account": "J8xfTV9UVS1cdaZj4toDd5Q1kgJ41buq19YDB3xH77AU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 132603886735054
+    },
+    {
+      "vote_account": "4H31h7d5eZXdeyS6mkhbaj8V5sgbZikBHQxCwyaF6nRq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58462415098640
+    },
+    {
+      "vote_account": "ESjX2jRuvdr2a47JfEKjP24gNsgreE9PvSpkw4t5Xn2M",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63831680896631
+    },
+    {
+      "vote_account": "JokeruQoFrVevoPR5QBRPGncPQbtrpq3PJEcY22JefC",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 60576310991790
+    },
+    {
+      "vote_account": "B9NiU9ZL3Jo2WkZA1X35sSpeyZXxLJpBi7B5Sah7zUQJ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 14465793781434
+    },
+    {
+      "vote_account": "8RDsLp5kLZEt2swpKne8JuZAN6PFRX1ak29Hci2DT1Xa",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 79592604935313
+    },
+    {
+      "vote_account": "DimavhUqvCpWjUZqSFZGLqBiUVUYQ5jZEaCHutKKVs45",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 261188004967362
+    },
+    {
+      "vote_account": "5yRVhTi64LAPM9P51NbKpEBcXx1BDCiMU6HHhdcZrPmv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34006995865375
+    },
+    {
+      "vote_account": "9Gko8QZBbV5SrEvHKtQHcMrGGSfgFP3KJUozEGifu25x",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 188076558719293
+    },
+    {
+      "vote_account": "75EiDe2N17CA64fUhhJLK9rKm4TcRfhMFdghzScycWfa",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35404327334149
+    },
+    {
+      "vote_account": "kpkkSzKLha44i5ij2eyTf8Aju9eQTEixeR8ktmvtDgT",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 100797361581217
+    },
+    {
+      "vote_account": "FBpY7LcnhwjgBNRzzQfhkLYk1ixnzRLqj39HWewNY4Jy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10780928503995
+    },
+    {
+      "vote_account": "FHkm7gi1thc9aYvvBcU8VErFH9NoVRCRZ6r9NGoQhokR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8857161761234
+    },
+    {
+      "vote_account": "4vggdLQRGJYvBkgbVh6kEWhyBzua1yYVpZKh4GeiLo6w",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62240232243105
+    },
+    {
+      "vote_account": "8inoRcYLtHdDL1qHWvGph7pkJKuJdrE2kNkFpjcYaYHf",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 99813062208962
+    },
+    {
+      "vote_account": "DCkFCCEQCuRTcJ3y4rTnWyXnQsi5abfCFXPZZ7pjPJqG",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59502715948522
+    },
+    {
+      "vote_account": "CFxQ1dFznJGYdskGXCgayJkt5AVsvN2ms3PTHHvqooTx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38060130053230
+    },
+    {
+      "vote_account": "9esjPxaUdD7yg4yDrBkP3jLipcAGVjpLDXsddF89avzW",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 58976383346869
+    },
+    {
+      "vote_account": "H7JJ6aE73ufbUuDCZSQMxguQsj28XHe4VQyMk2hsVGoo",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 41607205358133
+    },
+    {
+      "vote_account": "GqvPcJeVFuPit75RaFF2FuDo6jWS2E49DtJSyanzwcEs",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60126117881243
+    },
+    {
+      "vote_account": "7tr5vUb3j36k4p9bs2tr1GwRFoSsEWd4LEut8e8HJZEv",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 169962636576598
+    },
+    {
+      "vote_account": "F1emDGY23U6YpJj4H4af2CHcHUmiDGgAWs2xvWYZHWdR",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 11718131666472
+    },
+    {
+      "vote_account": "SwMV2YNK7ahUx5LMDqLhMBFC1QfBAkxUxihr7roLjVT",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 39486170263447
+    },
+    {
+      "vote_account": "9RnayB6EWDfGpTTzY4k9RYafvH1YyLFSzsPypgf6xPpU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38394160098417
+    },
+    {
+      "vote_account": "4LHnYfRov5zXwsrijic9UrgmwswLLUyFo9ZK67MYzdpw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39050939429580
+    },
+    {
+      "vote_account": "ErdfgpiSuwpMmbtx4bZ4Q3Ap94PyJ4aMJ1mLsUiJmywK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 13488386123018
+    },
+    {
+      "vote_account": "DzCirYWNsCECVHgSaMVg1mqMzKwtGuN2Pqm2a4HqVpTE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57543484645143
+    },
+    {
+      "vote_account": "J1to1yufRnoWn81KYg1XkTWzmKjnYSnmE2VY8DGUJ9Qv",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 4800844456838926
+    },
+    {
+      "vote_account": "4PsiLMyoUQ7QRn1FFiFCvej4hsUTFzfvJnyN4bj1tmSN",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 552995973613718
+    },
+    {
+      "vote_account": "JDeNVy8krNyf4dziyKnXwSMoBeFDhGUnHEeSmqWBAHkz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62964516751324
+    },
+    {
+      "vote_account": "DnHUCbu4unnxGukqp5hJWZL6a1P5Msb491f6iybbRCF5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 179555026467127
+    },
+    {
+      "vote_account": "GNajgJGjkdnmZTRGZzsQ4P4eL54gHRMfDDLyZpnZYmUy",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 242950621545062
+    },
+    {
+      "vote_account": "AAhcGqPdM9WdjhVH6T4vAQLvoDFrYQqirkxCdvxoKhgp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59434313053223
+    },
+    {
+      "vote_account": "BrRf2kyJEuW8TgdeDjvJcKK4NzTzRtM9RB6WuVKXHxkN",
+      "mev_commission_bps": 7,
+      "running_jito": true,
+      "active_stake": 36202802672601
+    },
+    {
+      "vote_account": "LunaFpQkZsZVJL2P2BUqNDJqyVYqrw9buQnjQtMLXdK",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 242506086036264
+    },
+    {
+      "vote_account": "Dro3NGNTkYR2QJK9A5ySfHgd4cUm6p1pnJqcERpWZCDz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8994052802382
+    },
+    {
+      "vote_account": "EVAL7czqdRyVc3Wi61ocWc7FkwVV56fbiXXM6hMx4TNB",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 11635144054867
+    },
+    {
+      "vote_account": "WTpLibwKTmWo15cRBtJFiBU6NoN8qZEnMDMkuM7N1rH",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 34851353736494
+    },
+    {
+      "vote_account": "8dk8UAi3d6K49fCPiwXyPynhYjQX6wxVA8mdSNzTGVts",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 9372528382341
+    },
+    {
+      "vote_account": "7okgo2YWz8fgNLAHSmAFwqPF59GMq9QuTSFSzPkkVcq7",
+      "mev_commission_bps": 900,
+      "running_jito": true,
+      "active_stake": 9753790952184
+    },
+    {
+      "vote_account": "137Hw29uc3HsYkz1YtdG8AheS3a55UKiaAfBWSn28vxA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59527514938956
+    },
+    {
+      "vote_account": "6thJCXmoS2EEgKxiub4ekWysjKWPDc5kAtuMgSui694H",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60226411319869
+    },
+    {
+      "vote_account": "Eajfs6oXGGkvjYsxkQZZJcDCLLkUajaHizfgg2xTsqyd",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 344342485152997
+    },
+    {
+      "vote_account": "D4mLBafAJjpRABT5Tyj6UhuwJ8DLRk74JzyuTMUdU9Fz",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 212766811878228
+    },
+    {
+      "vote_account": "F5b1wSUtpaYDnpjLQonCZC7iyFvizLcNqTactZbwSEXK",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 2840445502659820
+    },
+    {
+      "vote_account": "6jzDwKeR21EFHwaRgZMefMxJ9D2vnQRqfYxkpUuJppPh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 3294014464133252
+    },
+    {
+      "vote_account": "DTDvrj1mKFv453DMAGRuFwg77DuLjsfVHnbLe5BJPL9D",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 82647210102887
+    },
+    {
+      "vote_account": "2b5e3w6R3XTBGpvUJj9845xcpJUtXnGsKJbjGfdWEPzg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11328760498331
+    },
+    {
+      "vote_account": "EX3g83pPDBzmqhR3Butivqobds4Mx547REXycx4jAJe4",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 52094534899326
+    },
+    {
+      "vote_account": "CrkP4wtzKsfbQc6qMzEdb9Sageio8r6tCUnWTd5gHbhL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9038316434984
+    },
+    {
+      "vote_account": "AuBB9st3RqhHBkzZgBSm6SVnHZNJQSHeBWCSkik4bzdA",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 315417155227025
+    },
+    {
+      "vote_account": "69SajSVq1tWCF7fNWzu6W9fEcAC2FaTVgKZnbZzGSiaB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11261515234870
+    },
+    {
+      "vote_account": "JChWyNsSR66yf5Z7NbSZWgJ8xoj8JGymLHpEm2NpoHRR",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 7799119454648
+    },
+    {
+      "vote_account": "BxFf75Vtzro2Hy3coFHKxFMZo5au8W7J8BmLC3gCMotU",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 550253189623388
+    },
+    {
+      "vote_account": "5XGMWvqZSBk1fktPtxbwaMF5dhkbrtchpwd4xiXG9q8u",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 115701752233507
+    },
+    {
+      "vote_account": "EQahA1H9zQDGTHzt5uGq1YXoiFSaYU8WxjtfCCGjUAv1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34712442391625
+    },
+    {
+      "vote_account": "4MpRU9fDDSQNNTeb4v5DPZZTKupYancGksH679AKLBnt",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 53185567619472
+    },
+    {
+      "vote_account": "DMSuZcavta8L1w1tSiH8bALWjz6Q6KSryGG6m6Az4Qt5",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 1049207943641170
+    },
+    {
+      "vote_account": "3xjfK9C9YNcta8MvK1US4sQ3bc6DEjoJoR3qLExGf9xE",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 86062263727286
+    },
+    {
+      "vote_account": "5yHqB3NxovCEMUniQCboaPRMyyQ7kQQF4QqvC4vaz78z",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 32899401295831
+    },
+    {
+      "vote_account": "DfpdmTsSCBPxCDwZwgBMfjjV8mF8xHkGRcXP8dJBVmrq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 117847332257975
+    },
+    {
+      "vote_account": "5wYHvcKbCHPsT9dhEZaVZzoVY1qA7bosKRzKczpcaXpq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 158638794306065
+    },
+    {
+      "vote_account": "9Lqdoxm4LxAYCXWaCTxwFQF78KnMRbcjadNm188k4KpK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12630840434948
+    },
+    {
+      "vote_account": "39xF5qkfK5HBaG4Hkq6bjumUB2k4B5ozEAmfZoobhUVw",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 255589708602640
+    },
+    {
+      "vote_account": "EDjoFJLunZhjS7difXbi1DvLPPdFenf7YvTFoa9y5pCZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58122573986598
+    },
+    {
+      "vote_account": "2g2QU1NDRax6i2mKzRwgRfdBFoDkMC6bj7Zp5Q3i8sCq",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 241137123058873
+    },
+    {
+      "vote_account": "7spi8Z1CpG1AezUpjHQ5rGKxw2dBoeTfBmQxqT1YkS9y",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 30693744666684
+    },
+    {
+      "vote_account": "AnoFcEWKt7j9UuyvuNsJDbaRPrfo5LqpjvbxqQPswxn4",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 33720254933070
+    },
+    {
+      "vote_account": "6F5xdRXh2W3B2vhte12VG79JVUkUSLYrHydGX1SAadfZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 1441884275576091
+    },
+    {
+      "vote_account": "1bB6Z9iaL1TM4VTo54B5w1FgCXFDbbtVkVJu4VbiNNc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59300156100654
+    },
+    {
+      "vote_account": "7iC1Uu6QBqNG6oaBimnPgLmtoantH7Nc3RD7SoLHgVET",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 46162455010042
+    },
+    {
+      "vote_account": "7wqiBhRVEkbV3A8LbR9W1eNb5s27CBwoRCVro1okB6ew",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 230855964103358
+    },
+    {
+      "vote_account": "3dXXxEaV4fZqw1PL7VezfDkiJV5W4WTtRjh2EHgKSthF",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 37603268302782
+    },
+    {
+      "vote_account": "AXA7ztxJGz77RHmocYQ6MEbPYHbpc3TmhtQqZGrdzqo1",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 183587056666628
+    },
+    {
+      "vote_account": "JBaE8QhwFwka2kZxdF1DJHKb7XGdSRuiWutVB9SyENbJ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 64842329780166
+    },
+    {
+      "vote_account": "CGj63fS6gJXm8KvaUkkL5yAZvH9cjeRgHCgJwcZZEsRd",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56358528694688
+    },
+    {
+      "vote_account": "Va1idkzkB6LEmVFmxWbWU8Ao9qehC62Tjmf68L3uYKj",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1131096868781105
+    },
+    {
+      "vote_account": "G2Qvt31y3wQDqLvnZTf1Lj91JrZ8rKUhtCP5kVJxXS9",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 59107925984801
+    },
+    {
+      "vote_account": "HYjVeaM7XjdVPVUR2xkSDRDKUvaz1VaVAxn4RTj2gwDu",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60710301638435
+    },
+    {
+      "vote_account": "6D2jqw9hyVCpppZexquxa74Fn33rJzzBx38T58VucHx9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 14367913202462652
+    },
+    {
+      "vote_account": "AuBnQc2Tt6A8N3q8WFTeYcC26AGxJKnNhUHgF5qi98zv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9709437563620
+    },
+    {
+      "vote_account": "FE1asX5GjBTUEHwdFg8XziDh3phxhkDp8Fbh16wr6vGY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8961928648502
+    },
+    {
+      "vote_account": "CsfWHXyL85Ur2vsfJcxg8advGyfFa6FbCWMX22qbsqmk",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59304551278262
+    },
+    {
+      "vote_account": "8PTusiY7z4wfjScHU6hr459AFDzrCki4wWmwhXd91mMr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12605782877937
+    },
+    {
+      "vote_account": "CraRZ3Pk5mJC2sfGXGH2rFRYjr8LPVz2gLowNbujcND3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59952324950241
+    },
+    {
+      "vote_account": "7emL18Bnve7wbYE9Az7vYJjikxN6YPU81igf6rVU5FN8",
+      "mev_commission_bps": 200,
+      "running_jito": true,
+      "active_stake": 709526031144904
+    },
+    {
+      "vote_account": "HeTyhZdUKswQoonJJTXqAnDN48ceyVAeFaKfYKayGPNS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 102871917163333
+    },
+    {
+      "vote_account": "Ev3gPXRo6TJeQ2QhxfqWFoasdoGbmDytYvJbUabEHfLf",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 733237967608899
+    },
+    {
+      "vote_account": "C2YfFnfw92sDLfYQK1uB9Dq6FkHuFdFqFDM4RMJQFw8w",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60864147908133
+    },
+    {
+      "vote_account": "4NTGFvib9jutwo2GZbXSomgMoeJmoFv66T1mup4Kd8o6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39366428369848
+    },
+    {
+      "vote_account": "9L7SiDTE6GdLK1P4qxRRzuvHR3Jwia4AZLUrmdTJaL84",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8643414011320
+    },
+    {
+      "vote_account": "VotESBSkLKU8vebS6wTR2rzWWJsLc6YThYS6tebPxXq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 6816588213514
+    },
+    {
+      "vote_account": "8xV77wuFP5BkMDdb1845hRRWZNbDNAbcV75BjMuViWpf",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 85070935123395
+    },
+    {
+      "vote_account": "DSRnpPkLWLA5V2TZo3AJwe2eGfkZ4ZaCwRf2v7e4aXg7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 150690880538493
+    },
+    {
+      "vote_account": "4XRkaMPQnpAncWVZxAw1NfiqGiAX7oa4Ccg8mTD1JMn3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58135140202513
+    },
+    {
+      "vote_account": "576M4qCLi4H3yzcvADMMjNA8bDrJuiYZz2XCXMxGvaPe",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8318000846362
+    },
+    {
+      "vote_account": "3khMmeupU7B6ZSDSbTX5cYtME9yVqeJ178PQD7mCE7g1",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 58498404270760
+    },
+    {
+      "vote_account": "4DW4nrbGrjXRhhj3CH3AYgocExfqEoCCSMxZ9uzc3NpK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 53811773671768
+    },
+    {
+      "vote_account": "ENVaKoD7ytn58xJ8s5htFfQ8hqQt1G9dcPUDqbSwVcgB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 78642566838862
+    },
+    {
+      "vote_account": "2ZafMrwTVAHtCkn9PfGQqmqdD34tkWdqvvHfsxebbgKD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10944702322952
+    },
+    {
+      "vote_account": "EHSN8HePAJHpaMThxxcS3Pv7X6q5hVg259Q9MtXEuY1h",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 8167625188975
+    },
+    {
+      "vote_account": "9EQSJutW6TpD6eZehAnDMaoT6GeFHTzfWibkGwV5x1Mx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8895481244771
+    },
+    {
+      "vote_account": "2Jc8YA9pjTBbhcjsk1hMrLzHN5buCiV9e1XXYNT5Ltju",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10281958747532
+    },
+    {
+      "vote_account": "HFpuMHuQqUY9o5D4g5ByAJKEYQrMLjwcusDNjozXa4Dg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57266411049485
+    },
+    {
+      "vote_account": "A3ahHFBFkPkuLMhxLGEnKVVZu2J6Qy8Z7z2zozyXGhw2",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1183880401001322
+    },
+    {
+      "vote_account": "74PrnaiKU5q8SJX4H9Jis7xyzMUNoSesizn7FhFZaxfG",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 50164322872364
+    },
+    {
+      "vote_account": "F4UVoVGgmd2aJwnfz3eojQ92P9AvYbRG51z1xnEj8tFy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36057830145755
+    },
+    {
+      "vote_account": "DTWh2VQuUJmskHuZWy1KLNvzKqk7PeMkCoaNvZy415U7",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 86440339692585
+    },
+    {
+      "vote_account": "7Eg46UwGgsufXdd9C9kF27UAyD2t4VdmCdVTtPFoqxCy",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 205372585490508
+    },
+    {
+      "vote_account": "BBGumW2W9u8NEpkKeK4Gq1dCL2dUzAcLVPoPFYHwHHjm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 37098241219224
+    },
+    {
+      "vote_account": "FZ73jNbUZkEfAexMdMrghbYn3yjLAbDtkNWkPmjJWNkY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8760573585563
+    },
+    {
+      "vote_account": "6Wi4bMzio6PGnHXg39zBMjGp5vgphLBB2k238DzPBqhz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 45357742701571
+    },
+    {
+      "vote_account": "6QbXuFT59Gu9ihxPmUcLFpTfgXwaSxoJPUTcEDkidPAE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61566585364360
+    },
+    {
+      "vote_account": "Cc7UtVq4G25VbC3w6Ccs2XL2xikjc926q1sHp8zfddoL",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 194048507137895
+    },
+    {
+      "vote_account": "862VZk4B2PrWf96MDbvu6EH1j9PMKqhYA4FAgQWhpRYF",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60428887163618
+    },
+    {
+      "vote_account": "BARLL1NvF3jPHQ3zb82q1v5m6uewcpkgRBYVNufQMWjo",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 88964070898228
+    },
+    {
+      "vote_account": "AydeaGSrcjqdwSQmck7fhNe543Eai1v22cA8sKQwvDLf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7856577806045
+    },
+    {
+      "vote_account": "4oa8ERgVuPEqre7Uao5rkvDA8ovL5D45BXYhXy7RDv7R",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60056670941461
+    },
+    {
+      "vote_account": "6CSENi9ZT4iMQGgWi7mBBe9bKwe5qKamcJg6MAANTzrN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59070023159660
+    },
+    {
+      "vote_account": "q1phrX11VjA2XEPqsTFMYRfrTZiwUeG7HCVz3d6V5Ua",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 64614100001151
+    },
+    {
+      "vote_account": "DpvUS8Losp2UGGaSGyupyKwQqHkmruzfwrZg2VYK7Zg7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 58425505848549
+    },
+    {
+      "vote_account": "5pfqseENmSjqymBEUc86MM1YCX2d4hzb9HnsugADb72B",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36082488312220
+    },
+    {
+      "vote_account": "CbmFtfoXWuhSxo9GDJHBBrkszbPawKeQmaW9JQr8cgyf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8138137029676
+    },
+    {
+      "vote_account": "D54KW6UUK3bsfhKbyithVXFAwaqbegBZhPDC7HXVgScc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10298648056191
+    },
+    {
+      "vote_account": "4qvFxnUXYjBdcviCwVV7gKcGJMCENEBfS82hSLJUhyvu",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 142077258851729
+    },
+    {
+      "vote_account": "BTquv7QcKQU48GyQEspnpseM7dKjMiXSb2XF1TF8BnfZ",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 116315239863706
+    },
+    {
+      "vote_account": "JeDosjMNLfyjzj8Zpu27U6s2vbidbKZj4N3in2KRECB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 45804815356054
+    },
+    {
+      "vote_account": "BK5Km4MyuncoBWKCM9y3zntA1JjhdqNcHd3mxitms4Xo",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 44139959914956
+    },
+    {
+      "vote_account": "CxFH1pqJnEmyaE4wEwqdqMKpQMpkmdaMxhS7SzpHokA8",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 2182665920629860
+    },
+    {
+      "vote_account": "4aFj9VyXDrqU4TnKWnMVuPaAVTaF4GZLLKZN2iZivW29",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 86562092061445
+    },
+    {
+      "vote_account": "GgdUMBPn947xxHxc9ytQywjKeQcVD9AWR3EspNEc3iBi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36884589353579
+    },
+    {
+      "vote_account": "AtBb8cCroMeGNhiF2H5eAzfqnHLn6jS5mZtWFhszwKnp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60004437310099
+    },
+    {
+      "vote_account": "6SmEcnuXJ3ZYqJWTqCoPQMhfvey6PfWb1LebLzoH3f7m",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 308778494290557
+    },
+    {
+      "vote_account": "5MzyqGZTsfWEpmwXJMNioii5m4HvG57L7ZxRakkNb3nw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10739157987904
+    },
+    {
+      "vote_account": "CqSMzh8DWZeqYVa5M1V1rHU825T19NCjYipM3pkdHncm",
+      "mev_commission_bps": 900,
+      "running_jito": true,
+      "active_stake": 233124593007058
+    },
+    {
+      "vote_account": "3CnKZPQn92W8WXG7KTVaFQRk8LJJ3KZbrVVF4ngUxqkg",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 60960243270082
+    },
+    {
+      "vote_account": "HoPjSCdxospzvcx35Kvxbdx8xCAvhnufiBWWm5sQKApD",
+      "mev_commission_bps": 9900,
+      "running_jito": true,
+      "active_stake": 62979567705756
+    },
+    {
+      "vote_account": "8jDrqGdzxcnDwtxz5niBi1CqeRDTFbKUPygyz4M7umnm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9496745818642
+    },
+    {
+      "vote_account": "ARondxXAhmFsVfVkhyBuCvnszpzpH2Joge1nD65L1G4V",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 56937256061163
+    },
+    {
+      "vote_account": "9BUaTrUWHVpwq4mN5YTWLD5cYy3UtyRSwzg5v2hyNFNm",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 41424614500625
+    },
+    {
+      "vote_account": "BNYVMkawH7ekKdbZ7NHqd7duLVc6QLATHYf5aqMkwjec",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9168293144833
+    },
+    {
+      "vote_account": "GmUsURgUQh5cqZXFubyK53U6SYYs3wF6Fc2zEjPQcuHP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10790544259143
+    },
+    {
+      "vote_account": "EEkFzX5tE2RvPgWV1Su4uPJwXEubqRpSkarFLzHsV82R",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11490013410473
+    },
+    {
+      "vote_account": "686JcEJ98r8fMtUiVuKiz4WRoBpJ2Sm9zMhdc2b6H4bu",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 90885849022675
+    },
+    {
+      "vote_account": "7SqriECKvF3JGnhVYBU6D2jsYePUcVeavSLLmJFrrzAM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8972411618599
+    },
+    {
+      "vote_account": "2ZiMfQaT59j86HVWCvspuMtBotnVBeTc3BKk3kKpwgKP",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 48606043603881
+    },
+    {
+      "vote_account": "5wNCWJxnXxAxY7ugo3JmvxUK13zuuM9iW9ZxqYZDjciy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9587070614829
+    },
+    {
+      "vote_account": "LZrqGh6cErfu2PdTUgPEzzuxKYynKD1dTkDGVbPLtDc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 64242875412517
+    },
+    {
+      "vote_account": "DsiG71AvUHUEo9rMMHqM9NAWQ6ptguRAHyot6wGzLJjx",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 1048621615114088
+    },
+    {
+      "vote_account": "8GN7k7hoSXtuZ9iGwNcQbEDHBiyf8AhFKCSAi2me1pTe",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59540671850954
+    },
+    {
+      "vote_account": "8vqRKnHH77FdrBxSDR9KozJE98R1ETUJCSrFYqoYmbKh",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60852660369781
+    },
+    {
+      "vote_account": "3FLezD8GJgnawEHhZcsjdPxZVar9FzqEdViusQ5ZdSwe",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 60084935558668
+    },
+    {
+      "vote_account": "F1FkySZudpAUwfzcgrGVJTrQKFGg2bxBMJooNhRX1RBB",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 52441682885621
+    },
+    {
+      "vote_account": "6GoijNiK3JZVAY96ykCfPhcJnrQfrQMLvrQaX5HyMVhu",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 149618601535684
+    },
+    {
+      "vote_account": "5m8kTjAZRGppy6Ag5uCfUBzY1Ev4NtLR7fJwoaK3HanP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36244547262717
+    },
+    {
+      "vote_account": "74DQRGa4oqepMGcz96obZvw5gJPEPwaPa9MTqbAfBi9F",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 41658510493336
+    },
+    {
+      "vote_account": "EuUxT2aEqiAVkCjdfjehTYzPA9vGSrS4AEcroUf3Cxq6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34067016416245
+    },
+    {
+      "vote_account": "HBfknB1h47CyqQiAK7rC59qtdBNHwGg7HB1hZud3sdgY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9730786060815
+    },
+    {
+      "vote_account": "GbRQmLLZFwc6Y2T6LWeKAj4jYRUA216kp2qrVrpT9avM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 52302689858900
+    },
+    {
+      "vote_account": "FPjq7vB2V3TiseJJSPsp47UWSfT4AwvKjiU7GEro7bX9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34021724578018
+    },
+    {
+      "vote_account": "E8HaKuUc4cFesdgh8WhVvoAN98iWKPCLpxyX2rCphFzW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39048754185169
+    },
+    {
+      "vote_account": "8Dfm249TXe9Wd3wYEnpBdSme659gecoEMH8zx1YWN79v",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9912422972819
+    },
+    {
+      "vote_account": "8vT4MgBeZQmYN44DXwHd2BLM7Z6io186nJk3FQEwy58f",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 115846206028178
+    },
+    {
+      "vote_account": "5qdCvzzeCXfGH7EPjfu1fBNjL6DtcwV2w24A2m1xRM9p",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61150558961589
+    },
+    {
+      "vote_account": "AE6xdVD5e92ZgevjWAamoF5kuAu88AvmUv4RRdBcoyz3",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 263140016319066
+    },
+    {
+      "vote_account": "5PDSvknErgj8veQzcVEZgVyU6G9f73pMvcgAEpTP2NdJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11385609611216
+    },
+    {
+      "vote_account": "5iJDEVRi1nMLwKAWhYbEokZnvBAe15rgFaHGkggVEP9z",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 272417402295098
+    },
+    {
+      "vote_account": "6JfBwvcz5QUKQJ37BMKTLrf968DDJBtwoZLw19aHwFtQ",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 236240056412233
+    },
+    {
+      "vote_account": "Hocu6Vb6cDRYy5MnUj28tvDwda43wWx1Vc3fiCXziJ4x",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 37792029955753
+    },
+    {
+      "vote_account": "G15KujziTiDdrVKVbA9sCjbNHkNuHMSAZ9xdp9eVT2Mr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11192348712296
+    },
+    {
+      "vote_account": "GQ8DSRSNCFGEdCEwc6em1ma18qSPc5cXCSDnSPSznWBP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60900444306775
+    },
+    {
+      "vote_account": "C6uqzABsRPmFd14iL9Ej36AbddVxXPJWV6jwbLZYdYJM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 105903900915079
+    },
+    {
+      "vote_account": "FACqsS19VScz8oo2YhdMg35EsAy6xsCZ9Y58eJXGv8QJ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 50256443963954
+    },
+    {
+      "vote_account": "9gX9MV3nGHRs1R9E52Q3vMg1tNGe5NHvzdfo3AMHnr5t",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60283568758678
+    },
+    {
+      "vote_account": "ADYZmUgm49MeEotqzz59eVtoeNKBv5d4jRn8xjvR2uj3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61123236101616
+    },
+    {
+      "vote_account": "FSZ4GBucapayiQC8w1VNpKDmzM6NZDBSZmEFZsgMteRr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59647235852719
+    },
+    {
+      "vote_account": "Eb1oa4AfSUb5bHrKnNdSkZwjoAofMcLnkF7LgYBAyfsY",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 209573885773619
+    },
+    {
+      "vote_account": "EkLA4nA5jtM2t2FkNWo6XWAyvQyaJJUZoX5p7LMawoaz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 82454786789220
+    },
+    {
+      "vote_account": "7X7oVv6K6wawMNzVriczSAEk18GzqyrYrvqyJbwLAY3s",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 50419037677577
+    },
+    {
+      "vote_account": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 37256064162668
+    },
+    {
+      "vote_account": "GptPXjYUBUjxpRmueH6F5JcqizvjPTRDShTJQ8Vp6uN1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 179066084779312
+    },
+    {
+      "vote_account": "StepeLdhJ2znRjHcZdjwMWsC4nTRURNKQY8Nca82LJp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 536824271383949
+    },
+    {
+      "vote_account": "CjDsntDs5hXT14mrnEugMXJJ13PXxyZTLiSD3qNivX3t",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11540899237659
+    },
+    {
+      "vote_account": "3R4effnUPr3sDo5wdegPBnqTmKTZhKkbgL1wxYw7w4B6",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 63019793664997
+    },
+    {
+      "vote_account": "cover89z945JotsCRGdbjakJm4rnL5XspFSPgN1mVZj",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 194032926685721
+    },
+    {
+      "vote_account": "4CaonBV9LeqJ2oGhTdbNMWKFcHMbLmCnpCyvrRZtLkz3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58633982241289
+    },
+    {
+      "vote_account": "A2MtELFxn9wAiUrobrZ6vsypQtGHdH3ZesEnvAogvuFZ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 177930131434235
+    },
+    {
+      "vote_account": "DKnZkpsqtS4kpFP5zWudrg8w9eCUHixJ2QCRtwwxh8Me",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 56068787292039
+    },
+    {
+      "vote_account": "8B2Z2R8dRvqFcXuLBwinu3Jq7HQidCaJCnDuRRqeJLC1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36494078813317
+    },
+    {
+      "vote_account": "3pBPy27F1Wz3iVydZnGkdvefStrFm8UMCDakYZii8AUZ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60468493620660
+    },
+    {
+      "vote_account": "4K4qpgksvHbKnk8mpMNncHxihMN1ayidQ8odqJKaN7mH",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 169049206772545
+    },
+    {
+      "vote_account": "9Lp7PzvKVMhjqyQfJwxyha5P6thNWMmVDuVVyqqSaK7b",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 31866177500933
+    },
+    {
+      "vote_account": "9K67smfw8hDXmtnR7uvP62WrKUcB7oZ8cvpsB1hmrCzf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 72704338322469
+    },
+    {
+      "vote_account": "7FpZvZikG9RhTFxrCDA3g34q5o6tipTyhFPkt9EraVWw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9251506288663
+    },
+    {
+      "vote_account": "FwnUt6MUucm4mKKGfRVcKo7W82MTusfZ2sDhnc8k6F5i",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 107481662990894
+    },
+    {
+      "vote_account": "GRWCUtxwiSLtLGERyNyZymr77NJdko2HdDHxpVcJz6E9",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 76489694157365
+    },
+    {
+      "vote_account": "DbqQ6kPp5Rt2zbkMMsesTR8xbAc44pEgeTGqd92xFYbz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12277812935065
+    },
+    {
+      "vote_account": "GB44NXtM7zGm6QnzQjzHZcRKSswkJbox8aJsKiXGbFJr",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 577418322643188
+    },
+    {
+      "vote_account": "47swqegP5k3gUnYRz35gfrSJ5FaWhjcuSm1TJwHu6z9h",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57040180812190
+    },
+    {
+      "vote_account": "6KNVY2ijdADSy9F6qoSVr9FYKrDoZcBkQdZXkZDLcei7",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58779734996569
+    },
+    {
+      "vote_account": "6yShbTX3KRMJLANDfo8Xo4aHYCjepjUbna9Y64mdQB1a",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 9199115707314
+    },
+    {
+      "vote_account": "DQ7D6ZRtKbBSxCcAunEkoTzQhCBKLPdzTjPRRnM6wo1f",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 1339566603480600
+    },
+    {
+      "vote_account": "HM7vebE72CB5LBxRvyxiEbHj3b2teFhVyc4LCkXXhizz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12125949187754
+    },
+    {
+      "vote_account": "AVWnWgnS1ysX7ymBbQ9pMdWnt2hpweWGYekHRM8mxpQy",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58073932489597
+    },
+    {
+      "vote_account": "8ge8UzG9FyW4NDZ6zzZiUypnbcNQ3nUfTBKndxsmWqSB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 183622469515847
+    },
+    {
+      "vote_account": "57gGMmhTCxHtLevWHzDdrme3e4SC4UCXEq9oyfR4hDjE",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57658630231432
+    },
+    {
+      "vote_account": "BdM7KCd6ZYWcaCMmHVi8YeL4jFzDVM9cRLJUeRAGSvMS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62911684271256
+    },
+    {
+      "vote_account": "42XzJdJvr1qE7zdEnPQhV5PsN9eyAcR45SWpTrifW1JB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 54017286768303
+    },
+    {
+      "vote_account": "76DafWkJ6pGK2hoD41HjrM4xTBhfKqrDYDazv13n5ir1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 86680890020462
+    },
+    {
+      "vote_account": "7VKJjStSELiuK9PRQzQmQCGgy627sGSRSJhCVobMLVqL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 47620341267468
+    },
+    {
+      "vote_account": "ELvd1ayPGicuX9yBNr6tn3V3BUCa12Cme8FDdghcmskf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39287064483791
+    },
+    {
+      "vote_account": "JEJ9KC1aQgcYigTG386mkS85J3EGVPkKib1Xi1otypWJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56644550927754
+    },
+    {
+      "vote_account": "HFLsfstZkJeWDgVEA5fmXeea876Ad9f1VxrbXk386bBY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34023403027543
+    },
+    {
+      "vote_account": "8Uxj5i7CHajuNBUSNHdGzTz8yvmHHk2HfHwLt5ac1wxV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38433346733651
+    },
+    {
+      "vote_account": "CVKBDZBgHYimyaznSwmFR55U5jEjm3dDh7UyiYyhTbzt",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10414849825779
+    },
+    {
+      "vote_account": "GNZ1PAAS33davY4Q1BMEpZEpVBtRtGvSpcTH5wYVkkVt",
+      "mev_commission_bps": 600,
+      "running_jito": true,
+      "active_stake": 153348621074734
+    },
+    {
+      "vote_account": "B1UaJwhZ9rmB6rUwCikMCkYEPVgpGYgmmrKqfAHCZanw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 130980909413803
+    },
+    {
+      "vote_account": "ArWF5nxj7AupNtDztDz7sna5qFEBj11uVtJBnF77pWqo",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9418168316867
+    },
+    {
+      "vote_account": "2EWi8L6xp62VgTqFo3LnhoSP5sL9CWqYxvK7UA63qK9x",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 309926705365106
+    },
+    {
+      "vote_account": "B5QSmsEd4EAzMsZHN4Gov87LfLAnUB6LkkxGrz8aGeT3",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9688725824986
+    },
+    {
+      "vote_account": "H2z3pBT62ByS4jpqsiEMtgN3NUFEuZHiTvoKCFjqCtD6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58874666356038
+    },
+    {
+      "vote_account": "5D1pBBTUbFyZksxL4oRfjSJeg7pKZheezYmtL8Ychhez",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60435956244486
+    },
+    {
+      "vote_account": "DT3RANYewDEqCzssBUYURi34imtsgFUb9EUjgac7pFHQ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 75963640702122
+    },
+    {
+      "vote_account": "DyDjFYB6i51FMHQvB4eKSwGHmgMxVf1i3FWwANAngqyY",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 101292362764
+    },
+    {
+      "vote_account": "Gzz97i8Gp6f19gBmqEmYv7gNJ63gjuSGerAErcavDth7",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7827462347395
+    },
+    {
+      "vote_account": "3Rv2AfJuaunDHePFPGiDkN828nwzsbcZ5nM8jNdW2i2a",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59259643002879
+    },
+    {
+      "vote_account": "G8GqFzoEZrxHqV279nYxD5PX1vWWHvxWHkBDkXU2qMy6",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 283238461949701
+    },
+    {
+      "vote_account": "Gzb8kTzQdDuX84fjBZ9th5vZz1T1xwJayxsiGwKR28F5",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 31464405424999
+    },
+    {
+      "vote_account": "9a7VQpVNCwBKEiADAr4EHW52CTesXnDDfnPvvp7qRFyP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57076559449289
+    },
+    {
+      "vote_account": "DHnoGrcm2oecMuWpyYjwxzYoEW3vJdivGtV4favEp3R4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3439592227316
+    },
+    {
+      "vote_account": "21wUViiyG1g47VZ39ZZsSkFX9nu6bkyfy6jryHGD2TUB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34918095370331
+    },
+    {
+      "vote_account": "2oxQJ1qpgUZU9JU84BHaoM1GzHkYfRDgDQY9dpH5mgGn",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61153818054438
+    },
+    {
+      "vote_account": "indVHvxmQVkK4VsdHiK8kXjLDSjHfHRfP3yvZ947Gn3",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 41982121479956
+    },
+    {
+      "vote_account": "9mg9SH69itqkRdy1CudMforH3ju7uR3K8GH8esGx4Mfx",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 101762793636439
+    },
+    {
+      "vote_account": "9H7v1rB2tkPUaFmW6BMNV47Qpj63crPTzmhVgpQAmz9Y",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 41266739727927
+    },
+    {
+      "vote_account": "A9V5e8ZLwQ2ArKZnCcrmz9Q92pDCkUXE5tqJmJDZkCMo",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 2144907842974500
+    },
+    {
+      "vote_account": "5KgAGvMLZogKnDGKGgn47xY6GaTwQ3WBbGPoBxW5nDqp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58408594023268
+    },
+    {
+      "vote_account": "Hjr3PbQPmyqe78AiTiMycpmTiVc3EDTguWGqZcrjNc6A",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10592480941304
+    },
+    {
+      "vote_account": "C9YVc5dBPRbmyi8tPJKnrBuVwXeULby1eGXWvUVv866a",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 291567002026911
+    },
+    {
+      "vote_account": "BCRg6hEiLbrdgaTUbUbuz8deDcbyCgP37fCBMGqNhhq7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 66317913089421
+    },
+    {
+      "vote_account": "BLADE1qNA1uNjRgER6DtUFf7FU3c1TWLLdpPeEcKatZ2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 4130131555140421
+    },
+    {
+      "vote_account": "QUANT7qKUEW4PS4eP9jq4K35rDHpgWkWcgjbW1CwnGJ",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 506053222763180
+    },
+    {
+      "vote_account": "3yoaBCgeuNNCK7SWqUdSvbjKZdj9BeN3neQc647oUV8g",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 8118457567707
+    },
+    {
+      "vote_account": "DX3Rpy2drSHvwS85EEy29wH3LQG2ZrefoYqhroeJSzY7",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 77165476281325
+    },
+    {
+      "vote_account": "Cv4i8f7AZ2hA7LfSNmTRTbvCTUyRSbriSa6gUA3ncbgG",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59287537295271
+    },
+    {
+      "vote_account": "6DotPcVwdR4AtPA5nN9UcbLQ3WHtghvn5SCQXYkSV9kt",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10772574535080
+    },
+    {
+      "vote_account": "7kmTFq434qDsbuCbJgDsAtih8AurPfUk8u6kc5bJb5Zb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58595598718930
+    },
+    {
+      "vote_account": "6UgxzgqkEyXMwPtgyDZSn8WGzJ5GdSWG1bSPvy7V6QwV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 80309290357722
+    },
+    {
+      "vote_account": "tri1cHBy47fPyhCvrCf6FnR7Mz6XdSoSBah2FsZVQeT",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 98219156184764
+    },
+    {
+      "vote_account": "CzmqDuqEpfnkptuLAcikmJrhCnhFXo8aUBj6Rto1SPAc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 500049082851568
+    },
+    {
+      "vote_account": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 6763229252554885
+    },
+    {
+      "vote_account": "52J4Nhv5u3bKiKBw5nvAJjUigoWHfP7PBQCfC4craVEY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35533505136240
+    },
+    {
+      "vote_account": "462gkiydfX1ks7bzS71j4k5uLZaonTzcz5mfJpgLGe9k",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 17182798806064
+    },
+    {
+      "vote_account": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3562861780906860
+    },
+    {
+      "vote_account": "GVEADYM5kjjYYs347YF1PufWv9sEBKBt9Vvqc2Dersri",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 9399643750838
+    },
+    {
+      "vote_account": "C2CaDsVJDFv8gKpePdXVsv7EHkqa8GTxLTKzK8mKvJ6z",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12584363522276
+    },
+    {
+      "vote_account": "3Ty8DYNBkK237zPvACti83EJYGxDcMcoDMCou5r3eV5Q",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 3088470328542044
+    },
+    {
+      "vote_account": "Luck3DN3HhkV6oc7rPQ1hYGgU3b5AhdKW9o1ob6AyU9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 271898254642917
+    },
+    {
+      "vote_account": "Ezp1xiZC2mcenHjFB4nAfb8HW9YuGEBFit49yGG7XdAu",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 2068025818756040
+    },
+    {
+      "vote_account": "9rQxLv247GeCxmmfESBMSygX6fBxzniKec4kv35Gx4J6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33790830484064
+    },
+    {
+      "vote_account": "HgovzvawYMRPY6Go2kaQF1vLR4rNixooHKrUWSH6aW4C",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 75769872427395
+    },
+    {
+      "vote_account": "33hurzEz6aEnzfESL6pnNyR6DCgcKzssT1pwSzDCBTRQ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 2499999938665440
+    },
+    {
+      "vote_account": "9LSRBLpJMpejUeqmhVmwjHBVrptoCtbX6xWvx9qMmJcR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10014181765288
+    },
+    {
+      "vote_account": "AMGXof8JgLZomo67xeDCJs7rM9xaCdpy9k4CmN3W9bfs",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10877184833607
+    },
+    {
+      "vote_account": "GushxqHNL1eYcRumKwbijG7dtNH1sbJJRm2rqVZzmUAH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11312934635231
+    },
+    {
+      "vote_account": "GYMMgjX69RYVxN9wYNgE8YnjoZwVyencKFhWnd5hWGx6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34000954284160
+    },
+    {
+      "vote_account": "AS3nKBQfKs8fJ8ncyHrdvo4FDT6S8HMRhD75JjCcyr1t",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1110138373218626
+    },
+    {
+      "vote_account": "HD9FwkthKMAFzT3zsPfsZuELUN7pW71KkDR1EczuX8t5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 107563868945746
+    },
+    {
+      "vote_account": "9YnFDKcGCNUk92n8QgL5f4u34Twzp5qqik5aMRtVdC9N",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34367478853473
+    },
+    {
+      "vote_account": "3zEbnWKibg574DaGC1EA3zLNwBK6MGQxEySUgQWKBaYV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 77396964319828
+    },
+    {
+      "vote_account": "8rr2MSUfLmejRVUbsLYRsQCcB8rHsBqjicdGoYhZdvgb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10263508153777
+    },
+    {
+      "vote_account": "uTnZDhnbiSV3TX2obj71nFPAm2aXy83mFTFYzaBRk34",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57817119446278
+    },
+    {
+      "vote_account": "9svtcpqoFv4JMvaFg6fDTw5nFsFQM2Kd2X5HaSZsoYE6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9447767878160
+    },
+    {
+      "vote_account": "AKwLPtEbA5EDJ7dapH8p62gbhVC1dLNAp2DqyZMSPjJC",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10792541433991
+    },
+    {
+      "vote_account": "EFEKcHrUBsRoQkuTSJAQNZnj1u8h9oE4LoCYerednc3F",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 24010082785088
+    },
+    {
+      "vote_account": "531ABLCYsNQ4xztxHfoCc4xqEQ8xiEWWSP3TKDG5s7hz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60514519422286
+    },
+    {
+      "vote_account": "8EfUy8zz6DF2iTMQCUe4QAnoq4jVUzfU1yvZMCr2yJ7m",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 296750238956667
+    },
+    {
+      "vote_account": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 4749769760125853
+    },
+    {
+      "vote_account": "bhWgxLuBivaKiUgywT7JXsNhMgF8C6Pjg3j7jFKs58E",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34008394183674
+    },
+    {
+      "vote_account": "Ac1beBKixfNdrTAac7GRaTsJTxLyvgGvJjvy4qQfvyfc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 17270145232797
+    },
+    {
+      "vote_account": "GREENr9zSeapgunqdMeTg8MCh2cDDn2y3py1mBGUzJYe",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 308417202890515
+    },
+    {
+      "vote_account": "7uyNfJC7FrJXNRnhZKdVk8gctpnsmk2an6ocwVFXtdLz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9842327691761
+    },
+    {
+      "vote_account": "8tjRQLzor4dP4qd1e7pVDdQmsdwdVv4kSeCVEHwWEiQW",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 874926296596774
+    },
+    {
+      "vote_account": "5PyiGb6dNrCaKTkMfovKRQPYgH5zizcsvXp9YUAVWqbo",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58757421342726
+    },
+    {
+      "vote_account": "A2p8VRhPEZzLjx51dhVAruxjuJv1raXfDYxzXQzeJPEo",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61578954475580
+    },
+    {
+      "vote_account": "HQbdXrLm3EuFyu66mCpDS4ir9zRkhNHJVnck4vxG7jEo",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 93889182921287
+    },
+    {
+      "vote_account": "F2bcoVhE2he5DCruN4PKkWAriNXs2VWty94n9CCdWZ8s",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 182010508123594
+    },
+    {
+      "vote_account": "6T5kjAEURp7jsEfX6NdQVczDseUgMFHtK349Agouwotq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61620136474791
+    },
+    {
+      "vote_account": "2iWXwF2Q5W6o7yntV2mkbxncB4rYHnX61y3NU8a8EFMJ",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 4137795337066
+    },
+    {
+      "vote_account": "3CU8fbSAvMkvHW4YPADYYeq2MupaYa7GVaZDQ4JhUY7M",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9020809380885
+    },
+    {
+      "vote_account": "2het6nBRLq9LLZER8fqUEk7j5pbLxq2mVGqSse2nS3tf",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 307087103623724
+    },
+    {
+      "vote_account": "SUN1nYpPJVjd3gKnDACdaUVL53LJaXR9u8e9i1jkZ3a",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 37187254858058
+    },
+    {
+      "vote_account": "3XDZhoRESsx9bU9rdX94qrtLL7YCxhgX3dKmXFRV2vU7",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 12251862950187
+    },
+    {
+      "vote_account": "BkQJo4j8V6Xhi8p39B76GhF3csWzUz9C6VMz5Dn4bmKb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59432164756188
+    },
+    {
+      "vote_account": "62wwu7fq8bh9gX9MUySZAGLDCBjMTni3yrMEnxzCgNyS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11557811556749
+    },
+    {
+      "vote_account": "8oGhRavfRf13fBdp257nitq8VVgXhRAZxR9fR5Q4oKhH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59213830091258
+    },
+    {
+      "vote_account": "5nH6sYJNSa71DCBQHgRCsX1dh5W1bWrUPeYieo9xyZ7f",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 67917626084286
+    },
+    {
+      "vote_account": "9StaT8sPVEhksJcsAmekzy9mGvfiNHR4dx96Tk1gN19e",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56108325968149
+    },
+    {
+      "vote_account": "2w4dcnbJDcGrAh4CFAYYpAaEJiUB2q1rFMGByBuB5Cqz",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 44616121417895
+    },
+    {
+      "vote_account": "GZCv21mPm7HNwiC5Hq3j1DXz4njDQownDAfN7xziXbjN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 17183856321311
+    },
+    {
+      "vote_account": "F6ui6Rz6cCKBtyrSBqnNY5RzTzENdjFFpTJZYw47GD31",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59083335644454
+    },
+    {
+      "vote_account": "2uuSBFp7gLzBBA9w1u3ZfHd3ZrXypctbuRheH2EBgcpn",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39719962651875
+    },
+    {
+      "vote_account": "Fy6zNoZ1eCPpQX3JXeQ9Yd1HW1BFL8rrFmDvYYDnuxjT",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 156162958534403
+    },
+    {
+      "vote_account": "DggvF7asrbjrqvcvPPRKovy3VVvjCgvc2GnWVusxq2MP",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 58783238049271
+    },
+    {
+      "vote_account": "GuxBSrv5jnSwwPepkqnmkM7YCBSakKanbnw4BKMdda4j",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 249577462380761
+    },
+    {
+      "vote_account": "HCQ2gm7gApi5L3dbdvjFeJzvMkrdfxEc5WGcFvE3D4w4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10564212386783
+    },
+    {
+      "vote_account": "3aD7hctmQCXTKgemJoGSkftySV7zjGkmbYUdXD8qBHgS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9127685891241
+    },
+    {
+      "vote_account": "4khYzWBsGrBcvhQkA1UZbiMd51MaJ6zGgec563nqeP5A",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 4369520050728031
+    },
+    {
+      "vote_account": "FSwhPiYebzF5nNGvWbUUZ4SxGx7kw2QcA7A6xgYz1PZJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57512224641712
+    },
+    {
+      "vote_account": "NikGQUQqSLtsdHGGx7mQopojZcgd3N9uWFaZQ1r5EXn",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 204301755557161
+    },
+    {
+      "vote_account": "irVai3HewJyN1WJmBNVcTGEDZBMAMUmpvMcXuU94Mbc",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 12719199253905
+    },
+    {
+      "vote_account": "6k6Yo8kmwssvayHTzp8K4jtVwmyRyjvQx6T96DNJAdYH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60330193138437
+    },
+    {
+      "vote_account": "GmNaz71ak98CZ73AnM3K288etTGs8uwfa9i5V22dDkf2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10127550497921
+    },
+    {
+      "vote_account": "2WKHhJ34gNkw1G8iReLXn8roPfQUjsLyzjWHspNdvbFw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35402884003005
+    },
+    {
+      "vote_account": "HsUhGC6yKwr8kLC5gdqVLrDfKsGCd2ZAXiabP1WojuzA",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 212163084845191
+    },
+    {
+      "vote_account": "CHiNU8QWVW77kGS3U9MbYLCYkWXGTfPz2iRGoy6r6CA",
+      "mev_commission_bps": 400,
+      "running_jito": true,
+      "active_stake": 9266846827526
+    },
+    {
+      "vote_account": "BLroAM5KkPoCdweCAbEKoTJ3LEaQefJkrVvzArNARSC4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3167811451914
+    },
+    {
+      "vote_account": "FKyoehgzXD6KVSQoHJuTteXGCrChYe65k98wMckr9MN8",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 67275846466059
+    },
+    {
+      "vote_account": "6h4mhExruKD3zp7FLFU6ZDK9yVqoLHHdKVGpGXcauveT",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 1417598496392
+    },
+    {
+      "vote_account": "ASfKFAKz6fH4eip1jdLGt5Ym954kU9KYnwq2Csn9ogSz",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 235184181743837
+    },
+    {
+      "vote_account": "CPnLQCxoH4JdoqU7oEq5dyB49KWFGUuKn9dBvyJ5Fuot",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59888108272699
+    },
+    {
+      "vote_account": "6cvBCfFXugkTqgSFVPvzhoWaLbhHWvZfSsZadWP5rryR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 69892422572445
+    },
+    {
+      "vote_account": "FQ5Hc8CgnBBFT87QYt72SVVYGEk677fZHDKH1wX2TeQ5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 47851946914799
+    },
+    {
+      "vote_account": "GCUWGuMnmtMv3BFMx8EmeWxst18sihXxyU3skeNGTj8A",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 10821448522548
+    },
+    {
+      "vote_account": "61YeNFdHGaToskpbzcwzkFEguHdnPUzvXF4iHGLAnwcK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 7153268827651
+    },
+    {
+      "vote_account": "3iPuTgpWaaC6jYEY7kd993QBthGsQTK3yPCrNJyPMhCD",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 67287487704236
+    },
+    {
+      "vote_account": "4DcSke272vfn4QQK49RNzPPj9pYasbyjoiY1a5UxLDH1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 52246401097026
+    },
+    {
+      "vote_account": "9bpq8VAugtLeeQx2KF5x2RfK93jj4zSfZ4bPVhyHUJxe",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10685740361415
+    },
+    {
+      "vote_account": "6GjZkgrdkS19Ws5Zy5BEBgrHqgwXZynr2biHjTZb1hdM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56606079448176
+    },
+    {
+      "vote_account": "FJYPVSArASsFgxk9tWCwAhQLUuEMLhaPcDoL2TXMgK49",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11484377541734
+    },
+    {
+      "vote_account": "sAESK3Gda4FqBXvbj1XfwLL3ZMzhuW8NikgXJvPYV88",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59930698610456
+    },
+    {
+      "vote_account": "7K8DVxtNJGnMtUY1CQJT5jcs8sFGSZTDiG7kowvFpECh",
+      "mev_commission_bps": 5000,
+      "running_jito": true,
+      "active_stake": 653542339686997
+    },
+    {
+      "vote_account": "H9DZHSMsytPrGKjdsqoMJ19RxrXaaFFZMwN7kgquQj84",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11175852440007
+    },
+    {
+      "vote_account": "HWeDLvzf8PhbYCuNFXB9E3fiCaz8RCtHW8b52iPAboCJ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 154200007317249
+    },
+    {
+      "vote_account": "FqqeQTcB1feUo3kxHzFAE9i5TnzTYZmD2xRTHZVYby1c",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62402178963247
+    },
+    {
+      "vote_account": "Azc2uttGtHsRLorfQzd7tsMNtfaEg7LyvVEMVtckPCNN",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 87097425183256
+    },
+    {
+      "vote_account": "2AWVgdBDNhUjkfvueyoL5BPBycJavMwTGC9wEtqh5QwV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34366961258240
+    },
+    {
+      "vote_account": "Aq9DBA3EtBRU19Vk1NKBCEReRaZNv9eSR2VexgbZteu3",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 58475573845340
+    },
+    {
+      "vote_account": "8sHMgX4GyEByphQm8b8ESKJhSpveSMrnwh4Y4pt8t8FD",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 42221265335780
+    },
+    {
+      "vote_account": "J1r9rLo71mG7eTpX1jiYi7vyLE3QMZ4PCBXYJJfXYsp6",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60178489384872
+    },
+    {
+      "vote_account": "2eZwQcDuomrzfuj3kc1p3EqoSKwaBUWqqADeagv7PcbB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34002317250462
+    },
+    {
+      "vote_account": "3JFt7NBHuz7bR1wbWVKgGLkZx9QPwnkuW2sx2nREgbbr",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 6531457378516
+    },
+    {
+      "vote_account": "7ikNtivRm2EDHQtnheqSnxkbNvRxMgtmthEAG84V8AEf",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 474302070733038
+    },
+    {
+      "vote_account": "8cmey1eqqVS7GRqR22NafhQWhzsdgEiciM3xiEPL2Kac",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36616838609534
+    },
+    {
+      "vote_account": "6tajb2FFdjiRJLrdwfKQsijHGmeVFcTcXJn6NH3BEoLW",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 152106597515301
+    },
+    {
+      "vote_account": "65XpGeR8ScLit1sEZTf5moSEJR27QJTPWJ8AdAuHM6Wz",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 36129639999229
+    },
+    {
+      "vote_account": "Pond1QyT1sQtiru3fi9G5LGaLRGeUpJKR1a2gdbq2u4",
+      "mev_commission_bps": 9500,
+      "running_jito": true,
+      "active_stake": 932087014384928
+    },
+    {
+      "vote_account": "5yFNiQbTabGCMzvfyrhjiMAH1g6VEcs7uHe4W3KyYwR7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 20796768815561
+    },
+    {
+      "vote_account": "EWQfCyftKLVbeJtJ4idbLDcDFSGaZ6bZHGS5vboUx3VR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59500655225460
+    },
+    {
+      "vote_account": "6GLn8ZzDkScvhvESCFPvk71Vr1EuGdbeZoE54zZBqAqf",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 38523807149484
+    },
+    {
+      "vote_account": "2ueVedJz8CZm85wet8vxPGX2bD3VrhB9oXk46ym9rcDA",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58768335621959
+    },
+    {
+      "vote_account": "Atw2Wond9H3DHfgg5NGqi4dxMwF3Nrgdhm39x2oK8MCW",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 32804417857265
+    },
+    {
+      "vote_account": "CV7uvPY1Hk5Avb2NvkGJoUzGnipZrEZK27j5rQJoUae9",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 188115133334240
+    },
+    {
+      "vote_account": "5YMb9HYzBn9Mu2FxDKP9Pa6dUEcniFtwbewpGRu5EmfC",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 9713296867097
+    },
+    {
+      "vote_account": "8PMeDKfxUKv4KJBBQJYPmfyZfoYYnMju6fnokRR9uT2w",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 33975745102094
+    },
+    {
+      "vote_account": "28E8jAYguhHPuuMKxQJpSmU3J75zi6iFmktYbiam8eyS",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 15300327051648
+    },
+    {
+      "vote_account": "DzGHc5pLJACrLNrXQqvhoLW5cyEDQnuRcP4QDEhumkpG",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 51769975104409
+    },
+    {
+      "vote_account": "HiLaiF6HAUL2kYBsHcVb3CDws9c3dEphtfPbzDnKYFYB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 77910285306465
+    },
+    {
+      "vote_account": "pgbB8erEYkTBKxyuXJRB4HrwtgyKYqeGCQnuPAH8yVw",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 48884125413636
+    },
+    {
+      "vote_account": "4GAmUQ8FvKcTzeYGqxu2oSBMStYNwDTmBo7LC1Csg6SE",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 6113627745446
+    },
+    {
+      "vote_account": "FiijvR2ibXEHaFqB127CxrL3vSj19K2Kx1jf2RbK4BWS",
+      "mev_commission_bps": 2000,
+      "running_jito": true,
+      "active_stake": 250977225101319
+    },
+    {
+      "vote_account": "J1to3PQfXidUUhprQWgdKkQAMWPJAEqSJ7amkBDE9qhF",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 351504982996755
+    },
+    {
+      "vote_account": "NoRDTy8jpkpjPR7yxahVdoEUPngbojPhFU5jb8TtY4m",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 280501597666019
+    },
+    {
+      "vote_account": "2ayMCC4aizr8RGg5ptXYqu8uoxW1whNek1hE1zaAd58z",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 406356281291860
+    },
+    {
+      "vote_account": "45Rybt3VGxcu6jbSF6KgjbPk4vzGDc4unPWoiC6dP4mk",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9899642816021
+    },
+    {
+      "vote_account": "NipDoZC37aMQvv2fFq2moUyyiApQxszc7X4mvWHP2pZ",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 313714383812341
+    },
+    {
+      "vote_account": "99TxYFsmYwwpg9BjknC4cgSuJ9fnsppehwdHjQzRnkAR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11876789703366
+    },
+    {
+      "vote_account": "HQuUQmerqwvBRFo1moWgNPpcc43EJxGUQZmgrrmqA9sA",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 111466029509637
+    },
+    {
+      "vote_account": "mnde2ZW5LdekuDB9ywYsKeZvpNUqRXACnGks8d6TShC",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 85352556008392
+    },
+    {
+      "vote_account": "GA2t11gJcmuZ4y7pShTzgYDkxVaJaVQJqkVUqojhPPsT",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 303907793166210
+    },
+    {
+      "vote_account": "GvZEwtCHZ7YtCkQCaLRVEXsyVvQkRDhJhQgB6akPme1e",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 3209965522910143
+    },
+    {
+      "vote_account": "oRAnGeU5h8h2UkvbfnE5cjXnnAa4rBoaxmS4kbFymSe",
+      "mev_commission_bps": 600,
+      "running_jito": true,
+      "active_stake": 341054831607749
+    },
+    {
+      "vote_account": "6minRorGYiA5aEeDvXL1Usat6DCdaF46owL3oANVQ8uB",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 36415374381238
+    },
+    {
+      "vote_account": "NDf9Pv6TAxTDPR6ud3djsd2Ux1WS2m2YfTw4qEmSnQH",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 146096886392474
+    },
+    {
+      "vote_account": "BwCHr5RNd3ZYqQoZS383FwFn8cbNHiHkqkbmqgKbXBkw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34017942229471
+    },
+    {
+      "vote_account": "EKazaau82JT2KkJQ3m6L4MRt4EKjP5EoZRu18QgofTVs",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 42975253451842
+    },
+    {
+      "vote_account": "ENu5Y5DzdAPzC8cX6ZR6ezgSWZzVrjhEDnv1upGFANis",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58218417379673
+    },
+    {
+      "vote_account": "A3MC4K2pxLXTEHVN5HFF9ikjiauGP7ioZws9FYsucAWF",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 66980565056631
+    },
+    {
+      "vote_account": "25rtQR4h9BQKMcU6a1DxpZjB27dwcRUAdVb9binerD9E",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 91708790886580
+    },
+    {
+      "vote_account": "H6uAeBs3Ec6ZVE9UnCMu9PgFJJPLFbD5WS4CE59uiJxs",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8809672236996
+    },
+    {
+      "vote_account": "FfgNBriLYeWWuLvF3Bmy6xZ4RuuD4HLPVbpMTuHU7RzJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 56888197655719
+    },
+    {
+      "vote_account": "86dGbSrKhZHgKLWZc1hAyzQkk2asXGCFsoRsu1Ccfzd6",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 3966386888547203
+    },
+    {
+      "vote_account": "F1uC4BM1KbAHfpcJALXcZNvuxqbrYkC3Mt5ka8tcf5Hj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 41677193605398
+    },
+    {
+      "vote_account": "VoTEJDVw84uZvDWcMXYgfNAVcLETHsPyPEc2nTpwZPa",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34370498264031
+    },
+    {
+      "vote_account": "J1to2NAwajc8hD6E6kujdQiPn1Bbt2mGKKZLY9kSQKdB",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 5249155491451499
+    },
+    {
+      "vote_account": "Asns2MR4Su8domaswW1qnMcBBbzcW1SfJurPweKXgvd9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60924094266120
+    },
+    {
+      "vote_account": "5wKEXCpAg2YhrCCY6RRU7j54hbigf3vVVMeTkepQc92q",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10637765940540
+    },
+    {
+      "vote_account": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 701152194019542
+    },
+    {
+      "vote_account": "FCvNkHa4U3yh7AXWGGL2jWLWiSRouR8EtzY5WVTHKTHa",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 23143553969785
+    },
+    {
+      "vote_account": "GE6atKoWiQ2pt3zL7N13pjNHjdLVys8LinG8qeJLcAiL",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 3686501788527246
+    },
+    {
+      "vote_account": "BkSS8kGUNcQkTgEKMmBhHxGVLdzw43EAzDYpZqyyxFrT",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 3323482945532049
+    },
+    {
+      "vote_account": "5Ri6yTqus7LdDaYGAVNGStC77BHZuQy8F6fYsp5cC7Vf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59820986884110
+    },
+    {
+      "vote_account": "78Txiv4aMrEeTLNhJYtfnGwtvuVH4NZ8igXS3oYeKdg2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58709458860170
+    },
+    {
+      "vote_account": "CiTYUYPAPHdcri5yEfsmqVcs54J6j8X1QaiFLgYqMVe",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 212934320056439
+    },
+    {
+      "vote_account": "BeachiopjxQxL7CaHNSZsynApiZCKx9QFVtcWNz3jDBo",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 313519820625564
+    },
+    {
+      "vote_account": "3z39UyCtJf3gcCmBMgLU3LJFUBWP9Fvmr9fhGZXb9Hdi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 51641285183518
+    },
+    {
+      "vote_account": "BXaSsyrvY5o19AoRDovjzVyZU9nXHixuDfNjBH8pfbjd",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59276824096881
+    },
+    {
+      "vote_account": "77vww1KxwCCsVRFioJbV4CGwTVyeyrf3KRC9SZdbHwtc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38845661667086
+    },
+    {
+      "vote_account": "7DCb5VuNx9XFqsaEgERyb5mwwRunDNtLRudCEoqhcz6N",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 237176807026098
+    },
+    {
+      "vote_account": "B6nDYYLc2iwYqY3zdmavMmU9GjUL2hf79MkufviM2bXv",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 598127208605075
+    },
+    {
+      "vote_account": "5mUKu45ufC2wHqt9fvpZDLgGxb4ErfHz1E6kNfj4ivDt",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12176848642760
+    },
+    {
+      "vote_account": "AWxcQc8GdkqU9C2TYLJXU9kvZgVGHiuHSm62TvbKuVEv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60317098870490
+    },
+    {
+      "vote_account": "5pA7CcMXqsG4F87SoWrTmDYMKM1Pk4a619MurCzP8UJU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9692164945958
+    },
+    {
+      "vote_account": "53ANFYA6BCDzdtiEeWawm5bqsH1Qgmjog8oMo5N4o4wU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 48549441845801
+    },
+    {
+      "vote_account": "HGpxNN8yTfms4PpGkc5k4iRs2rykCqJ75B4xQUMF5C2p",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9159754418770
+    },
+    {
+      "vote_account": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 6167973259233277
+    },
+    {
+      "vote_account": "7tMGGrAcjKH9aSug4je9CYKfu5WjXww3zgWJ5SUg6Yeh",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10453889423078
+    },
+    {
+      "vote_account": "BohPTSY4vvjGd9ARFqDJjRaHZKP4bde7ewBq65WgRGmA",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 144897313260347
+    },
+    {
+      "vote_account": "Rash24BXgUyy65JJ5KBzpYLrj3pyCqEMEixLVimTcDp",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 248435113164706
+    },
+    {
+      "vote_account": "Czos5xViyJStxzvZc1B8mEfU91ZZFchXU7sNuY8vensJ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10708463849641
+    },
+    {
+      "vote_account": "6tgtejPHUHR1pECzXqQT8EHZqnKCWZFSqdZXDyBaKe3b",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 298176085547275
+    },
+    {
+      "vote_account": "Fn8W13S1dgiqjoTESpWc6MXkVcUqw35orBKgL2aYzqVM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59655989976637
+    },
+    {
+      "vote_account": "BSRRvjdKd8SHApi3KtTGbzrdhUojitiwAt4xt4nAxbFh",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 321289146759347
+    },
+    {
+      "vote_account": "9V3Yy2fYZt65so3xg6wmnUiG1mDQvgkTJYTsn3YPkgLH",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 148592347602151
+    },
+    {
+      "vote_account": "5PKBzZEbwGEXhQj47eiwH6RHAPSCxcVhdYcFttW5gLWQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 86206374224801
+    },
+    {
+      "vote_account": "FKCcfoLt2pq7boiNqRGucVq5LE1K5Dt4HALCx2WbEQkv",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 9678625936985
+    },
+    {
+      "vote_account": "E7SeJHDuThghiqzyq5WRP67zGr4JzLCQYqeAeHKc8vwM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59736338393623
+    },
+    {
+      "vote_account": "DR3Gt31cATSx4T6qRTaWcPzLKP3FSYpqrZ74iDHVm5A5",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 1201051853696
+    },
+    {
+      "vote_account": "DciShieqLiMBjfqxiJ66F9b9fckJusbqFFnwJiG9jKmg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 2941877585489
+    },
+    {
+      "vote_account": "6x2sXJHX3JmESfLK6AMSb8UA58X6A7wa4QXpJ4fWKy3M",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10572846011803
+    },
+    {
+      "vote_account": "gangtRyGPTvYWb8K3xS2feJQaCks4iJ7rytFUPtVqSY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 272268991779987
+    },
+    {
+      "vote_account": "2yruMEFWuAJ9C2jv5JyjAfgTZVGhCmv5945TUwdP17kk",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60423154963444
+    },
+    {
+      "vote_account": "EcjtYtuxBuupjeyXNdttATwoQoNL5Ck7bmrqDCj3ALT4",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 177611536602325
+    },
+    {
+      "vote_account": "J6XZBDuUpuBzgcVGmY8NgHQYKbGZegoYmbpadAKo1qRw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 182839717281145
+    },
+    {
+      "vote_account": "EV4FXbtXSMKuBKG4hUeWNhaTQTEknYMXKxNry864mVdp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33684914370641
+    },
+    {
+      "vote_account": "Ha5QeKj9o3u1116qohTcSqEhPRJgUUKSLxS1n5Phgq85",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 155342276632253
+    },
+    {
+      "vote_account": "4QhNoG3PN1FXXFhAEA2QWdor6xjXvM9pjq6MXAUV8Zg2",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 63706353567640
+    },
+    {
+      "vote_account": "2kPpoyJ4AuVPKrJAVpDZuaH2RkZoBtzNzXQM459cZEkd",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11916242400211
+    },
+    {
+      "vote_account": "53gnaHMxDzGTZ9A58S4jbc1qzhYT4X51thUD4MdSBiyo",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 62512526581202
+    },
+    {
+      "vote_account": "3YCCGCuCicRggDgdK3ixZWXNPVRYfQxvytDUgHFrRFJ4",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 60497916336127
+    },
+    {
+      "vote_account": "8xihirHNzLTCGtEyRTH77q7WzAWE8yxtD1ciQJ5j3HQX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 33976734335518
+    },
+    {
+      "vote_account": "DHXbmu3KUhHYn2Trned5ZUaGC6GRgHYhJoRbCr75XQxj",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 59950189814347
+    },
+    {
+      "vote_account": "rqd7oeKNwB5U8Wd3wgMkJboLJs9AnZokRNEUK35gnWw",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59368159790157
+    },
+    {
+      "vote_account": "HAK7iPgQTFwqEzPfVrRDbG5epFdk1dsA9qQexytsDoes",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 34379765972752
+    },
+    {
+      "vote_account": "DgHAbtwppwNg2bC76ig9KyZPvcnV9W8unLr1rmCDnQMM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 12150621944932
+    },
+    {
+      "vote_account": "A8ARsTnLNEieHGNvnjoiJj9A1JY98dXbnohA18YRmDzN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59501163265716
+    },
+    {
+      "vote_account": "5WF1VwByGfW31Nmk1xcfz9k5YyZLskX4659JXyAA3rpb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 44022728479121
+    },
+    {
+      "vote_account": "MNDE6ueF5uMvyk3ohq7wWZ8H749pbpj1yHj2MvMRCJM",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 279103942256241
+    },
+    {
+      "vote_account": "BmtE4BoqFZy7MDtN79EXrdaphRSqzwmEb2Kuq8xHPXpY",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 6900632639968
+    },
+    {
+      "vote_account": "D55pKEVajSQJtxCfF65UJLSXkTpCRaEqrC3a6GRDj1CD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10370817141105
+    },
+    {
+      "vote_account": "GULVKbHAQEXBanKujCnvujcvLvWFFwLnb9bn7HmfamJH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38716985870747
+    },
+    {
+      "vote_account": "i6PZjkPHGYmPfPE8LsJuLn5huZyusXhmysiDiHGPjxb",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 231028436381473
+    },
+    {
+      "vote_account": "FGj3nQTn2Lwe9KkaKnFGm4HcxLSh8B8TjpvP4CinP4iX",
+      "mev_commission_bps": 700,
+      "running_jito": true,
+      "active_stake": 62231058449478
+    },
+    {
+      "vote_account": "63mj5NgxsJigb6GEc4KVMsydnM4fQ8qg5ujU57puT154",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 62456193577571
+    },
+    {
+      "vote_account": "6CEi8mpebENyYPfPDpXRHSPbJBUHEFwU7ftLVhwBSamt",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59861768759060
+    },
+    {
+      "vote_account": "8SRc8gaFpmnb2behQp6KXZxrt9KcV56eFTzUDhzk4qei",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59403744546013
+    },
+    {
+      "vote_account": "s1V1Y1XFHfr6pqs6edVNzA3W1kf9ye2J3VhrgKMQyb5",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 47961366803351
+    },
+    {
+      "vote_account": "DpodNd2DWRLbNJVuV1R33xW2PkBJyRTFU5aZGmQrVtMi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9023498137284
+    },
+    {
+      "vote_account": "8qHuv28pcps9GmonX8Dec44FrrJwxsz5zFiSqURteioj",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11979482827403
+    },
+    {
+      "vote_account": "8D8XL6ovqx15RKwC1XtFyTz6H8JYF2fUsxTnsY4b123P",
+      "mev_commission_bps": 400,
+      "running_jito": true,
+      "active_stake": 251924303372231
+    },
+    {
+      "vote_account": "JE7Hie2UEQLWLNgXXvS3P9oe86uBetxmXC5zdXMBqSQL",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61691888755134
+    },
+    {
+      "vote_account": "2bm3fmyLq12943jC1UePUcvFho7y1bUik8PisvsRc2yq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 46455374763828
+    },
+    {
+      "vote_account": "GRmgXGYfKd1oPzMnzNTYG3GwvyCZKi79LyyF3ANVre3g",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10760584079107
+    },
+    {
+      "vote_account": "HtRAGpko23W2t8wPUU8HuUQC1TrRUuK64K8RCqRD5ubX",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 61013300104614
+    },
+    {
+      "vote_account": "3Xn3K5zeTzs4sURj1PCRaF6rvFg2hPgT49B4SiM998f7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 294628510516490
+    },
+    {
+      "vote_account": "J6hFEnGhsGxTyss6DNW9aNQskPZ98gD8P6Wo1F5MBsCK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 65675145820309
+    },
+    {
+      "vote_account": "9sWYTuuR4s12Q4SuSfo5CfWaFggQwA6Z8pf8dWowN5rk",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 310755010167073
+    },
+    {
+      "vote_account": "2giMniq7L6WLUaZwDsfP2fmTbTnsJgVDyBDZJ5vnmtE3",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 67245802146010
+    },
+    {
+      "vote_account": "AY1nugg77a2QEMfTKrfniYqHp5MgLMWykXTKwZwXYxQD",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57871984317636
+    },
+    {
+      "vote_account": "g4MMQmzT7182jBvyUebMvsgvNM3RVrVFFJd9tRjWXhf",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 232373158731088
+    },
+    {
+      "vote_account": "9gY4S2LkL6QJwBU7hpDFEMKcvb7tvdqW29UfobazJG5i",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 7464018448061
+    },
+    {
+      "vote_account": "BEnZR4K28tNLPiH15tdxYkyhaXGbzxqFCNjzTU66uh8b",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60510780817189
+    },
+    {
+      "vote_account": "6FMaXpe2KWDeqzKVuKBAJRgG79zARSLsFkwYyKrij4vX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58612963002108
+    },
+    {
+      "vote_account": "H97b7WujYu1qRLdngfSWVxsXpasMoTaCfRbNx3qvu3ev",
+      "mev_commission_bps": 300,
+      "running_jito": true,
+      "active_stake": 55908407581917
+    },
+    {
+      "vote_account": "F2wLWDvK3FsvHNXQka6zqQMz3rg5ByuhrcnrMd9URhgk",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9737175405624
+    },
+    {
+      "vote_account": "HuZHiH3zaq9paSbYB1jzbnvm923Wzzk4zcS8GgFcDdqU",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8870353179387
+    },
+    {
+      "vote_account": "9DUTDovSg7Tfc2C9mBHvtGfqfgaBY7srBb2ZYPCDgUPY",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 10712201652350
+    },
+    {
+      "vote_account": "EZCQcPkgsNS5rnfoAWRsVZNGEo3GoZSVV4qSdeWrXzhX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 60752050933798
+    },
+    {
+      "vote_account": "8DHFGo3fDB8GudbNLZEyExLzXQPwvY4twybPbxwDnffx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58802151954462
+    },
+    {
+      "vote_account": "5ni6KoVM62cRJNfFFKGdiyDfYbKWWAGZ21cfGZcj1y66",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 34364350401489
+    },
+    {
+      "vote_account": "6KxQFRReTRH6gFJUs2CkSa57fobfAbQtigp1NfGXt3Qs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 598471499620921
+    },
+    {
+      "vote_account": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 4852993551287571
+    },
+    {
+      "vote_account": "A2GkHf71SqegGcLmhgs6XzR5YfLh5ZJ2Ci2vKM5SY5WR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59934646129133
+    },
+    {
+      "vote_account": "9rCg3Nduf3YSPkvYWw421n8Ya8EUJ5KQQvkQaK7G3DkM",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58970029954806
+    },
+    {
+      "vote_account": "BeSov1og3sEYyH9JY3ap7QcQDvVX8f4sugfNPf9YLkcV",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 258947634167600
+    },
+    {
+      "vote_account": "DFRTiEkoBW4p2LwiWmjnpaPAvKN7a1NAFN95CfSTShhy",
+      "mev_commission_bps": 9800,
+      "running_jito": true,
+      "active_stake": 11188779722356
+    },
+    {
+      "vote_account": "8j6hfPMpAoETDJGZP5hHnqgpCEsshobghwS6FeFbFykH",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10691032824989
+    },
+    {
+      "vote_account": "D7WodK26tETSqyWBW35vvMGfige9afLEyTsm1Pvvropd",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 85934040995556
+    },
+    {
+      "vote_account": "We11J5D4iXcNbdMwCZX2o9RRkwaWBo1AGLADfubmeTb",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 273585109182445
+    },
+    {
+      "vote_account": "ASrBTnxfvt8uY164wRrM9xXP925yoHzoRBnVYU5s7DEs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 50274619376176
+    },
+    {
+      "vote_account": "8b9iGk6LpRyawMkwdubq2e2PVtmdSrJ6DchW8uosoUzc",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11095037476583
+    },
+    {
+      "vote_account": "TahoeLA91rRRqaWWBft1KvWLEjv87Zqe2qaDqSG69fm",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 202263032149710
+    },
+    {
+      "vote_account": "3r84fqQnrSLrEDA8p5TStbHB8QFRHB9Frcdmq1AGVDYG",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 44627048307022
+    },
+    {
+      "vote_account": "7PHYfBQAdbbHXvQCbdLPgnkXofDyPx1pkSjkf7GyYer9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9791920068933
+    },
+    {
+      "vote_account": "8NGHra5ExC6zy2dBXc92MwDTrDCtmJXZaGRMRihar5SP",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34014059808549
+    },
+    {
+      "vote_account": "BYNXBFkB89FoRCJ4VxFE9Tfde3anECjZjasTP8qSYQUi",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 67513211338497
+    },
+    {
+      "vote_account": "7vGdiJ1PQjiwAb3wbVAZSeA8ZR7GunoqT7B1mvdDMAYK",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9542369156631
+    },
+    {
+      "vote_account": "FXxmynYypFWd56xdTfjNd6fpJ7vqMpSCYKN6BzhWJsmX",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38384567624961
+    },
+    {
+      "vote_account": "8e8QYWHrPEEpAk7rDJ3BSKm9YGnfb8cwmGzo6EMb7tYb",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58880483397227
+    },
+    {
+      "vote_account": "8HR5rCobbFMDe5EbgKdJLNDWVCeGG79w837BUxtsCngs",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 440988927454222
+    },
+    {
+      "vote_account": "5vZqGaxGdjhrAVqScWxLiy67ze2PqgMzyNVJcagMvPaQ",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38368783146981
+    },
+    {
+      "vote_account": "7G7rBK9vyPhVi2f4xxABr4KZ4N5wTiqAPCGqSB9RevVF",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9877890925974
+    },
+    {
+      "vote_account": "A3GVugPZjqiuKSHtWSbH47Q7L9auC9UbTYS2TJCqPxMu",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9932248850815
+    },
+    {
+      "vote_account": "6p7SQ6D3ACRYDM7x5Pjb9xa6sChaD3ZBoZxXpR2LyUZ7",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 60224149152466
+    },
+    {
+      "vote_account": "6V4SMF3vweyPZWUiPAXkZsNstHDoecsWdCDTUacn8j4u",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 40435226688845
+    },
+    {
+      "vote_account": "D9f3gNyo7zSznuTY5HMEBEeueF7WD1mAJHHRMtH8ahWv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 3323426487464
+    },
+    {
+      "vote_account": "4LRZqicBdx2S1hUC3yLJNKFwcHHmLc8HfRJPURPnWJYu",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10122081720371
+    },
+    {
+      "vote_account": "CbTt6Wyk2HiNjyGiwvAABPoRXrSBxLwFFiWd4rndXwqr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10053075164706
+    },
+    {
+      "vote_account": "LodezVTbz3v5GK6oULfWNFfcs7D4rtMZQkmRjnh65gq",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 302432564831524
+    },
+    {
+      "vote_account": "BfF3vg8UFcwTkFJNgQ7KQTAZBUWegF3spPm79d71WNwo",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 17087349787887
+    },
+    {
+      "vote_account": "juicQdAnksqZ5Yb8NQwCLjLWhykvXGktxnQCDvMe6Nx",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 800858711263511
+    },
+    {
+      "vote_account": "votrmVhKBfy2taHK5RYXb8XF8zfgU8jK3VTi77KL8Bz",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 7148916252073
+    },
+    {
+      "vote_account": "QXmsTYFK7YT2BpP2AnvXwuRpfwmsJZpovLcUqdSjoK1",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 41101242929797
+    },
+    {
+      "vote_account": "644K33yWfSzc32VvY5fRUfUqphw8LTaLQntCkyEpJ8h7",
+      "mev_commission_bps": 900,
+      "running_jito": true,
+      "active_stake": 124225693132879
+    },
+    {
+      "vote_account": "b3d74rXdGgdw9XeqRWgAnm7bsZgg9mf5J5hjZMqKxRD",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 206509651649954
+    },
+    {
+      "vote_account": "7jPqpHuN5v59dtBom2tjmYEfi6WaM4sFtJeTD6fzhcdS",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 1476400355102398
+    },
+    {
+      "vote_account": "2QE9X9X4tdDUTYic1DgBBJjU7cWUNPbKYGerCb9KqDQN",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 60384998612554
+    },
+    {
+      "vote_account": "ApcUbFDskBMrYJqu9orEnPSq5uMAH1YjhwR4DP2JwKT8",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34621312573916
+    },
+    {
+      "vote_account": "HwhsBNduje3zK3aHqfMPrQN2NYytTHvSwEjLs43NLmtp",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59664675487462
+    },
+    {
+      "vote_account": "GfvMjWQRkrTEUBwpn2CdJpZGQaNN3vaPu7c9Es1GEFcr",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10828249818107
+    },
+    {
+      "vote_account": "7xBb5NxfSGGP4KuWvTY4iKNfXC7hMWmxm86eZfs6vAJN",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59086337271680
+    },
+    {
+      "vote_account": "EsEtxoyhFTgfvudcy2VwwQJ1qA6BScLUW39PKpYczuxF",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 196245621804142
+    },
+    {
+      "vote_account": "4NhuurEJimA7Y3heUb9ejnGbUXKsCws3RsbHLCL6FxXx",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 58147569152001
+    },
+    {
+      "vote_account": "HwcEWmU5G67QwQfUX4KG1euJXEu8joL86T2ZBxXRziby",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59733201939396
+    },
+    {
+      "vote_account": "GMnqnaM2QsBLn6nCTxJ15DzZKuyc3UZAogCva5DC7w5M",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 61325829893966
+    },
+    {
+      "vote_account": "Hi8vxcjvAoLSDB9a9xjreJBFurMg41UQhNndx3qS1BJW",
+      "mev_commission_bps": 600,
+      "running_jito": true,
+      "active_stake": 76573449683036
+    },
+    {
+      "vote_account": "4BwKbV3ViY9huwhxRrbYWC5GgRUCwEe9k1YpFqFC7kQa",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 37416534385762
+    },
+    {
+      "vote_account": "BmCLQofhV75owwSAbhZhvQtRRcCaftKUwNfnGBv41QEg",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 34413354254177
+    },
+    {
+      "vote_account": "8yPiZWMNYMhEqTmPSRc6LsWLFC8pewYEzmgc5kRCLTrZ",
+      "mev_commission_bps": 0,
+      "running_jito": true,
+      "active_stake": 308779860676391
+    },
+    {
+      "vote_account": "FYaScwmTfzX9prmqdvxr6KbKHQ6yfEmW7S8fmZrMRrPn",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8588509507015
+    },
+    {
+      "vote_account": "EHhxJpoAZXSSmUBhUXUMNd29verm4WdmaHQ2eZtU7fWR",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 140907092614468
+    },
+    {
+      "vote_account": "DTunugoGTxVBDhdmWmdhATsYimxM2sEuJafs97mLFmaz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 8730719003837
+    },
+    {
+      "vote_account": "82LBHm7QzS7AZ266njB8uQkMa2t891Ma7CjhfTwQfuy9",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38796551828078
+    },
+    {
+      "vote_account": "7VGU4ZwR1e1AFekqbqv2gvjeg47e1PwMPm4BfLt6rxNk",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 417239203725752
+    },
+    {
+      "vote_account": "EH98DbaKkW4b987mJAHQ89c7z4DAviZZMmAxX3LkABCe",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 41936193362364
+    },
+    {
+      "vote_account": "63a15aZm4rphdQJcZfL8oSMPwLDmvUW2dFw3WqZpjxEt",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 9456210131072
+    },
+    {
+      "vote_account": "3VPiVUKbbjwWeinHMt8aqKu5aiQpm2PZxndJJR44Xzuv",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11803467035937
+    },
+    {
+      "vote_account": "FwPkzFcLFGH7GCAELuHVxNMuUV21C4wTdai5BA7Ptz6c",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 57881649970231
+    },
+    {
+      "vote_account": "DbPzQgfrGvNG6i5sYtQ3mGSKpGmbQfpqWHq5D7PCHwnq",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 11027319217419
+    },
+    {
+      "vote_account": "9KCBBdzx4cGZg14YaqBuZd1tGUvo9ohYnW7KEqQes1E1",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 185200784482286
+    },
+    {
+      "vote_account": "86Sw9R6ynPmXnHfwUWinXtq1QoF2KHesfQQyZG5r8sXo",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 40133423958040
+    },
+    {
+      "vote_account": "5tq4wWgnwRiJVU6nakZrBCZJ63pMEZJxmVrL2WnZ6yQv",
+      "mev_commission_bps": 800,
+      "running_jito": true,
+      "active_stake": 105290933688006
+    },
+    {
+      "vote_account": "J16gLiz6BJC8CuFY2RETBnsu9MgthgVnpLHVJzvdu1bz",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 10271951671713
+    },
+    {
+      "vote_account": "CmNNNuhJDsox8NRDXaRLN9fi62NzNTdaJTxJNkDHzCVV",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 38389988756063
+    },
+    {
+      "vote_account": "8etsTs3g9a8viLGq66sx3dkUNZY3GJz1U7g4u5joKH3q",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 39045410362978
+    },
+    {
+      "vote_account": "StakeSuWAzutXc386d7PRaSJLWrNfh5iBhqxqGCkmZ8",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 82849741298277
+    },
+    {
+      "vote_account": "ACyyUk2AF8XCkyjVKL6kMxUHqaud5wrXo44jawohn3qT",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 59808234499605
+    },
+    {
+      "vote_account": "H4cXCqtAy8qdu9qe2dSxoPhUscMTYVrmVBXyPqRVTNR1",
+      "mev_commission_bps": 10000,
+      "running_jito": true,
+      "active_stake": 35402436739916
+    },
+    {
+      "vote_account": "3Rk99suwAvvJgyLpDYEJeC2YPPLw1enc5T1r6J8ZoRSr",
+      "mev_commission_bps": 500,
+      "running_jito": true,
+      "active_stake": 53655107439389
+    },
+    {
+      "vote_account": "7miZ2ZoXwS3YDzBRCbWcEtNVyuxk8WbbcyQwq7i5btvZ",
+      "mev_commission_bps": 1000,
+      "running_jito": true,
+      "active_stake": 56126716871726
+    }
+  ]
+}
