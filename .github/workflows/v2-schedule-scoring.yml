@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '50 0/1 * * *'
 jobs:
-  trigger_scoring_if_needed:
+  trigger_scoring_v2_if_needed:
     name: Schedule Scoring V2
     runs-on: ubuntu-latest
     steps:

@@ -2,10 +2,8 @@ name: Prepare Late Unstakes V2
 
 on:
   workflow_dispatch:
-  pull_request:
-    types: [closed]
-    branches:
-      - scoring-v2
+  repository_dispatch:
+    types: [trigger_unstakes_v2]
 jobs: 
   unstakes:
     runs-on: ubuntu-latest
@@ -112,7 +110,7 @@ jobs:
         cat > unstakes.md << EOF
         # Unstakes results $scoring_id
 
-        | Stake type              | Stake (SOL)    | Validators     |
+        |                         | Stake (SOL)    | Validators     |
         |:------------------------|---------------:|---------------:|
         | **Total unstakes**      | $total_marinade_stake | $validators_count |
 
@@ -128,7 +126,7 @@ jobs:
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
         git add scoring-v2
-        ! [ -z "$(git status --porcelain)" ] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
+        [[ -n "$(git status --porcelain)" ]] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
         pr_body=$(cat unstakes.md)
         pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
