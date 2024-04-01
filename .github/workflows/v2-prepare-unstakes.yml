@@ -126,7 +126,7 @@ jobs:
         git config --global user.email 'bot@noreply.marinade.finance'
         git checkout -b "$scoring_branch"
         git add scoring-v2
-        ! [ -z "$(git status --porcelain)" ] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
+        [[ -n "$(git status --porcelain)" ]] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
         pr_body=$(cat unstakes.md)
         pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
