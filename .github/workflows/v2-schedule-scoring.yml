@@ -18,7 +18,7 @@ jobs:
         slot_index=$(<<<"$epoch_info" jq '.result.slotIndex' -r)
 
         last_v2_scoring_epoch_from_dir=$(find scoring-v2 -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
-        last_v2_scoring_epoch_from_git=$(gh pr list --state open --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep scoring-v2/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
+        last_v2_scoring_epoch_from_git=$(gh pr list --state open --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep ds-scoring/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
 
         echo "Last V2 scoring epoch (git): $last_v2_scoring_epoch_from_git"
         echo "Last V2 scoring epoch (dir): $last_v2_scoring_epoch_from_dir"
