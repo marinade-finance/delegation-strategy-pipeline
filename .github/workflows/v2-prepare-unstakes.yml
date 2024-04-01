@@ -1,0 +1,152 @@
+name: Prepare Late Unstakes V2
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger_unstakes_v2]
+jobs: 
+  unstakes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@master
+      with:
+        ref: scoring-v2
+        fetch-depth: 20
+
+    - name: Load scoring unstakes details
+      run: |
+        set -ex
+        unstake_hints_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep unstake-hints.json)
+        scoring_run_ui_id=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | head -6 | tail -1 | awk -F / '{print $2}')
+        epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
+
+        if [[ -z $unstake_hints_json ]]
+        then
+          echo "Failed to find JSON with unstake hints in the PR!"
+          exit 1
+        fi
+
+        if [[ -z $epoch ]]
+        then
+          echo "Failed to detect epoch from the UI ID!"
+          exit 1
+        fi
+
+        echo "unstake_hints_json=$unstake_hints_json" >> $GITHUB_ENV
+        echo "epoch=$epoch" >> $GITHUB_ENV
+        echo "scoring_id=$scoring_run_ui_id" >> $GITHUB_ENV
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Configure image
+      run: |
+        images=$(aws ecr describe-images --repository-name marinade.finance/ds-scoring)
+        latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
+        echo "latest=$latest" >> $GITHUB_ENV
+
+    - name: Run compute unstakes
+      run: |
+        docker run --rm \
+          -e "DATA_PROVIDER_MODE=api" \
+          -e "VALIDATORS_URL=https://validators-api.marinade.finance/validators" \
+          -e "BLACKLIST_URL=https://raw.githubusercontent.com/marinade-finance/delegation-strategy-2/master/blacklist.csv" \
+          -e "REWARDS_API=https://validators-api.marinade.finance/rewards" \
+          -e "VEMNDE_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/vemnde/latest" \
+          -e "MSOL_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/msol/latest" \
+          -e "REWARDS_URL=https://validators-api.marinade.finance/rewards" \
+          -e "JITO_MEV_URL=https://kobe.mainnet.jito.network/api/v1/validators" \
+          -e "BONDS_URL=https://validator-bonds-api.marinade.finance/bonds" \
+          -e "MARINADE_TVL_URL=http://api.marinade.finance/tlv" \
+          -v "/tmp/snapshot:/usr/src/app/snapshot" \
+          "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+          pnpm cli -- computeUnstakes
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: marinade.finance/ds-scoring
+        IMAGE_TAG: ${{ env.latest }}
+
+    - name: Merge unstakes
+      run: |
+        file1="/tmp/snapshot/unstake-hints.json"
+        file2="${{ env.unstake_hints_json }}"
+        output="merged.json"
+        temp=$(mktemp)
+        jq '.unstake_hints = []' "$file1" > "$output"
+        accounts=$(jq -r '.unstake_hints[].vote_account' "$file1" "$file2" | sort -u)
+        echo "$accounts" | while read -r account; do
+            [[ -z "$account" ]] && continue
+            hints1=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file1")
+            hints2=$(jq -r --arg account "$account" '.unstake_hints[] | select(.vote_account == $account) | .hints[]' "$file2")
+            hints_merged=$(echo -e "$hints1\n$hints2" | grep -v '^$' | sort | uniq | jq -R . | jq -s .)
+            base_entry=$(jq --arg account "$account" '.unstake_hints[] | select(.vote_account == $account)' "$file1")
+            if [[ -z "$base_entry" ]]; then
+                base_entry=$(jq --arg account "$account" '.unstake_hints[] | select(.vote_account == $account)' "$file2")
+            fi
+            updated_entry=$(echo "$base_entry" | jq --argjson hints "$hints_merged" '.hints = $hints')
+            jq --argjson entry "$updated_entry" '.unstake_hints += [$entry]' "$output" > "$temp" && mv "$temp" "$output"
+        done
+        total_marinade_stake=$(jq '[.unstake_hints[].marinade_stake | tonumber] | add' merged.json)
+        validators_count=$(jq '.unstake_hints | length' merged.json)
+        echo "total_marinade_stake=$total_marinade_stake" >> $GITHUB_ENV
+        echo "validators_count=$validators_count" >> $GITHUB_ENV
+        mv merged.json "${{ env.unstake_hints_json }}"
+
+    - name: Generate Unstakes Summary
+      run: |
+        total_marinade_stake="${{ env.total_marinade_stake }}"
+        validators_count="${{ env.validators_count }}"
+        
+        cat > unstakes.md << EOF
+        # Unstakes results $scoring_id
+
+        |                         | Stake (SOL)    | Validators     |
+        |:------------------------|---------------:|---------------:|
+        | **Total unstakes**      | $total_marinade_stake | $validators_count |
+
+        EOF
+
+    - name: Make a Pull Request
+      run: |
+        scoring_id="${{ env.scoring_id }}"
+        scoring_branch="ds-unstakes/$scoring_id"
+        total_marinade_stake="${{ env.total_marinade_stake }}"
+        validators_count="${{ env.validators_count }}"
+        git config --global user.name 'Autonomous Scoring Pipeline'
+        git config --global user.email 'bot@noreply.marinade.finance'
+        git checkout -b "$scoring_branch"
+        git add scoring-v2
+        [[ -n "$(git status --porcelain)" ]] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
+        pr_body=$(cat unstakes.md)
+        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
+        echo "pr_url=$pr_url" >> $GITHUB_ENV
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Send Discord Notification
+      run: |
+        scoring_id="${{ env.scoring_id }}"
+        pr_url="${{ env.pr_url }}"
+        curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+            "username": "DS Scoring",
+            "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
+            "embeds": [
+                {
+                    "title": "Late Unstakes PR ('"$scoring_id"') is prepared.",
+                    "url": "'"$pr_url"'",
+                    "color": "5661687"
+                }
+            ]
+        }'
+      env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
