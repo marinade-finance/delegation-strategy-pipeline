@@ -18,8 +18,8 @@ jobs:
     - name: Load scoring unstakes details
       run: |
         set -ex
-        unstake_hints_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep unstake-hints.json)
-        scoring_run_ui_id=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | head -6 | tail -1 | awk -F / '{print $2}')
+        unstake_hints_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | grep unstake-hints.json)
+        scoring_run_ui_id=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | head -6 | tail -1 | awk -F / '{print $2}')
         epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
 
         if [[ -z $unstake_hints_json ]]
