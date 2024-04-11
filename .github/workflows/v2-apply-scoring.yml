@@ -129,6 +129,20 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.VALIDATORS_API_ADMIN_TOKEN }}" \
             -F "scores=@${{ env.scores_csv }}"
 
+      - name: Send Discord Notification
+        run: |
+          curl "$DISCORD_WEBHOOK" -H "Content-Type: application/json" -d '{
+              "username": "DS Scoring",
+              "avatar_url": "https://public.marinade.finance/ds-scoring-bot.png",
+              "embeds": [
+                  {
+                      "title": "Scoring successfully applied.",
+                      "color": "52224"
+                  }
+              ]
+          }'
+        env:
+            DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
   # Temporary disable and apply them manually
   # early_unstake:
   #   needs: apply_scoring_v2
