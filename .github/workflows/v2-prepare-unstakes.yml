@@ -12,14 +12,13 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@master
       with:
-        ref: scoring-v2
         fetch-depth: 20
 
     - name: Load scoring unstakes details
       run: |
         set -ex
-        unstake_hints_json=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | grep unstake-hints.json)
-        scoring_run_ui_id=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | head -6 | tail -1 | awk -F / '{print $2}')
+        unstake_hints_json=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | grep unstake-hints.json)
+        scoring_run_ui_id=$(git log -1 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 | head -6 | tail -1 | awk -F / '{print $2}')
         epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
 
         if [[ -z $unstake_hints_json ]]
@@ -119,7 +118,7 @@ jobs:
     - name: Make a Pull Request
       run: |
         scoring_id="${{ env.scoring_id }}"
-        scoring_branch="ds-unstakes/$scoring_id"
+        scoring_branch="unstakes/$scoring_id"
         total_marinade_stake="${{ env.total_marinade_stake }}"
         validators_count="${{ env.validators_count }}"
         git config --global user.name 'Autonomous Scoring Pipeline'
@@ -128,7 +127,7 @@ jobs:
         git add scoring-v2
         [[ -n "$(git status --porcelain)" ]] && git commit -m "emergency unstakes for scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
         pr_body=$(cat unstakes.md)
-        pr_url=$(gh pr create -B scoring-v2 -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
+        pr_url=$(gh pr create -B scoring -H "$scoring_branch" --title "Publish V2 Emergency Unstakes ($scoring_id)" --body "$pr_body")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
