@@ -6,24 +6,23 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - scoring-v2
+      - master
 
 jobs:
   late_unstake:
-    if: startsWith(github.event.pull_request.head.ref, 'ds-unstakes') && github.event.pull_request.merged == true
+    if: startsWith(github.event.pull_request.head.ref, 'unstakes') && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
         uses: actions/checkout@master
         with:
-          ref: scoring-v2
           fetch-depth: 20
 
       - name: Load scoring details
         run: |
           set -ex
           unstake_hints_json=$(git log -1 --name-only --pretty=format: --grep 'emergency unstakes' | grep unstake-hints.json)
-          scoring_run_ui_id=$(git log -1 origin/scoring-v2 --name-only --pretty=format: --grep 'emergency unstakes' | grep scoring-v2 | head -3 | tail -1 | awk -F / '{print $2}')
+          scoring_run_ui_id=$(git log -1 --name-only --pretty=format: --grep 'emergency unstakes' | grep scoring-v2 | head -3 | tail -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
 
           if [[ -z $unstake_hints_json ]]
