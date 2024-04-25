@@ -81,7 +81,7 @@ jobs:
         git add scoring-v2
         [[ -n "$(git status --porcelain)" ]] && git commit -m "scoring run $scoring_id" && git push -u origin "$scoring_branch" || echo "No changes to be committed"
 
-        pr_url=$(gh pr create -B scoring -H "$scoring_branch" --title "Publish V2 Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
+        pr_url=$(gh pr create -B master -H "$scoring_branch" --title "Publish V2 Scoring Results ($scoring_id)" --body-file "${{ env.scoring_path }}/summary.md")
         echo "pr_url=$pr_url" >> $GITHUB_ENV
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
