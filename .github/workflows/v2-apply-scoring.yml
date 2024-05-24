@@ -58,7 +58,7 @@ jobs:
           echo "scores_csv=$scores_csv" >> $GITHUB_ENV
           echo "scoring_run_ui_id=$scoring_run_ui_id" >> $GITHUB_ENV
           echo "epoch=$epoch" >> $GITHUB_ENV
-          echo "components=COMMISSION_ADJUSTED_CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
+          echo "components=CREDITS,BLOCK_PRODUCTION,INFLATION_COMMISSION,MEV_COMMISSION,DC_COUNTRY_CONCENTRATION,DC_CITY_CONCENTRATION,DC_ASO_CONCENTRATION,DC_NODE_CONCENTRATION" >> $GITHUB_ENV
           echo "components_weights=$weightVoteCredits,$weightBlockProduction,$weightInflationCommission,$weightMEVCommission,$weightStakeConcentrationCountry,$weightStakeConcentrationCity,$weightStakeConcentrationASO,$weightStakeConcentrationNode" >> $GITHUB_ENV
 
       - name: Configure AWS credentials
