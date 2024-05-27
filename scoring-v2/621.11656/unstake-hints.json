@@ -1,0 +1,33 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "Chorus6Kis8tFHA7AowrPMcRJk3LbApHTYpgSNXzY5KE",
+      "marinade_stake": "33.196860963",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "marinade_stake": "1.031896622",
+      "hints": [
+        "COMMISSION",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "5yFNiQbTabGCMzvfyrhjiMAH1g6VEcs7uHe4W3KyYwR7",
+      "marinade_stake": "1443.141109212",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "marinade_stake": "29.921997134",
+      "hints": [
+        "SCORE"
+      ]
+    }
+  ]
+}
