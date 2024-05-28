@@ -110,12 +110,23 @@ jobs:
 
       - name: Run scoring
         run: |
-          for i in {1..20}; do docker run --rm --user "$(id -u):$(id -g)" \
-            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-            -v /tmp/id.json:/.config/solana/id.json \
-            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            ./validator-manager update-scores2 --scores-file /scores.csv && break || sleep 15; done
+          for i in {1..20}
+          do
+            docker run --rm --user "$(id -u):$(id -g)" \
+              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+              -v /tmp/id.json:/.config/solana/id.json \
+              -v "$(realpath "$SCORES_CSV"):/scores.csv" \
+              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+              ./validator-manager update-scores2 --scores-file /scores.csv
+            
+            status=$?
+              if [[ $status -eq 0 ]]; then
+                  break
+              else
+                  sleep 15
+              fi
+          done
+          exit $status
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
