@@ -1,6 +1,20 @@
 {
   "unstake_hints": [
     {
+      "vote_account": "5yFNiQbTabGCMzvfyrhjiMAH1g6VEcs7uHe4W3KyYwR7",
+      "marinade_stake": "1443.800963594",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "marinade_stake": "29.934701684",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
       "vote_account": "BxFf75Vtzro2Hy3coFHKxFMZo5au8W7J8BmLC3gCMotU",
       "marinade_stake": "4.509978112",
       "hints": [
@@ -15,23 +29,8 @@
       ]
     },
     {
-      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
-      "marinade_stake": "1.440691342",
-      "hints": [
-        "COMMISSION",
-        "NO_BOND"
-      ]
-    },
-    {
       "vote_account": "F5b1wSUtpaYDnpjLQonCZC7iyFvizLcNqTactZbwSEXK",
       "marinade_stake": "1.028267203",
-      "hints": [
-        "NO_BOND"
-      ]
-    },
-    {
-      "vote_account": "5yFNiQbTabGCMzvfyrhjiMAH1g6VEcs7uHe4W3KyYwR7",
-      "marinade_stake": "1443.800963594",
       "hints": [
         "NO_BOND"
       ]
@@ -40,15 +39,16 @@
       "vote_account": "GvZEwtCHZ7YtCkQCaLRVEXsyVvQkRDhJhQgB6akPme1e",
       "marinade_stake": "61.767911601",
       "hints": [
-        "SCORE",
-        "NO_BOND"
+        "NO_BOND",
+        "SCORE"
       ]
     },
     {
-      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
-      "marinade_stake": "29.934701684",
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "marinade_stake": "2.4706589890000004",
       "hints": [
-        "SCORE"
+        "COMMISSION",
+        "NO_BOND"
       ]
     }
   ]
