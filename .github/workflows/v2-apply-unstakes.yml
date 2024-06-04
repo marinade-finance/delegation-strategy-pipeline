@@ -90,7 +90,7 @@ jobs:
       - name: Send Discord Notification
         run: |
           validators_count=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | length' -r)
-          unstaked_sol=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake] | add' -r)
+          unstaked_sol=$(<"$UNSTAKE_HINTS_JSON" jq '[.unstake_hints[].marinade_stake | tonumber] | add' -r)
 
           message="Late unstake successfully applied. ($validators_count validators, $unstaked_sol SOL)"
 
