@@ -21,6 +21,7 @@ jobs:
 
         last_v2_scoring_epoch_from_dir=$(find scoring-v2 -type d | sort -n | tail -1 | cut -d/ -f2 | cut -d. -f1)
         last_v2_scoring_epoch_from_git=$(gh pr list --state open --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep unstakes/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
+        last_v2_unstakes_epoch_from_git=$(gh pr list --state merged --json headRefName,isCrossRepository --jq '.[] | select(.isCrossRepository == false) | .headRefName' | grep unstakes/ | sort -n | tail -1 | cut -d/ -f2| cut -d. -f1)
 
         echo "Last V2 scoring epoch (git): $last_v2_scoring_epoch_from_git"
         echo "Last V2 scoring epoch (dir): $last_v2_scoring_epoch_from_dir"
@@ -42,6 +43,12 @@ jobs:
         if ! [[ -z $last_v2_scoring_epoch_from_git ]] && (( last_v2_scoring_epoch_from_git == current_epoch ))
         then
           echo "Scoring PR is not merged!"
+          exit 0
+        fi
+
+        if [[ -n $last_v2_unstakes_epoch_from_git ]] && (( last_v2_unstakes_epoch_from_git == current_epoch ))
+        then
+          echo "Late unstakes PR was already merged"
           exit 0
         fi
 
