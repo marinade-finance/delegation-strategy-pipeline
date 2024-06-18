@@ -57,7 +57,7 @@ jobs:
           -e "VEMNDE_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/vemnde/latest" \
           -e "MSOL_VOTES_URL=https://snapshots-api.marinade.finance/v1/votes/msol/latest" \
           -e "REWARDS_URL=https://validators-api.marinade.finance/rewards" \
-          -e "JITO_MEV_URL=https://kobe.mainnet.jito.network/api/v1/validators" \
+          -e "JITO_MEV_URL=https://validators-api.marinade.finance/mev" \
           -e "BONDS_URL=https://validator-bonds-api.marinade.finance/bonds" \
           -e "MARINADE_TVL_URL=http://api.marinade.finance/tlv" \
           -v "/tmp/snapshot:/usr/src/app/snapshot" \
