@@ -73,7 +73,7 @@ jobs:
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
           echo "latest=$latest" >> $GITHUB_ENV
 
-      - name: Early unstake V2 - simulation
+      - name: Late unstake V2 - simulation
         run: |
           <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
             docker run --rm --user "$(id -u):$(id -g)" \
@@ -81,6 +81,20 @@ jobs:
               -v /tmp/id.json:/.config/solana/id.json \
               "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
               ./validator-manager -s --print-only emergency-unstake {}
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: marinade.finance/validator-manager
+          UNSTAKE_HINTS_JSON: ${{ env.unstake_hints_json }}
+          IMAGE_TAG: ${{ env.latest }}
+
+      - name: Late unstake V2
+        run: |
+          <"$UNSTAKE_HINTS_JSON" jq '.unstake_hints[].vote_account' -r | xargs -I{} \
+            docker run --rm --user "$(id -u):$(id -g)" \
+              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
+              -v /tmp/id.json:/.config/solana/id.json \
+              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+              ./validator-manager emergency-unstake {}
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: marinade.finance/validator-manager
