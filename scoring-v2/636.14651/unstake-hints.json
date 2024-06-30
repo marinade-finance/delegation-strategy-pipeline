@@ -1,0 +1,98 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+      "marinade_stake": "36.519322647",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "6F5xdRXh2W3B2vhte12VG79JVUkUSLYrHydGX1SAadfZ",
+      "marinade_stake": "19.584908066",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "CiTYUYPAPHdcri5yEfsmqVcs54J6j8X1QaiFLgYqMVe",
+      "marinade_stake": "1.957728566",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "marinade_stake": "2.039023379",
+      "hints": [
+        "COMMISSION",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs",
+      "marinade_stake": "68.099324488",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GvZEwtCHZ7YtCkQCaLRVEXsyVvQkRDhJhQgB6akPme1e",
+      "marinade_stake": "27.011733445",
+      "hints": [
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "GE6atKoWiQ2pt3zL7N13pjNHjdLVys8LinG8qeJLcAiL",
+      "marinade_stake": "41.954456297",
+      "hints": [
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "C6uqzABsRPmFd14iL9Ej36AbddVxXPJWV6jwbLZYdYJM",
+      "marinade_stake": "219.042221005",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "apySoLRzPkGf8EEinWQjAbL6B4frjgx4gG4YePoM9NJ",
+      "marinade_stake": "2.908154423",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "3haaHvHV8v6hDoUHVoKnEVZ6ZyyqFexJDizXi1ZoxtJn",
+      "marinade_stake": "453.395371914",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "99qWAJz1guUvUFwYAXr8jLMvPn2Tj3DWXjmC4q9SvjjQ",
+      "marinade_stake": "482.420633788",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "4FvYz1jD34CLpN4FhLVEnqAboc1HM4JUErBjxQaj8YY8",
+      "marinade_stake": "500.436302907",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "7BmZ4jKsK1ewLZAPajQJdAZeKTpnfebTuzqZjfKT5pcr",
+      "marinade_stake": "446.119339601",
+      "hints": [
+        "NO_BOND"
+      ]
+    }
+  ]
+}
