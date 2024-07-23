@@ -94,46 +94,6 @@ jobs:
           latest=$(<<<"$images" jq '.imageDetails[] | .imagePushedAt + " " + .imageTags[0]' -r | sort | tail -1 | cut -d' ' -f2)
           echo "latest=$latest" >> $GITHUB_ENV
 
-      - name: Run scoring - simulation
-        run: |
-          docker run --rm --user "$(id -u):$(id -g)" \
-            -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-            -v /tmp/id.json:/.config/solana/id.json \
-            -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-            "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            ./validator-manager -s --print-only update-scores2 --scores-file /scores.csv
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/validator-manager
-          SCORES_CSV: ${{ env.scores_csv }}
-          IMAGE_TAG: ${{ env.latest }}
-
-      - name: Run scoring
-        run: |
-          set +e
-          for i in {1..20}
-          do
-            docker run --rm --user "$(id -u):$(id -g)" \
-              -v /tmp/solana-config.yml:/.config/solana/cli/config.yml \
-              -v /tmp/id.json:/.config/solana/id.json \
-              -v "$(realpath "$SCORES_CSV"):/scores.csv" \
-              "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-              ./validator-manager update-scores2 --scores-file /scores.csv
-            
-            status=$?
-              if [[ $status -eq 0 ]]; then
-                  break
-              else
-                  sleep 15
-              fi
-          done
-          exit $status
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: marinade.finance/validator-manager
-          SCORES_CSV: ${{ env.scores_csv }}
-          IMAGE_TAG: ${{ env.latest }}
-
       - name: Publish scoring results
         run: |
           curl -sLfS "https://scoring.marinade.finance/api/v1/scores/upload?epoch=${{ env.epoch }}&components=${{ env.components }}&component_weights=${{ env.components_weights }}&ui_id=${{ env.scoring_run_ui_id }}" -X POST \
