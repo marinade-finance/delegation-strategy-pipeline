@@ -22,10 +22,10 @@ jobs:
         run: |
           set -ex
           git fetch --all
-          scores_csv=$(git log -2 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv | grep scoring-v2)
-          params_json=$(git log -2 --name-only --pretty=format: --grep 'scoring run' | grep params.json | grep scoring-v2)
+          scores_csv=$(git log -3 --name-only --pretty=format: --grep 'scoring run' | grep scores.csv | grep scoring-v2)
+          params_json=$(git log -3 --name-only --pretty=format: --grep 'scoring run' | grep params.json | grep scoring-v2)
 
-          scoring_run_ui_id=$(git log -2 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 |  head -6 | tail -1 | awk -F / '{print $2}')
+          scoring_run_ui_id=$(git log -3 --name-only --pretty=format: --grep 'scoring run' | grep scoring-v2 |  head -6 | tail -1 | awk -F / '{print $2}')
           epoch=$(<<<"$scoring_run_ui_id" awk -F . '{print $1}')
 
           weightVoteCredits=$(jq '.weightVoteCredits' $params_json)
