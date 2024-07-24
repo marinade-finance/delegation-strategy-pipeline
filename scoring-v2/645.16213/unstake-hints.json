@@ -45,7 +45,7 @@
     },
     {
       "vote_account": "6SQJfKXxqacQpYmCNtqvabV6kfHrPGqXm9q2iH7zsied",
-      "marinade_stake": "179.491590001",
+      "marinade_stake": "174.478457324",
       "hints": [
         "VOTE_CREDITS_LOW"
       ]
@@ -169,7 +169,7 @@
     },
     {
       "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
-      "marinade_stake": "103.599584383",
+      "marinade_stake": "112.158029884",
       "hints": [
         "BLACKLIST"
       ]
@@ -184,7 +184,7 @@
     },
     {
       "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
-      "marinade_stake": "63.842230217",
+      "marinade_stake": "64.896037821",
       "hints": [
         "COMMISSION",
         "NO_BOND"
