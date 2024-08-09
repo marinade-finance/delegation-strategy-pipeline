@@ -13,6 +13,13 @@
       "hints": [
         "NO_BOND"
       ]
+    },
+    {
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "marinade_stake": "1.030527518",
+      "hints": [
+        "COMMISSION"
+      ]
     }
   ]
 }
