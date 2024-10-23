@@ -1,0 +1,206 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+      "marinade_stake": "75.441754903",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "ELLB9W7ZCwRCV3FzWcCWoyKP6NjZJKArLyGtkqefnHcG",
+      "marinade_stake": "271.684582641",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "CNcaYdqkCwxDpKSVK8in5f6kqrTiZ5SuHsHFDqx6jNvu",
+      "marinade_stake": "38.571178224",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "CHiNU8QWVW77kGS3U9MbYLCYkWXGTfPz2iRGoy6r6CA",
+      "marinade_stake": "343.141341638",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4",
+      "marinade_stake": "5.506776825",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "BxFf75Vtzro2Hy3coFHKxFMZo5au8W7J8BmLC3gCMotU",
+      "marinade_stake": "2940.735854091",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "Chorus6Kis8tFHA7AowrPMcRJk3LbApHTYpgSNXzY5KE",
+      "marinade_stake": "111.796136444",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "DriFTm3wM9ugxhCA1K3wVQMSdC4Dv4LNmyZMmZiuHRpp",
+      "marinade_stake": "1866.307079561",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "6MP6Bun9VmkGcRVU4iF14Q8P7jTkGtQW9zVwmB9kCYyK",
+      "marinade_stake": "26.671495147",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "8hPk5CbKDoM7dN9LssTdVkFhDykeq7A8CZurA5AQSFJH",
+      "marinade_stake": "183737.22602801",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "5EYp3kCdMLq52vzZ4ucsVyYaaxQe5MKTquxahjXpcShS",
+      "marinade_stake": "1058.994669379",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "marinade_stake": "12.000029873",
+      "hints": [
+        "COMMISSION",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "J1to3PQfXidUUhprQWgdKkQAMWPJAEqSJ7amkBDE9qhF",
+      "marinade_stake": "138.594465108",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "mrgn6ETrBDM8mjjYN8rbVwFqVwF8z6rtmvGLbdGuVUU",
+      "marinade_stake": "928.82734643",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
+      "marinade_stake": "1.031612697",
+      "hints": [
+        "BLACKLIST"
+      ]
+    },
+    {
+      "vote_account": "GREEDkpTvpKzcGvBu9qd36yk6BfjTWPShB67gLWuixMv",
+      "marinade_stake": "7.328923664",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GwT72fNWtBrFa9GsBru2kPso1NEw3AnzrjPwprVAv32X",
+      "marinade_stake": "745.961594112",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GvZEwtCHZ7YtCkQCaLRVEXsyVvQkRDhJhQgB6akPme1e",
+      "marinade_stake": "46.843221367",
+      "hints": [
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "B6nDYYLc2iwYqY3zdmavMmU9GjUL2hf79MkufviM2bXv",
+      "marinade_stake": "1.038788862",
+      "hints": [
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+      "marinade_stake": "581.798460539",
+      "hints": [
+        "COMMISSION",
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs",
+      "marinade_stake": "170.637936496",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GE6atKoWiQ2pt3zL7N13pjNHjdLVys8LinG8qeJLcAiL",
+      "marinade_stake": "3975.440527131",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "marinade_stake": "214.15624379500002",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+      "marinade_stake": "31.455824448",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
+      "marinade_stake": "1492.066585897",
+      "hints": [
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "EXhYxF25PJEHb3v5G1HY8Jn8Jm7bRjJtaxEghGrUuhQw",
+      "marinade_stake": "1.005392166",
+      "hints": [
+        "SCORE",
+        "NO_BOND"
+      ]
+    },
+    {
+      "vote_account": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+      "marinade_stake": "3106.113866702",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "CiTYUYPAPHdcri5yEfsmqVcs54J6j8X1QaiFLgYqMVe",
+      "marinade_stake": "5.264014149",
+      "hints": [
+        "NO_BOND"
+      ]
+    }
+  ]
+}
