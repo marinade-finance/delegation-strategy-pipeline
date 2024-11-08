@@ -1,0 +1,89 @@
+{
+  "unstake_hints": [
+    {
+      "vote_account": "CHiNU8QWVW77kGS3U9MbYLCYkWXGTfPz2iRGoy6r6CA",
+      "marinade_stake": "332.034909307",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "Chorus6Kis8tFHA7AowrPMcRJk3LbApHTYpgSNXzY5KE",
+      "marinade_stake": "112.085652682",
+      "hints": [
+        "COMMISSION"
+      ]
+    },
+    {
+      "vote_account": "GwT72fNWtBrFa9GsBru2kPso1NEw3AnzrjPwprVAv32X",
+      "marinade_stake": "748.09907778",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "HxRrsnbc6K8CdEo3LCTrSUkFaDDxv9BdJsTDzBKnUVWH",
+      "marinade_stake": "10161.006677143",
+      "hints": [
+        "BLACKLIST",
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GREEDkpTvpKzcGvBu9qd36yk6BfjTWPShB67gLWuixMv",
+      "marinade_stake": "7.349547467",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "AS3nKBQfKs8fJ8ncyHrdvo4FDT6S8HMRhD75JjCcyr1t",
+      "marinade_stake": "1601.189404359",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GREENr9zSeapgunqdMeTg8MCh2cDDn2y3py1mBGUzJYe",
+      "marinade_stake": "6.154940996",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs",
+      "marinade_stake": "171.108834948",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+      "marinade_stake": "62.845466586",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "GE6atKoWiQ2pt3zL7N13pjNHjdLVys8LinG8qeJLcAiL",
+      "marinade_stake": "12686.770066886",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+      "marinade_stake": "392.259935011",
+      "hints": [
+        "SCORE"
+      ]
+    },
+    {
+      "vote_account": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+      "marinade_stake": "4135.008375858",
+      "hints": [
+        "SCORE"
+      ]
+    }
+  ]
+}
