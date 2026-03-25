@@ -9,7 +9,7 @@ on:
 
 jobs:
   apply_scoring:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'scoring/'))
 
     steps:
@@ -19,7 +19,7 @@ jobs:
           echo "start_timestamp=$start_timestamp" >> $GITHUB_ENV
 
       - name: Checkout the repository
-        uses: actions/checkout@master
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           ref: master
           fetch-depth: 20
@@ -62,7 +62,7 @@ jobs:
           echo "epoch=$epoch" >> $GITHUB_ENV
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -70,7 +70,7 @@ jobs:
 
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@c962da2960ed15f492addc26fffa274485265950 # v2
 
       - name: Prepare solana config
         run: |
@@ -162,7 +162,7 @@ jobs:
             DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       # - name: Approval stage
-      #   uses: trstringer/manual-approval@v1
+      #   uses: trstringer/manual-approval@74d99dff7380e3e4b122d4ededcbca2b6ce59367 # v1
       #   with:
       #     secret: ${{ github.TOKEN }}
       #     approvers: user1,user2,org-team1
@@ -175,10 +175,10 @@ jobs:
 
   # emergency_unstake:
   #   needs: apply_scoring
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-24.04
   #   steps:
   #     - name: Checkout the repository
-  #       uses: actions/checkout@master
+  #       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
   #       with:
   #         ref: master
   #         fetch-depth: 20
@@ -206,7 +206,7 @@ jobs:
   #         echo "epoch=$epoch" >> $GITHUB_ENV
 
   #     - name: Configure AWS credentials
-  #       uses: aws-actions/configure-aws-credentials@v1
+  #       uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6
   #       with:
   #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
   #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -214,7 +214,7 @@ jobs:
 
   #     - name: Login to Amazon ECR
   #       id: login-ecr
-  #       uses: aws-actions/amazon-ecr-login@v1
+  #       uses: aws-actions/amazon-ecr-login@c962da2960ed15f492addc26fffa274485265950 # v2
 
   #     - name: Prepare solana config
   #       run: |

@@ -7,10 +7,10 @@ on:
 jobs:
   trigger_unstakes_v2_if_needed:
     name: Schedule Unstakes V2
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout the repository
-      uses: actions/checkout@master
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       with:
         fetch-depth: 20
     - name: Check epoch timing
